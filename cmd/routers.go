@@ -76,6 +76,7 @@ var globalMiddlewares = []mux.MiddlewareFunc{
 }
 
 // configureServer handler returns final handler for the http server.
+// 注册服务器服务
 func configureServerHandler(endpointServerPools EndpointServerPools) (http.Handler, error) {
 	// Initialize router. `SkipClean(true)` stops minio/mux from
 	// normalizing URL path minio/minio#3256
@@ -102,6 +103,7 @@ func configureServerHandler(endpointServerPools EndpointServerPools) (http.Handl
 	registerKMSRouter(router)
 
 	// Add API router
+    // s3 协议 api 注册
 	registerAPIRouter(router)
 
 	router.Use(globalMiddlewares...)

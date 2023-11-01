@@ -131,6 +131,7 @@ func newApp(name string) *cli.App {
 	}
 
 	// Register all commands.
+    // 注册命令参数
 	registerCommand(serverCmd)
 	registerCommand(gatewayCmd) // hidden kept for guiding users.
 
@@ -193,8 +194,10 @@ func Main(args []string) {
 	appName := filepath.Base(args[0])
 
 	if env.Get("_MINIO_DEBUG_NO_EXIT", "") != "" {
+        // 捕获崩溃信息
 		freeze := func(_ int) {
 			// Infinite blocking op
+            // 堵塞住
 			<-make(chan struct{})
 		}
 

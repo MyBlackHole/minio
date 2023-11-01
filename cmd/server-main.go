@@ -168,6 +168,7 @@ var serverCmd = cli.Command{
 	Name:   "server",
 	Usage:  "start object storage server",
 	Flags:  append(ServerFlags, GlobalFlags...),
+    // 执行此命令参数是执行 serverMain
 	Action: serverMain,
 	CustomHelpTemplate: `NAME:
   {{.HelpName}} - {{.Usage}}
@@ -643,6 +644,7 @@ func serverMain(ctx *cli.Context) {
 	setDefaultProfilerRates()
 
 	// Always load ENV variables from files first.
+    // 载入环境变量
 	loadEnvVarsFromFiles()
 
 	// Handle all server command args and build the disks layout
@@ -717,6 +719,7 @@ func serverMain(ctx *cli.Context) {
 
 	// Verify kernel release and version.
 	if oldLinux() {
+        // 不支持旧(小于 4.0.0)linux
 		logger.Info(color.RedBold("WARNING: Detected Linux kernel version older than 4.0.0 release, there are some known potential performance problems with this kernel version. MinIO recommends a minimum of 4.x.x linux kernel version for best performance"))
 	}
 
@@ -738,6 +741,7 @@ func serverMain(ctx *cli.Context) {
 
 	// Configure server.
 	bootstrapTrace("configureServer", func() {
+        // 配置 http 服务器
 		handler, err := configureServerHandler(globalEndpoints)
 		if err != nil {
 			logger.Fatal(config.ErrUnexpectedError(err), "Unable to configure one of server's RPC services")
