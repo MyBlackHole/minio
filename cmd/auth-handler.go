@@ -700,6 +700,8 @@ func validateSignature(atype authType, r *http.Request) (auth.Credentials, bool,
 			return cred, owner, s3Err
 		}
 		cred, owner, s3Err = getReqAccessKeyV2(r)
+	case authTypeOSS:
+		cred, owner, s3Err = getReqAccessKeyV2(r)
 	case authTypePresigned, authTypeSigned:
 		region := globalSite.Region
 		if s3Err = isReqAuthenticated(GlobalContext, r, region, serviceS3); s3Err != ErrNone {
@@ -759,6 +761,7 @@ func isPutRetentionAllowed(bucketName, objectName string, retDays int, retDate t
 // isPutActionAllowed - check if PUT operation is allowed on the resource, this
 // call verifies bucket policies and IAM policies, supports multi user
 // checks etc.
+// 检查是否运行 put 操作
 func isPutActionAllowed(ctx context.Context, atype authType, bucketName, objectName string, r *http.Request, action policy.Action) (s3Err APIErrorCode) {
 	var cred auth.Credentials
 	var owner bool
@@ -767,6 +770,8 @@ func isPutActionAllowed(ctx context.Context, atype authType, bucketName, objectN
 	case authTypeUnknown:
 		return ErrSignatureVersionNotSupported
 	case authTypeSignedV2, authTypePresignedV2:
+		cred, owner, s3Err = getReqAccessKeyV2(r)
+	case authTypeOSS:
 		cred, owner, s3Err = getReqAccessKeyV2(r)
 	case authTypeStreamingSigned, authTypePresigned, authTypeSigned, authTypeStreamingSignedTrailer, authTypeStreamingUnsignedTrailer:
 		cred, owner, s3Err = getReqAccessKeyV4(r, region, serviceS3)

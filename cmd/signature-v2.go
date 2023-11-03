@@ -187,6 +187,7 @@ func doesPresignV2SignatureMatch(r *http.Request) APIErrorCode {
 	return ErrNone
 }
 
+// aws v2 认证 key 获取
 func getReqAccessKeyV2(r *http.Request) (auth.Credentials, bool, APIErrorCode) {
 	if accessKey := r.Form.Get(xhttp.AmzAccessKeyID); accessKey != "" {
 		return checkKeyValid(r, accessKey)

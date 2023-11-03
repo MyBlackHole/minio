@@ -1446,6 +1446,7 @@ func (sys *IAMSys) updateGroupMembershipsForLDAP(ctx context.Context) {
 }
 
 // GetUser - get user credentials
+// 根据 key 获取 user 信息
 func (sys *IAMSys) GetUser(ctx context.Context, accessKey string) (u UserIdentity, ok bool) {
 	if !sys.Initialized() {
 		return u, false
