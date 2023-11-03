@@ -66,6 +66,7 @@ func getOpName(name string) (op string) {
 
 // If trace is enabled, execute the request if it is traced by other handlers
 // otherwise, generate a trace event with request information but no response.
+// 请求跟踪中间件
 func httpTracerMiddleware(h http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		// Setup a http request response recorder - this is needed for
@@ -172,6 +173,7 @@ func httpTracerMiddleware(h http.Handler) http.Handler {
 	})
 }
 
+// http 跟踪
 func httpTrace(f http.HandlerFunc, logBody bool) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		tc, ok := r.Context().Value(mcontext.ContextTraceKey).(*mcontext.TraceCtxt)

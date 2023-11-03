@@ -281,6 +281,7 @@ func collectInternodeStats(f http.HandlerFunc) http.HandlerFunc {
 	}
 }
 
+// 收集 api 统计信息中间件
 func collectAPIStats(api string, f http.HandlerFunc) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		resource, err := getResource(r.URL.Path, r.Host, globalDomainNames)

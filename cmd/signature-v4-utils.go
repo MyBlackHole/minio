@@ -145,6 +145,7 @@ func isValidRegion(reqRegion string, confRegion string) bool {
 
 // check if the access key is valid and recognized, additionally
 // also returns if the access key is owner/admin.
+// 检查密钥是否正常识别
 func checkKeyValid(r *http.Request, accessKey string) (auth.Credentials, bool, APIErrorCode) {
 	cred := globalActiveCred
 	if cred.AccessKey != accessKey {

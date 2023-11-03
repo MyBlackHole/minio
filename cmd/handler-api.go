@@ -280,6 +280,7 @@ func (t *apiConfig) getRequestsPool() (chan struct{}, time.Duration) {
 }
 
 // maxClients throttles the S3 API calls
+// 限制并发
 func maxClients(f http.HandlerFunc) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		globalHTTPStats.incS3RequestsIncoming()

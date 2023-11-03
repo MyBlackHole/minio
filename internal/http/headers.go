@@ -125,6 +125,7 @@ const (
 	AmzExpires              = "X-Amz-Expires"
 	AmzSignedHeaders        = "X-Amz-SignedHeaders"
 	AmzSignature            = "X-Amz-Signature"
+    // 凭据
 	AmzCredential           = "X-Amz-Credential"
 	AmzSecurityToken        = "X-Amz-Security-Token"
 	AmzDecodedContentLength = "X-Amz-Decoded-Content-Length"

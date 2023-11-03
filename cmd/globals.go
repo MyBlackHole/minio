@@ -227,9 +227,11 @@ var (
 	globalNotifyTargetList *event.TargetList
 	globalLambdaTargetList *levent.TargetList
 
+    // 全局 bucket 元数据
 	globalBucketMetadataSys *BucketMetadataSys
 	globalBucketMonitor     *bandwidth.Monitor
 	globalPolicySys         *PolicySys
+    // 全局 身份访问管理(IAM)
 	globalIAMSys            *IAMSys
 	globalBytePoolCap       *bpool.BytePoolCap
 
@@ -297,12 +299,14 @@ var (
 	globalHTTPStats = newHTTPStats()
 
 	// Global bucket network and API statistics
+    // 全局统计
 	globalBucketConnStats = newBucketConnStats()
 	globalBucketHTTPStats = newBucketHTTPStats()
 
 	// Time when the server is started
 	globalBootTime = UTCNow()
 
+    // 全局活动的信任密钥
 	globalActiveCred auth.Credentials
 
 	// Captures if root credentials are set via ENV.
@@ -324,6 +328,7 @@ var (
 	globalEtcdClient *etcd.Client
 
 	// Cluster replication manager.
+    // 集群服务管理器
 	globalSiteReplicationSys SiteReplicationSys
 
 	// Cluster replication resync metrics
@@ -393,6 +398,7 @@ var (
 		Timeout: 5 * time.Second,
 	}
 
+    // 全局代理
 	globalForwarder *handlers.Forwarder
 
 	globalTierConfigMgr *TierConfigMgr
@@ -402,6 +408,7 @@ var (
 	globalConsoleSrv *consoleapi.Server
 
 	// handles service freeze or un-freeze S3 API calls.
+    // 全局处理服务冻结或取消冻结 S3 API 调用。
 	globalServiceFreeze atomic.Value
 
 	// Only needed for tracking

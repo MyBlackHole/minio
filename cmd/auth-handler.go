@@ -44,29 +44,39 @@ import (
 	"github.com/minio/pkg/v2/policy"
 )
 
+// 阿里 OSS
+func isOSS(r *http.Request) bool {
+	return strings.HasPrefix(r.Header.Get(xhttp.Authorization), "OSS")
+}
+
+
 // Verify if request has JWT.
 func isRequestJWT(r *http.Request) bool {
 	return strings.HasPrefix(r.Header.Get(xhttp.Authorization), jwtAlgorithm)
 }
 
 // Verify if request has AWS Signature Version '4'.
+// 验证是否具有 AWS V4
 func isRequestSignatureV4(r *http.Request) bool {
 	return strings.HasPrefix(r.Header.Get(xhttp.Authorization), signV4Algorithm)
 }
 
 // Verify if request has AWS Signature Version '2'.
+// 验证是否具有 AWS V2
 func isRequestSignatureV2(r *http.Request) bool {
 	return (!strings.HasPrefix(r.Header.Get(xhttp.Authorization), signV4Algorithm) &&
 		strings.HasPrefix(r.Header.Get(xhttp.Authorization), signV2Algorithm))
 }
 
 // Verify if request has AWS PreSign Version '4'.
+// 检查是否有凭据
 func isRequestPresignedSignatureV4(r *http.Request) bool {
 	_, ok := r.Form[xhttp.AmzCredential]
 	return ok
 }
 
 // Verify request has AWS PreSign Version '2'.
+// 检查是否有验证 key id, v2 版本
 func isRequestPresignedSignatureV2(r *http.Request) bool {
 	_, ok := r.Form[xhttp.AmzAccessKeyID]
 	return ok
@@ -107,6 +117,7 @@ type authType int
 // List of all supported auth types.
 const (
 	authTypeUnknown authType = iota
+    // 匿名
 	authTypeAnonymous
 	authTypePresigned
 	authTypePresignedV2
@@ -115,12 +126,15 @@ const (
 	authTypeSigned
 	authTypeSignedV2
 	authTypeJWT
+    // 基于用户
 	authTypeSTS
 	authTypeStreamingSignedTrailer
 	authTypeStreamingUnsignedTrailer
+    authTypeOSS
 )
 
 // Get request authentication type.
+// 获取验证类型
 func getRequestAuthType(r *http.Request) (at authType) {
 	if r.URL != nil {
 		var err error
@@ -148,11 +162,13 @@ func getRequestAuthType(r *http.Request) (at authType) {
 		return authTypeJWT
 	} else if isRequestPostPolicySignatureV4(r) {
 		return authTypePostPolicy
+    } else if isOSS(r) {
+		return authTypeOSS
 	} else if _, ok := r.Form[xhttp.Action]; ok {
 		return authTypeSTS
 	} else if _, ok := r.Header[xhttp.Authorization]; !ok {
 		return authTypeAnonymous
-	}
+    }
 	return authTypeUnknown
 }
 
@@ -271,6 +287,7 @@ func getClaimsFromToken(token string) (map[string]interface{}, error) {
 }
 
 // Fetch claims in the security token returned by the client and validate the token.
+// 验证 key 令牌
 func checkClaimsFromToken(r *http.Request, cred auth.Credentials) (map[string]interface{}, APIErrorCode) {
 	token := getSessionToken(r)
 	if token != "" && cred.AccessKey == "" {
@@ -352,6 +369,9 @@ func authenticateRequest(ctx context.Context, r *http.Request, action policy.Act
 			return s3Err
 		}
 		cred, owner, s3Err = getReqAccessKeyV2(r)
+	case authTypeOSS:
+		cred, owner, s3Err = getReqAccessKeyV2(r)
+        // return ErrNone
 	case authTypeSigned, authTypePresigned:
 		region := globalSite.Region
 		switch action {
@@ -367,6 +387,7 @@ func authenticateRequest(ctx context.Context, r *http.Request, action policy.Act
 		return s3Err
 	}
 
+    // 传递密钥等信息
 	logger.GetReqInfo(ctx).Cred = cred
 	logger.GetReqInfo(ctx).Owner = owner
 	logger.GetReqInfo(ctx).Region = globalSite.Region
@@ -397,6 +418,7 @@ func authenticateRequest(ctx context.Context, r *http.Request, action policy.Act
 	return s3Err
 }
 
+// 验证请求策略
 func authorizeRequest(ctx context.Context, r *http.Request, action policy.Action) (s3Err APIErrorCode) {
 	reqInfo := logger.GetReqInfo(ctx)
 	if reqInfo == nil {
@@ -425,6 +447,7 @@ func authorizeRequest(ctx context.Context, r *http.Request, action policy.Action
 			return ErrNone
 		}
 
+        // 列出存储桶版本操作
 		if action == policy.ListBucketVersionsAction {
 			// In AWS S3 s3:ListBucket permission is same as s3:ListBucketVersions permission
 			// verify as a fallback.
@@ -501,6 +524,7 @@ func authorizeRequest(ctx context.Context, r *http.Request, action policy.Action
 //
 // returns APIErrorCode if any to be replied to the client.
 // Additionally returns the accessKey used in the request, and if this request is by an admin.
+// 验证请求类型凭证
 func checkRequestAuthTypeCredential(ctx context.Context, r *http.Request, action policy.Action) (cred auth.Credentials, owner bool, s3Err APIErrorCode) {
 	s3Err = authenticateRequest(ctx, r, action)
 	reqInfo := logger.GetReqInfo(ctx)
@@ -577,6 +601,7 @@ func isReqAuthenticated(ctx context.Context, r *http.Request, region string, sty
 
 // List of all support S3 auth types.
 var supportedS3AuthTypes = map[authType]struct{}{
+    // OSS 会选这个
 	authTypeAnonymous:                {},
 	authTypePresigned:                {},
 	authTypePresignedV2:              {},
@@ -595,11 +620,13 @@ func isSupportedS3AuthType(aType authType) bool {
 }
 
 // setAuthMiddleware to validate authorization header for the incoming request.
+// 验证授权的头
 func setAuthMiddleware(h http.Handler) http.Handler {
 	// handler for validating incoming authorization headers.
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		tc, ok := r.Context().Value(mcontext.ContextTraceKey).(*mcontext.TraceCtxt)
 
+        // 验证类型
 		aType := getRequestAuthType(r)
 		switch aType {
 		case authTypeSigned, authTypeSignedV2, authTypeStreamingSigned, authTypeStreamingSignedTrailer:
@@ -638,8 +665,13 @@ func setAuthMiddleware(h http.Handler) http.Handler {
 		case authTypeJWT, authTypeSTS:
 			h.ServeHTTP(w, r)
 			return
+        case authTypeOSS:
+                // 直接放行
+				h.ServeHTTP(w, r)
 		default:
+            // 啥，OSS 来这了
 			if isSupportedS3AuthType(aType) {
+                // 直接放行
 				h.ServeHTTP(w, r)
 				return
 			}

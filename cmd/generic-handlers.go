@@ -102,6 +102,7 @@ func isHTTPHeaderSizeTooLarge(header http.Header) bool {
 }
 
 // Limits body and header to specific allowed maximum limits as per S3/MinIO API requirements.
+// 限制请求
 func setRequestLimitMiddleware(h http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		tc, ok := r.Context().Value(mcontext.ContextTraceKey).(*mcontext.TraceCtxt)
@@ -130,6 +131,7 @@ func setRequestLimitMiddleware(h http.Handler) http.Handler {
 			return
 		}
 		// Restricting read data to a given maximum length
+        // 限制大小
 		r.Body = http.MaxBytesReader(w, r.Body, requestMaxBodySize)
 		h.ServeHTTP(w, r)
 	})
@@ -333,6 +335,7 @@ func hasMultipleAuth(r *http.Request) bool {
 
 // requestValidityHandler validates all the incoming paths for
 // any malicious requests.
+// 验证路径
 func setRequestValidityMiddleware(h http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		tc, ok := r.Context().Value(mcontext.ContextTraceKey).(*mcontext.TraceCtxt)
@@ -456,11 +459,12 @@ func setBucketForwardingMiddleware(h http.Handler) http.Handler {
 		}
 		if globalDNSConfig == nil || !globalBucketFederation ||
 			guessIsHealthCheckReq(r) || guessIsMetricsReq(r) ||
-			guessIsRPCReq(r) || guessIsLoginSTSReq(r) || isAdminReq(r) {
+			guessIsRPCReq(r) || guessIsLoginSTSReq(r) || isAdminReq(r) || isOSS(r) {
 			h.ServeHTTP(w, r)
 			return
 		}
 
+        // 从 etcd 获取 bucket 位置 ip
 		bucket, object := request2BucketObjectName(r)
 
 		// Requests in federated setups for STS type calls which are
@@ -519,6 +523,7 @@ func setBucketForwardingMiddleware(h http.Handler) http.Handler {
 
 // addCustomHeadersMiddleware adds various HTTP(S) response headers.
 // Security Headers enable various security protections behaviors in the client's browser.
+// HTTP(S) 响应头补充
 func addCustomHeadersMiddleware(h http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		header := w.Header()
@@ -569,11 +574,12 @@ func setUploadForwardingMiddleware(h http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		if !globalSiteReplicationSys.isEnabled() ||
 			guessIsHealthCheckReq(r) || guessIsMetricsReq(r) ||
-			guessIsRPCReq(r) || guessIsLoginSTSReq(r) || isAdminReq(r) {
+			guessIsRPCReq(r) || guessIsLoginSTSReq(r) || isAdminReq(r) || isOSS(r) {
 			h.ServeHTTP(w, r)
 			return
 		}
 
+        // 进入集群复制
 		bucket, object := request2BucketObjectName(r)
 		uploadID := r.Form.Get(xhttp.UploadID)
 

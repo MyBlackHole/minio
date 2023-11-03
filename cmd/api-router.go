@@ -93,6 +93,7 @@ type rejectedAPI struct {
 	path    string
 }
 
+// 拒绝的对象 api
 var rejectedObjAPIs = []rejectedAPI{
 	{
 		api:     "torrent",
@@ -108,6 +109,7 @@ var rejectedObjAPIs = []rejectedAPI{
 	},
 }
 
+// 拒绝的桶 api
 var rejectedBucketAPIs = []rejectedAPI{
 	{
 		api:     "inventory",

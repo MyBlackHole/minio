@@ -46,31 +46,41 @@ func registerDistErasureRouters(router *mux.Router, endpointServerPools Endpoint
 }
 
 // List of some generic middlewares which are applied for all incoming requests.
+// 全局中间件列表
 var globalMiddlewares = []mux.MiddlewareFunc{
 	// set x-amz-request-id header and others
+    // 设置头
 	addCustomHeadersMiddleware,
 	// The generic tracer needs to be the first middleware to catch all requests
 	// returned early by any other middleware (but after the middleware that
 	// sets the amz request id).
+    // http 跟踪
 	httpTracerMiddleware,
 	// Auth middleware verifies incoming authorization headers and routes them
 	// accordingly. Client receives a HTTP error for invalid/unsupported
 	// signatures.
 	//
 	// Validates all incoming requests to have a valid date header.
+    // 验证中间件
 	setAuthMiddleware,
 	// Redirect some pre-defined browser request paths to a static location
 	// prefix.
+    // 静态重定向
 	setBrowserRedirectMiddleware,
 	// Adds 'crossdomain.xml' policy middleware to serve legacy flash clients.
+    // 垮域处理
 	setCrossDomainPolicyMiddleware,
 	// Limits all body and header sizes to a maximum fixed limit
+    // 限制 body 大小
 	setRequestLimitMiddleware,
 	// Validate all the incoming requests.
+    // 验证所有请求
 	setRequestValidityMiddleware,
 	// Add upload forwarding middleware for site replication
+    // 转发？
 	setUploadForwardingMiddleware,
 	// Add bucket forwarding middleware
+    // 转发？
 	setBucketForwardingMiddleware,
 	// Add new middlewares here.
 }
@@ -106,6 +116,7 @@ func configureServerHandler(endpointServerPools EndpointServerPools) (http.Handl
     // s3 协议 api 注册
 	registerAPIRouter(router)
 
+    // 注册所有插件
 	router.Use(globalMiddlewares...)
 
 	return router, nil

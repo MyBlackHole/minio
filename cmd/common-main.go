@@ -67,6 +67,7 @@ import (
 )
 
 // serverDebugLog will enable debug printing
+// 启用 debug log
 var serverDebugLog = env.Get("_MINIO_SERVER_DEBUG", config.EnableOff) == config.EnableOn
 
 var shardDiskTimeDelta time.Duration

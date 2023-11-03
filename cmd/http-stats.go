@@ -284,6 +284,7 @@ type HTTPAPIStats struct {
 }
 
 // Inc increments the api stats counter.
+// api 统计计数器 ++
 func (stats *HTTPAPIStats) Inc(api string) {
 	if stats == nil {
 		return
@@ -297,6 +298,7 @@ func (stats *HTTPAPIStats) Inc(api string) {
 }
 
 // Dec increments the api stats counter.
+// api 统计计数器 --
 func (stats *HTTPAPIStats) Dec(api string) {
 	if stats == nil {
 		return
