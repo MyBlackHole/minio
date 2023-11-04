@@ -77,6 +77,7 @@ func (p *parallelWriter) Write(ctx context.Context, blocks [][]byte) error {
 }
 
 // Encode reads from the reader, erasure-encodes the data and writes to the writers.
+// 对读取器读取的内容进行编码，对数据进行擦除编码并写入写入器。
 func (e *Erasure) Encode(ctx context.Context, src io.Reader, writers []io.Writer, buf []byte, quorum int) (total int64, err error) {
 	writer := &parallelWriter{
 		writers:     writers,
@@ -86,6 +87,7 @@ func (e *Erasure) Encode(ctx context.Context, src io.Reader, writers []io.Writer
 
 	for {
 		var blocks [][]byte
+        // 从 src 读到 buf
 		n, err := io.ReadFull(src, buf)
 		if err != nil {
 			if !IsErrIgnored(err, []error{
@@ -104,6 +106,7 @@ func (e *Erasure) Encode(ctx context.Context, src io.Reader, writers []io.Writer
 			break
 		}
 		// We take care of the situation where if n == 0 and total == 0 by creating empty data and parity files.
+        // 我们通过创建空数据和奇偶校验文件来处理 if n == 0 并且total == 0 的情况。
 		blocks, err = e.EncodeData(ctx, buf[:n])
 		if err != nil {
 			logger.LogIf(ctx, err)

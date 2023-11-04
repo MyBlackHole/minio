@@ -466,6 +466,7 @@ func (m metaCacheEntries) names() []string {
 }
 
 // metaCacheEntriesSorted contains metacache entries that are sorted.
+// metaCacheEntriesSorted 包含已排序的元缓存条目。
 type metaCacheEntriesSorted struct {
 	o metaCacheEntries
 	// list id is not serialized
@@ -558,12 +559,15 @@ func (m *metaCacheEntriesSorted) fileInfoVersions(bucket, prefix, delimiter, aft
 
 // fileInfos converts the metadata to ObjectInfo where possible.
 // Metadata that cannot be decoded is skipped.
+// fileInfos 在可能的情况下将元数据转换为 ObjectInfo。
+// 无法解码的元数据将被跳过。
 func (m *metaCacheEntriesSorted) fileInfos(bucket, prefix, delimiter string) (objects []ObjectInfo) {
 	objects = make([]ObjectInfo, 0, m.len())
 	prevPrefix := ""
 
 	vcfg, _ := globalBucketVersioningSys.Get(bucket)
 
+    // 遍历元数据条目
 	for _, entry := range m.o {
 		if entry.isObject() {
 			if delimiter != "" {
@@ -617,10 +621,12 @@ func (m *metaCacheEntriesSorted) fileInfos(bucket, prefix, delimiter string) (ob
 }
 
 // forwardTo will truncate m so only entries that are s or after is in the list.
+// forwardTo 将截断 m，以便列表中只有 s 或之后的条目。
 func (m *metaCacheEntriesSorted) forwardTo(s string) {
 	if s == "" {
 		return
 	}
+    // 二分搜索
 	idx := sort.Search(len(m.o), func(i int) bool {
 		return m.o[i].name >= s
 	})
@@ -635,10 +641,12 @@ func (m *metaCacheEntriesSorted) forwardTo(s string) {
 }
 
 // forwardPast will truncate m so only entries that are after s is in the list.
+// forwardPast 将截断 m，以便列表中只有 s 之后的条目。
 func (m *metaCacheEntriesSorted) forwardPast(s string) {
 	if s == "" {
 		return
 	}
+    // 二分搜索
 	idx := sort.Search(len(m.o), func(i int) bool {
 		return m.o[i].name > s
 	})
@@ -907,6 +915,7 @@ func (m *metaCacheEntriesSorted) filterRecursiveEntries(prefix, separator string
 }
 
 // truncate the number of entries to maximum n.
+// 将条目数截断为最大 n。
 func (m *metaCacheEntriesSorted) truncate(n int) {
 	if m == nil {
 		return

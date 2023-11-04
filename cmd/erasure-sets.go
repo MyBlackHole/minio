@@ -48,6 +48,9 @@ type setsDsyncLockers [][]dsync.NetLocker
 // erasureSets implements ObjectLayer combining a static list of erasure coded
 // object sets. NOTE: There is no dynamic scaling allowed or intended in
 // current design.
+// erasureSets 实现了 ObjectLayer 组合了纠删码的静态列表
+// 对象集。 注意： 不允许或不打算进行动态缩放
+// 当前设计。
 type erasureSets struct {
 	sets []*erasureObjects
 
@@ -196,6 +199,8 @@ func findDiskIndex(refFormat, format *formatErasureV3) (int, int, error) {
 
 // connectDisks - attempt to connect all the endpoints, loads format
 // and re-arranges the disks in proper position.
+// connectDisks - 尝试连接所有端点，加载格式
+// 并将磁盘重新排列在适当的位置。
 func (s *erasureSets) connectDisks() {
 	defer func() {
 		s.lastConnectDisksOpTime = time.Now()

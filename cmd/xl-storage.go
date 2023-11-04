@@ -1796,6 +1796,7 @@ func (s *xlStorage) ReadFile(ctx context.Context, volume string, path string, of
 	}
 
 	if verifier == nil {
+        // 支持偏移读
 		n, err = file.ReadAt(buffer, offset)
 		return int64(n), err
 	}
@@ -1944,11 +1945,14 @@ func (s *xlStorage) ReadFileStream(ctx context.Context, volume, path string, off
 	if st.Size() < offset+length {
 		// Expected size cannot be satisfied for
 		// requested offset and length
+        // 无法满足预期大小
+        // 请求的偏移量和长度
 		file.Close()
 		return nil, errFileCorrupt
 	}
 
 	if offset > 0 {
+        // 设置文件偏移量
 		if _, err = file.Seek(offset, io.SeekStart); err != nil {
 			file.Close()
 			return nil, err

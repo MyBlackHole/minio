@@ -74,6 +74,8 @@ func NewErasure(ctx context.Context, dataBlocks, parityBlocks int, blockSize int
 
 // EncodeData encodes the given data and returns the erasure-coded data.
 // It returns an error if the erasure coding failed.
+// EncodeData 对给定数据进行编码并返回纠删码数据。
+// 如果纠删码失败则返回错误。
 func (e *Erasure) EncodeData(ctx context.Context, data []byte) ([][]byte, error) {
 	if len(data) == 0 {
 		return make([][]byte, e.dataBlocks+e.parityBlocks), nil

@@ -56,6 +56,13 @@ func renameAllBucketMetacache(epPath string) error {
 // Required important fields are Bucket, Prefix, Separator.
 // Other important fields are Limit, Marker.
 // List ID always derived from the Marker.
+// listPath 将返回请求的条目。
+// 如果列表中没有更多条目，则返回 io.EOF，
+// 否则返回 nil 或意外错误。
+// 给定的listPathOptions将在内部进行检查和修改。
+// 必填重要字段为Bucket、Prefix、Separator。
+// 其他重要字段有 Limit、Marker。
+// 列表 ID 始终源自标记。
 func (z *erasureServerPools) listPath(ctx context.Context, o *listPathOptions) (entries metaCacheEntriesSorted, err error) {
 	if err := checkListObjsArgs(ctx, o.Bucket, o.Prefix, o.Marker, z); err != nil {
 		return entries, err
@@ -66,8 +73,10 @@ func (z *erasureServerPools) listPath(ctx context.Context, o *listPathOptions) (
 	}
 
 	// Marker is set validate pre-condition.
+    // 标记已设置验证前提条件
 	if o.Marker != "" && o.Prefix != "" {
 		// Marker not common with prefix is not implemented. Send an empty response
+        // 未实现与前缀不常见的标记。 发送空回复
 		if !HasPrefix(o.Marker, o.Prefix) {
 			return entries, io.EOF
 		}
@@ -220,6 +229,9 @@ func (z *erasureServerPools) listPath(ctx context.Context, o *listPathOptions) (
 	// Do listing in-place.
 	// Create output for our results.
 	// Create filter for results.
+    // 就地列出。
+    // 为我们的结果创建输出。
+    // 创建结果过滤器。
 	o.debugln("Raw List", o)
 	filterCh := make(chan metaCacheEntry, o.Limit)
 	listCtx, cancelList := context.WithCancel(ctx)
@@ -259,6 +271,8 @@ func (z *erasureServerPools) listPath(ctx context.Context, o *listPathOptions) (
 
 // listMerged will list across all sets and return a merged results stream.
 // The result channel is closed when no more results are expected.
+// listMerged 将列出所有集合并返回合并的结果流。
+// 当不需要更多结果时，结果通道关闭。
 func (z *erasureServerPools) listMerged(ctx context.Context, o listPathOptions, results chan<- metaCacheEntry) error {
 	var mu sync.Mutex
 	var wg sync.WaitGroup
@@ -269,7 +283,9 @@ func (z *erasureServerPools) listMerged(ctx context.Context, o listPathOptions, 
 	// Ask all sets and merge entries.
 	listCtx, cancelList := context.WithCancel(ctx)
 	defer cancelList()
+    // 层层查询
 	for _, pool := range z.serverPools {
+        // 层层查询
 		for _, set := range pool.sets {
 			wg.Add(1)
 			innerResults := make(chan metaCacheEntry, 100)

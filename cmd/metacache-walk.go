@@ -63,6 +63,9 @@ type WalkDirOptions struct {
 // WalkDir will traverse a directory and return all entries found.
 // On success a sorted meta cache stream will be returned.
 // Metadata has data stripped, if any.
+// WalkDir 将遍历目录并返回找到的所有条目。
+// 成功时，将返回排序的元缓存流。
+// 元数据已删除数据（如果有）。
 func (s *xlStorage) WalkDir(ctx context.Context, opts WalkDirOptions, wr io.Writer) (err error) {
 	// Verify if volume is valid and it exists.
 	volumeDir, err := s.getVolDir(opts.Bucket)

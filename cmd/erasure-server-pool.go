@@ -45,6 +45,7 @@ import (
 	"github.com/minio/pkg/v2/wildcard"
 )
 
+// 服务池
 type erasureServerPools struct {
 	poolMetaMutex sync.RWMutex
 	poolMeta      poolMeta
@@ -55,6 +56,7 @@ type erasureServerPools struct {
 	deploymentID     [16]byte
 	distributionAlgo string
 
+    // 对象集列表
 	serverPools []*erasureSets
 
 	// Active decommission canceler
@@ -1484,7 +1486,9 @@ func (z *erasureServerPools) ListObjects(ctx context.Context, bucket, prefix, ma
 		return loi, err
 	}
 
+    // 筛选大于 Marker
 	merged.forwardPast(opts.Marker)
+    // 退出时截断释放(没有引用 gc 自动回收)
 	defer merged.truncate(0) // Release when returning
 
 	if contextCanceled(ctx) {
@@ -1495,6 +1499,7 @@ func (z *erasureServerPools) ListObjects(ctx context.Context, bucket, prefix, ma
 	objects := merged.fileInfos(bucket, prefix, delimiter)
 	loi.IsTruncated = err == nil && len(objects) > 0
 	if maxKeys > 0 && len(objects) > maxKeys {
+        // 超过最大数量
 		objects = objects[:maxKeys]
 		loi.IsTruncated = true
 	}
@@ -1520,6 +1525,7 @@ func (z *erasureServerPools) ListObjects(ctx context.Context, bucket, prefix, ma
 	}
 	if loi.IsTruncated {
 		last := objects[len(objects)-1]
+        // 赋值下一个开始位置
 		loi.NextMarker = opts.encodeMarker(last.Name)
 	}
 	return loi, nil
@@ -1617,6 +1623,7 @@ func (z *erasureServerPools) PutObjectPart(ctx context.Context, bucket, object, 
 	}
 
 	if z.SinglePool() {
+        // 单点
 		return z.serverPools[0].PutObjectPart(ctx, bucket, object, uploadID, partID, data, opts)
 	}
 

@@ -267,13 +267,20 @@ const (
 	// This is a divergence from S3 limit on purpose to support
 	// use cases where users are going to upload large files
 	// using 'curl' and presigned URL.
+    // 每个 PUT 请求的最大对象大小为 5TB。
+    // 这是与 S3 限制的分歧，旨在支持
+    // 用户要上传大文件的用例
+    // 使用“curl”和预签名 URL。
 	globalMaxObjectSize = 5 * humanize.TiByte
 
 	// Minimum Part size for multipart upload is 5MiB
+    // 分段上传的最小部分大小为 5MiB
 	globalMinPartSize = 5 * humanize.MiByte
 
 	// Maximum Part ID for multipart upload is 10000
 	// (Acceptable values range from 1 to 10000 inclusive)
+    // 分段上传的最大Part ID为10000
+    //（可接受的值范围为 1 到 10000（含））
 	globalMaxPartID = 10000
 )
 

@@ -54,6 +54,7 @@ type listPathOptions struct {
 	BaseDir string
 
 	// Scan/return only content with prefix.
+    // 仅扫描/返回带前缀的内容。
 	Prefix string
 
 	// FilterPrefix will return only results with this prefix when scanning.
@@ -63,9 +64,12 @@ type listPathOptions struct {
 
 	// Marker to resume listing.
 	// The response will be the first entry >= this object name.
+    // 恢复列表的标记。
+    // 响应将是第一个条目 >= 该对象名称。
 	Marker string
 
 	// Limit the number of results.
+    // 限制队列结果数量。
 	Limit int
 
 	// The number of disks to ask.
@@ -109,12 +113,14 @@ type listPathOptions struct {
 	Retention lock.Retention
 
 	// Replication configuration
+    // 复制配置
 	Replication replicationConfig
 
 	// StopDiskAtLimit will stop listing on each disk when limit number off objects has been returned.
 	StopDiskAtLimit bool
 
 	// pool and set of where the cache is located.
+    // 缓存所在的池和集合。
 	pool, set int
 }
 
@@ -173,6 +179,10 @@ func (o *listPathOptions) debugln(data ...interface{}) {
 // Caller should close the channel when done.
 // The returned function will return the results once there is enough or input is closed,
 // or the context is canceled.
+// GatherResults 将收集输入通道上的所有结果，并根据选项过滤结果。
+// 调用者应在完成后关闭通道。
+// 一旦足够或输入关闭，返回函数将返回结果，
+// 或者上下文被取消。
 func (o *listPathOptions) gatherResults(ctx context.Context, in <-chan metaCacheEntry) func() (metaCacheEntriesSorted, error) {
 	resultsDone := make(chan metaCacheEntriesSorted)
 	// Copy so we can mutate
@@ -200,6 +210,7 @@ func (o *listPathOptions) gatherResults(ctx context.Context, in <-chan metaCache
 				continue
 			}
 			if o.Marker != "" && entry.name < o.Marker {
+                // 筛选小于 Marker 跳过
 				continue
 			}
 			if !strings.HasPrefix(entry.name, o.Prefix) {
@@ -678,6 +689,7 @@ func getQuorumDisks(disks []StorageAPI, infos []DiskInfo, readQuorum int) (newDi
 }
 
 // Will return io.EOF if continuing would not yield more results.
+// 如果不会继续产生更多结果，将返回 io.EOF。
 func (er *erasureObjects) listPath(ctx context.Context, o listPathOptions, results chan<- metaCacheEntry) (err error) {
 	defer close(results)
 	o.debugf(color.Green("listPath:")+" with options: %#v", o)
@@ -754,7 +766,6 @@ func (er *erasureObjects) listPath(ctx context.Context, o listPathOptions, resul
 			}
 		},
 		partial: func(entries metaCacheEntries, errs []error) {
-			// Results Disagree :-(
 			entry, ok := entries.resolve(&resolver)
 			if ok {
 				select {
@@ -930,11 +941,15 @@ type listPathRawOptions struct {
 
 	// Minimum number of good disks to continue.
 	// An error will be returned if this many disks returned an error.
+    // 继续的好磁盘的最小数量。
+    // 如果这么多磁盘返回错误，则会返回错误。
 	minDisks       int
 	reportNotFound bool
 
 	// perDiskLimit will limit each disk to return n objects.
 	// If <= 0 all results will be returned until canceled.
+    // perDiskLimit 将限制每个磁盘返回 n 个对象。
+    // 如果<= 0，所有结果将被返回，直到取消。
 	perDiskLimit int
 
 	// Callbacks with results:
@@ -959,6 +974,11 @@ type listPathRawOptions struct {
 // Directories are always returned.
 // Cache will be bypassed.
 // Context cancellation will be respected but may take a while to effectuate.
+// listPathRaw 将列出所提供的驱动器上的路径。
+// 请参阅 listPathRawOptions 了解如何传递结果。
+// 目录总是被返回。
+// 缓存将被绕过。
+// 上下文取消将受到尊重，但可能需要一段时间才能实现。
 func listPathRaw(ctx context.Context, opts listPathRawOptions) (err error) {
 	disks := opts.disks
 	if len(disks) == 0 {
@@ -1009,6 +1029,7 @@ func listPathRaw(ctx context.Context, opts listPathRawOptions) (err error) {
 		d := disks[i]
 
 		// Send request to each disk.
+        // 向每个磁盘发送请求。
 		go func() {
 			var werr error
 			if d == nil {

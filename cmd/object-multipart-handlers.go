@@ -627,12 +627,14 @@ func (api objectAPIHandlers) PutObjectPartHandler(w http.ResponseWriter, r *http
 	}
 
 	// maximum size for multipart objects in a single operation
+    // 单次操作中多部分对象的最大大小
 	if isMaxObjectSize(size) {
 		writeErrorResponse(ctx, w, errorCodes.ToAPIErr(ErrEntityTooLarge), r.URL)
 		return
 	}
 
 	// check partID with maximum part ID for multipart objects
+    // 分段 id 判断
 	if isMaxPartID(partID) {
 		writeErrorResponse(ctx, w, errorCodes.ToAPIErr(ErrInvalidMaxParts), r.URL)
 		return
@@ -685,6 +687,7 @@ func (api objectAPIHandlers) PutObjectPartHandler(w http.ResponseWriter, r *http
 		return
 	}
 
+    // 实际大小
 	actualSize := size
 
 	// get encryption options
