@@ -218,6 +218,8 @@ func registerAPIRouter(router *mux.Router) {
 
 	for _, router := range routers {
 		// Register all rejected object APIs
+        // 注册所有被拒绝的对象API
+        // 保留 api
 		for _, r := range rejectedObjAPIs {
 			t := router.Methods(r.methods...).
 				HandlerFunc(collectAPIStats(r.api, httpTraceAll(notImplementedHandler))).

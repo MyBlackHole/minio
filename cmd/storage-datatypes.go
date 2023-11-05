@@ -339,6 +339,7 @@ const (
 )
 
 // newFileInfo - initializes new FileInfo, allocates a fresh erasure info.
+// newFileInfo - 初始化新的 FileInfo，分配新的擦除信息。
 func newFileInfo(object string, dataBlocks, parityBlocks int) (fi FileInfo) {
 	fi.Erasure = ErasureInfo{
 		Algorithm:    erasureAlgorithm,

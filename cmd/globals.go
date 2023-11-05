@@ -171,6 +171,7 @@ var (
 	globalServerCtxt serverCtxt
 
 	// Indicates if the running minio server is distributed setup.
+    // 指示运行的 minio 服务器是否是分布式设置。
 	globalIsDistErasure = false
 
 	// Indicates if the running minio server is an erasure-code backend.

@@ -56,6 +56,7 @@ const (
 )
 
 // ObjectOptions represents object options for ObjectLayer object operations
+// ObjectOptions表示ObjectLayer对象操作的对象选项
 type ObjectOptions struct {
 	ServerSideEncryption encrypt.ServerSide
 	VersionSuspended     bool      // indicates if the bucket was previously versioned but is currently suspended.
@@ -73,6 +74,7 @@ type ObjectOptions struct {
 	MaxParts            int                 // used in GetObjectAttributes. Signals how many parts we should return
 	PartNumberMarker    int                 // used in GetObjectAttributes. Signals the part number after which results should be returned
 	PartNumber          int                 // only useful in case of GetObject/HeadObject
+    // 仅在 GetObject/HeadObject/CopyObjectPart 前提评估期间设置
 	CheckPrecondFn      CheckPreconditionFn // only set during GetObject/HeadObject/CopyObjectPart preconditional valuation
 	EvalMetadataFn      EvalMetadataFn      // only set for retention settings, meant to be used only when updating metadata in-place.
 	DeleteReplication   ReplicationState    // Represents internal replication state needed for Delete replication
@@ -84,6 +86,7 @@ type ObjectOptions struct {
 
 	NoDecryption                        bool      // indicates if the stream must be decrypted.
 	PreserveETag                        string    // preserves this etag during a PUT call.
+    // 向下层指示调用者是否希望持有锁。
 	NoLock                              bool      // indicates to lower layers if the caller is expecting to hold locks.
 	ProxyRequest                        bool      // only set for GET/HEAD in active-active replication scenario
 	ProxyHeaderSet                      bool      // only set for GET/HEAD in active-active replication scenario
@@ -97,6 +100,7 @@ type ObjectOptions struct {
 	Speedtest bool // object call specifically meant for SpeedTest code, set to 'true' when invoked by SpeedtestHandler.
 
 	// Use the maximum parity (N/2), used when saving server configuration files
+    // 使用最大奇偶校验（N/2），保存服务器配置文件时使用
 	MaxParity bool
 
 	// Provides a per object encryption function, allowing metadata encryption.

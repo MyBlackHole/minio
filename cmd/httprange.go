@@ -44,6 +44,7 @@ type HTTPRangeSpec struct {
 }
 
 // GetLength - get length of range
+// GetLength - 获取范围的长度
 func (h *HTTPRangeSpec) GetLength(resourceSize int64) (rangeLength int64, err error) {
 	switch {
 	case resourceSize < 0:

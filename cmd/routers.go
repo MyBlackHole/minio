@@ -25,20 +25,26 @@ import (
 )
 
 // Composed function registering routers for only distributed Erasure setup.
+// 为分布式擦除设置注册路由器的组合函数。
 func registerDistErasureRouters(router *mux.Router, endpointServerPools EndpointServerPools) {
 	// Register storage REST router only if its a distributed setup.
+    // 仅当其是分布式设置时才注册存储 REST 路由器。
 	registerStorageRESTHandlers(router, endpointServerPools, globalGrid.Load())
 
 	// Register peer REST router only if its a distributed setup.
+    // 仅当其是分布式设置时才注册对等 REST 路由器。
 	registerPeerRESTHandlers(router)
 
 	// Register peer S3 router only if its a distributed setup.
+    // 仅在分布式设置时才注册对等 S3 路由器。
 	registerPeerS3Handlers(router)
 
 	// Register bootstrap REST router for distributed setups.
+    // 注册引导 REST 路由器以进行分布式设置。
 	registerBootstrapRESTHandlers(router)
 
 	// Register distributed namespace lock routers.
+    // 注册分布式命名空间锁路由器。
 	registerLockRESTHandlers()
 
 	// Add grid to router
@@ -98,15 +104,19 @@ func configureServerHandler(endpointServerPools EndpointServerPools) (http.Handl
 	}
 
 	// Add Admin router, all APIs are enabled in server mode.
+    // 添加管理路由器，所有API均在服务器模式下启用。
 	registerAdminRouter(router, true)
 
 	// Add healthCheck router
+    // 添加健康检查路由器
 	registerHealthCheckRouter(router)
 
 	// Add server metrics router
+    // 添加服务器指标路由器
 	registerMetricsRouter(router)
 
 	// Add STS router always.
+    // 始终添加 STS(Security Token Service) 路由器。
 	registerSTSRouter(router)
 
 	// Add KMS router

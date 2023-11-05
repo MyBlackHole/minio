@@ -127,9 +127,11 @@ type ObjectInfo struct {
 	ModTime time.Time
 
 	// Total object size.
+    // 总对象大小
 	Size int64
 
 	// Actual size is the real size of the object uploaded by client.
+    // 实际大小是客户端上传的对象的真实大小。
 	ActualSize *int64
 
 	// IsDir indicates if the object is prefix.

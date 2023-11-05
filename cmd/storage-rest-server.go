@@ -306,6 +306,7 @@ func (s *storageRESTServer) StatVolHandler(params *grid.MSS) (*VolInfo, *grid.Re
 }
 
 // AppendFileHandler - append data from the request to the file specified.
+// AppendFileHandler - 将请求中的数据附加到指定的文件。
 func (s *storageRESTServer) AppendFileHandler(w http.ResponseWriter, r *http.Request) {
 	if !s.IsValid(w, r) {
 		return
@@ -1319,6 +1320,7 @@ func (s *storageRESTServer) ReadMultiple(w http.ResponseWriter, r *http.Request)
 var globalLocalSetDrives [][][]StorageAPI
 
 // registerStorageRESTHandlers - register storage rpc router.
+// registerStorageRPCouter - 注册存储 rpc 路由器。
 func registerStorageRESTHandlers(router *mux.Router, endpointServerPools EndpointServerPools, gm *grid.Manager) {
 	h := func(f http.HandlerFunc) http.HandlerFunc {
 		return collectInternodeStats(httpTraceHdrs(f))

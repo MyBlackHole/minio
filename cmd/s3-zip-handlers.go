@@ -44,6 +44,7 @@ const (
 	archiveInfoMetadataKey = ReservedMetadataPrefixLower + "archive-info" // "x-minio-internal-archive-info"
 
 	// Peek into a zip archive
+    // 查看 zip 存档
 	xMinIOExtract = "x-minio-extract"
 )
 

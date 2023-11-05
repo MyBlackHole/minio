@@ -35,6 +35,7 @@ type parallelWriter struct {
 }
 
 // Write writes data to writers in parallel.
+// Write 并行地将数据写入写入器。
 func (p *parallelWriter) Write(ctx context.Context, blocks [][]byte) error {
 	var wg sync.WaitGroup
 
@@ -81,6 +82,7 @@ func (p *parallelWriter) Write(ctx context.Context, blocks [][]byte) error {
 func (e *Erasure) Encode(ctx context.Context, src io.Reader, writers []io.Writer, buf []byte, quorum int) (total int64, err error) {
 	writer := &parallelWriter{
 		writers:     writers,
+        // 写仲裁
 		writeQuorum: quorum,
 		errs:        make([]error, len(writers)),
 	}

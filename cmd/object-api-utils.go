@@ -498,6 +498,7 @@ func getHostFromSrv(records []dns.SrvRecord) (host string) {
 }
 
 // IsCompressed returns true if the object is marked as compressed.
+// 如果对象被标记为压缩，则 IsCompressed 返回 true。
 func (o *ObjectInfo) IsCompressed() bool {
 	_, ok := o.UserDefined[ReservedMetadataPrefix+"compression"]
 	return ok
@@ -517,11 +518,13 @@ func (o *ObjectInfo) IsCompressedOK() (bool, error) {
 }
 
 // GetActualSize - returns the actual size of the stored object
+// GetActualSize - 返回存储对象的实际大小
 func (o ObjectInfo) GetActualSize() (int64, error) {
 	if o.ActualSize != nil {
 		return *o.ActualSize, nil
 	}
 	if o.IsCompressed() {
+        // 压缩过，获取实际大小
 		sizeStr, ok := o.UserDefined[ReservedMetadataPrefix+"actual-size"]
 		if !ok {
 			return -1, errInvalidDecompressedSize
@@ -550,6 +553,9 @@ func (o ObjectInfo) GetActualSize() (int64, error) {
 // Disabling compression for encrypted enabled requests.
 // Using compression and encryption together enables room for side channel attacks.
 // Eliminate non-compressible objects by extensions/content-types.
+// 对已启用的加密请求禁用压缩。
+// 同时使用压缩和加密为侧信道攻击提供了空间。
+// 通过扩展/内容类型消除不可压缩对象。
 func isCompressible(header http.Header, object string) bool {
 	globalCompressConfigMu.Lock()
 	cfg := globalCompressConfig
@@ -993,6 +999,8 @@ func (p *PutObjReader) Size() int64 {
 
 // MD5CurrentHexString returns the current MD5Sum or encrypted MD5Sum
 // as a hex encoded string
+// MD5CurrentHexString 返回当前的 MD5Sum 或加密的 MD5Sum
+// 作为十六进制编码的字符串
 func (p *PutObjReader) MD5CurrentHexString() string {
 	md5sumCurr := p.rawReader.MD5Current()
 	var appendHyphen bool
@@ -1033,6 +1041,8 @@ func (p *PutObjReader) WithEncryption(encReader *hash.Reader, objEncKey *crypto.
 
 // NewPutObjReader returns a new PutObjReader. It uses given hash.Reader's
 // MD5Current method to construct md5sum when requested downstream.
+// NewPutObjReader 返回一个新的 PutObjReader。 它使用给定的 hash.Reader's
+// 当下游请求时构造 md5sum 的 MD5Current 方法。
 func NewPutObjReader(rawReader *hash.Reader) *PutObjReader {
 	return &PutObjReader{Reader: rawReader, rawReader: rawReader}
 }

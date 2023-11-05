@@ -44,7 +44,7 @@ var bucketMetadataOpIgnoredErrs = append(bucketOpIgnoredErrs, errVolumeNotFound)
 // OfflineDisk represents an unavailable disk.
 var OfflineDisk StorageAPI // zero value is nil
 
-// erasureObjects - Implements ER object layer.
+// erasureObjects - Implements ER object layer. // erasureObjects - 实现 ER(擦除|纠错) 对象层。
 type erasureObjects struct {
 	setDriveCount      int
 	defaultParityCount int

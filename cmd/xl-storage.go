@@ -2134,6 +2134,7 @@ func (s *xlStorage) WriteAll(ctx context.Context, volume string, path string, b 
 
 // AppendFile - append a byte array at path, if file doesn't exist at
 // path this call explicitly creates it.
+// 追加写, 不存在则创建
 func (s *xlStorage) AppendFile(ctx context.Context, volume string, path string, buf []byte) (err error) {
 	volumeDir, err := s.getVolDir(volume)
 	if err != nil {

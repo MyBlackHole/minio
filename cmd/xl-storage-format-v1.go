@@ -93,6 +93,7 @@ type ErasureInfo struct {
 	// Algorithm is the string representation of erasure-coding-algorithm
 	Algorithm string `json:"algorithm"`
 	// DataBlocks is the number of data blocks for erasure-coding
+    // DataBlocks 是用于纠删码的数据块的数量
 	DataBlocks int `json:"data"`
 	// ParityBlocks is the number of parity blocks for erasure-coding
 	ParityBlocks int `json:"parity"`

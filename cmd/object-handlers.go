@@ -88,6 +88,7 @@ const (
 	encryptBufferSize = 1 << 20
 
 	// minCompressibleSize is the minimum size at which we enable compression.
+    // minCompressibleSize 是我们启用压缩的最小大小。
 	minCompressibleSize = 4096
 )
 
@@ -1150,6 +1151,7 @@ func (api objectAPIHandlers) headObjectHandler(ctx context.Context, objectAPI Ob
 	}
 
 	// Set standard object headers.
+    // 设置对象信息头
 	if err = setObjectHeaders(w, objInfo, rs, opts); err != nil {
 		writeErrorResponseHeadersOnly(w, toAPIError(ctx, err))
 		return
@@ -1221,6 +1223,7 @@ func (api objectAPIHandlers) HeadObjectHandler(w http.ResponseWriter, r *http.Re
 
 	vars := mux.Vars(r)
 	bucket := vars["bucket"]
+    // 取变量对象
 	object, err := unescapePath(vars["object"])
 	if err != nil {
 		writeErrorResponse(ctx, w, toAPIError(ctx, err), r.URL)
@@ -1991,6 +1994,7 @@ func (api objectAPIHandlers) PutObjectHandler(w http.ResponseWriter, r *http.Req
 	}
 
 	// if Content-Length is unknown/missing, deny the request
+    // 如果 Content-Length 未知/缺失，则拒绝请求
 	size := r.ContentLength
 	rAuthType := getRequestAuthType(r)
 	switch rAuthType {
@@ -2014,6 +2018,7 @@ func (api objectAPIHandlers) PutObjectHandler(w http.ResponseWriter, r *http.Req
 	}
 
 	// maximum Upload size for objects in a single operation
+    // 最大 5TB
 	if isMaxObjectSize(size) {
 		writeErrorResponse(ctx, w, errorCodes.ToAPIErr(ErrEntityTooLarge), r.URL)
 		return
@@ -2101,6 +2106,7 @@ func (api objectAPIHandlers) PutObjectHandler(w http.ResponseWriter, r *http.Req
 	}
 
 	// Check if bucket encryption is enabled
+    // 检查桶加密是否开启
 	sseConfig, _ := globalBucketSSEConfigSys.Get(bucket)
 	sseConfig.Apply(r.Header, sse.ApplyOptions{
 		AutoEncrypt: globalAutoEncryption,
@@ -2277,6 +2283,7 @@ func (api objectAPIHandlers) PutObjectHandler(w http.ResponseWriter, r *http.Req
 	}
 
 	// Create the object..
+    // 创建对象
 	objInfo, err := putObject(ctx, bucket, object, pReader, opts)
 	if err != nil {
 		writeErrorResponse(ctx, w, toAPIError(ctx, err), r.URL)
@@ -2679,6 +2686,7 @@ func (api objectAPIHandlers) PutObjectExtractHandler(w http.ResponseWriter, r *h
 		}
 
 		// Create the object..
+        // 创建对象
 		objInfo, err := putObject(ctx, bucket, object, pReader, opts)
 		if err != nil {
 			return err

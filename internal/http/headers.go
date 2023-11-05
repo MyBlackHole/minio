@@ -215,6 +215,7 @@ const (
 	// Header indicates that this request is a replication request to create a REPLICA
 	MinIOSourceReplicationRequest = "X-Minio-Source-Replication-Request"
 	// Header checks replication permissions without actually completing replication
+    // 标头检查复制权限而不实际完成复制
 	MinIOSourceReplicationCheck = "X-Minio-Source-Replication-Check"
 	// Header indicates replication reset status.
 	MinIOReplicationResetStatus = "X-Minio-Replication-Reset-Status"

@@ -246,6 +246,9 @@ func (e ETag) ETag() ETag { return e }
 // FromContentMD5 decodes and returns the Content-MD5
 // as ETag, if set. If no Content-MD5 header is set
 // it returns an empty ETag and no error.
+// FromContentMD5 解码并返回Content-MD5
+// 作为 ETag（如果已设置）。 如果未设置 Content-MD5 标头
+// 它返回一个空的 ETag 并且没有错误。
 func FromContentMD5(h http.Header) (ETag, error) {
 	v, ok := h["Content-Md5"]
 	if !ok {
