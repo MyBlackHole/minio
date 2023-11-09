@@ -783,6 +783,7 @@ func (client *storageRESTClient) Close() error {
 }
 
 // Returns a storage rest client.
+// 返回一个存储 rest 客户端。
 func newStorageRESTClient(endpoint Endpoint, healthCheck bool, gm *grid.Manager) (*storageRESTClient, error) {
 	serverURL := &url.URL{
 		Scheme: endpoint.Scheme,

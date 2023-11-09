@@ -96,7 +96,8 @@ var globalMiddlewares = []mux.MiddlewareFunc{
 func configureServerHandler(endpointServerPools EndpointServerPools) (http.Handler, error) {
 	// Initialize router. `SkipClean(true)` stops minio/mux from
 	// normalizing URL path minio/minio#3256
-	router := mux.NewRouter().SkipClean(true).UseEncodedPath()
+	router := mux.NewRouter().SkipClean(true)
+	// router := mux.NewRouter().SkipClean(true).UseEncodedPath()
 
 	// Initialize distributed NS lock.
 	if globalIsDistErasure {

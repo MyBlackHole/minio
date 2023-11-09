@@ -34,6 +34,7 @@ import (
 )
 
 // magic HH-256 key as HH-256 hash of the first 100 decimals of π as utf-8 string with a zero key.
+// 神奇的 HH-256 密钥作为 π 的前 100 个小数的 HH-256 哈希值作为带有零密钥的 utf-8 字符串。
 var magicHighwayHash256Key = []byte("\x4b\xe7\x34\xfa\x8e\x23\x8a\xcd\x26\x3e\x83\xe6\xbb\x96\x85\x52\x04\x0f\x93\x5d\xa3\x9f\x44\x14\x97\xe0\x9d\x13\x22\xde\x36\xa0")
 
 var bitrotAlgorithms = map[BitrotAlgorithm]string{
@@ -44,6 +45,7 @@ var bitrotAlgorithms = map[BitrotAlgorithm]string{
 }
 
 // New returns a new hash.Hash calculating the given bitrot algorithm.
+// New 返回一个新的 hash.Hash 计算给定的 bitrot 算法。
 func (a BitrotAlgorithm) New() hash.Hash {
 	switch a {
 	case SHA256:
@@ -64,6 +66,7 @@ func (a BitrotAlgorithm) New() hash.Hash {
 }
 
 // Available reports whether the given algorithm is available.
+// 可用报告给定的算法是否可用。
 func (a BitrotAlgorithm) Available() bool {
 	_, ok := bitrotAlgorithms[a]
 	return ok

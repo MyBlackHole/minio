@@ -1243,6 +1243,339 @@ func (er erasureObjects) PutObject(ctx context.Context, bucket string, object st
 	return er.putObject(ctx, bucket, object, data, opts)
 }
 
+func (er erasureObjects) ApendObject(ctx context.Context, bucket string, object string, data *PutObjReader, opts ObjectOptions) (objInfo ObjectInfo, err error) {
+	return er.appendObject(ctx, bucket, object, data, opts)
+}
+
+func (er erasureObjects) appendObject(ctx context.Context, bucket string, object string, r *PutObjReader, opts ObjectOptions) (objInfo ObjectInfo, err error) {
+	auditObjectErasureSet(ctx, object, &er)
+
+	data := r.Reader
+
+	if opts.CheckPrecondFn != nil {
+		if !opts.NoLock {
+			ns := er.NewNSLock(bucket, object)
+			lkctx, err := ns.GetLock(ctx, globalOperationTimeout)
+			if err != nil {
+				return ObjectInfo{}, err
+			}
+			ctx = lkctx.Context()
+			defer ns.Unlock(lkctx)
+			opts.NoLock = true
+		}
+
+		obj, err := er.getObjectInfo(ctx, bucket, object, opts)
+		if err == nil && opts.CheckPrecondFn(obj) {
+			return objInfo, PreConditionFailed{}
+		}
+		if err != nil && !isErrVersionNotFound(err) && !isErrObjectNotFound(err) && !isErrReadQuorum(err) {
+			return objInfo, err
+		}
+	}
+
+	// Validate input data size and it can never be less than -1.
+	if data.Size() < -1 {
+		logger.LogIf(ctx, errInvalidArgument, logger.Application)
+		return ObjectInfo{}, toObjectErr(errInvalidArgument)
+	}
+
+	userDefined := cloneMSS(opts.UserDefined)
+
+	storageDisks := er.getDisks()
+
+	parityDrives := len(storageDisks) / 2
+	if !opts.MaxParity {
+		// Get parity and data drive count based on storage class metadata
+		parityDrives = globalStorageClass.GetParityForSC(userDefined[xhttp.AmzStorageClass])
+		if parityDrives < 0 {
+			parityDrives = er.defaultParityCount
+		}
+
+		// If we have offline disks upgrade the number of erasure codes for this object.
+		parityOrig := parityDrives
+
+		var offlineDrives int
+		for _, disk := range storageDisks {
+			if disk == nil {
+				parityDrives++
+				offlineDrives++
+				continue
+			}
+			if !disk.IsOnline() {
+				parityDrives++
+				offlineDrives++
+				continue
+			}
+		}
+
+		if offlineDrives >= (len(storageDisks)+1)/2 {
+			// if offline drives are more than 50% of the drives
+			// we have no quorum, we shouldn't proceed just
+			// fail at that point.
+			return ObjectInfo{}, toObjectErr(errErasureWriteQuorum, bucket, object)
+		}
+
+		if parityDrives >= len(storageDisks)/2 {
+			parityDrives = len(storageDisks) / 2
+		}
+
+		if parityOrig != parityDrives {
+			userDefined[minIOErasureUpgraded] = strconv.Itoa(parityOrig) + "->" + strconv.Itoa(parityDrives)
+		}
+	}
+	dataDrives := len(storageDisks) - parityDrives
+
+	// we now know the number of blocks this object needs for data and parity.
+	// writeQuorum is dataBlocks + 1
+	writeQuorum := dataDrives
+	if dataDrives == parityDrives {
+		writeQuorum++
+	}
+
+	// Initialize parts metadata
+	partsMetadata := make([]FileInfo, len(storageDisks))
+
+	fi := newFileInfo(pathJoin(bucket, object), dataDrives, parityDrives)
+	fi.VersionID = opts.VersionID
+	if opts.Versioned && fi.VersionID == "" {
+		fi.VersionID = mustGetUUID()
+	}
+
+	fi.DataDir = mustGetUUID()
+	fi.Checksum = opts.WantChecksum.AppendTo(nil, nil)
+	if opts.EncryptFn != nil {
+		fi.Checksum = opts.EncryptFn("object-checksum", fi.Checksum)
+	}
+	uniqueID := mustGetUUID()
+	tempObj := uniqueID
+
+	// Initialize erasure metadata.
+	for index := range partsMetadata {
+		partsMetadata[index] = fi
+	}
+
+	// Order disks according to erasure distribution
+	var onlineDisks []StorageAPI
+	onlineDisks, partsMetadata = shuffleDisksAndPartsMetadata(storageDisks, partsMetadata, fi)
+
+	erasure, err := NewErasure(ctx, fi.Erasure.DataBlocks, fi.Erasure.ParityBlocks, fi.Erasure.BlockSize)
+	if err != nil {
+		return ObjectInfo{}, toObjectErr(err, bucket, object)
+	}
+
+	// Fetch buffer for I/O, returns from the pool if not allocates a new one and returns.
+	var buffer []byte
+	switch size := data.Size(); {
+	case size == 0:
+		buffer = make([]byte, 1) // Allocate atleast a byte to reach EOF
+	case size >= fi.Erasure.BlockSize || size == -1:
+		buffer = er.bp.Get()
+		defer er.bp.Put(buffer)
+	case size < fi.Erasure.BlockSize:
+		// No need to allocate fully blockSizeV1 buffer if the incoming data is smaller.
+		buffer = make([]byte, size, 2*size+int64(fi.Erasure.ParityBlocks+fi.Erasure.DataBlocks-1))
+	}
+
+	if len(buffer) > int(fi.Erasure.BlockSize) {
+		buffer = buffer[:fi.Erasure.BlockSize]
+	}
+
+	partName := "part.1"
+	tempErasureObj := pathJoin(uniqueID, fi.DataDir, partName)
+
+	defer er.deleteAll(context.Background(), minioMetaTmpBucket, tempObj)
+
+	shardFileSize := erasure.ShardFileSize(data.Size())
+	writers := make([]io.Writer, len(onlineDisks))
+	var inlineBuffers []*bytes.Buffer
+	if shardFileSize >= 0 {
+		if !opts.Versioned && shardFileSize < smallFileThreshold {
+			inlineBuffers = make([]*bytes.Buffer, len(onlineDisks))
+		} else if shardFileSize < smallFileThreshold/8 {
+			inlineBuffers = make([]*bytes.Buffer, len(onlineDisks))
+		}
+	} else {
+		// If compressed, use actual size to determine.
+		if sz := erasure.ShardFileSize(data.ActualSize()); sz > 0 {
+			if !opts.Versioned && sz < smallFileThreshold {
+				inlineBuffers = make([]*bytes.Buffer, len(onlineDisks))
+			} else if sz < smallFileThreshold/8 {
+				inlineBuffers = make([]*bytes.Buffer, len(onlineDisks))
+			}
+		}
+	}
+	for i, disk := range onlineDisks {
+		if disk == nil {
+			continue
+		}
+
+		if !disk.IsOnline() {
+			continue
+		}
+
+		if len(inlineBuffers) > 0 {
+			sz := shardFileSize
+			if sz < 0 {
+				sz = data.ActualSize()
+			}
+			inlineBuffers[i] = bytes.NewBuffer(make([]byte, 0, sz))
+			writers[i] = newStreamingBitrotWriterBuffer(inlineBuffers[i], DefaultBitrotAlgorithm, erasure.ShardSize())
+			continue
+		}
+
+		writers[i] = newBitrotWriter(disk, minioMetaTmpBucket, tempErasureObj, shardFileSize, DefaultBitrotAlgorithm, erasure.ShardSize())
+	}
+
+	toEncode := io.Reader(data)
+	if data.Size() > bigFileThreshold {
+		// We use 2 buffers, so we always have a full buffer of input.
+		bufA := er.bp.Get()
+		bufB := er.bp.Get()
+		defer er.bp.Put(bufA)
+		defer er.bp.Put(bufB)
+		ra, err := readahead.NewReaderBuffer(data, [][]byte{bufA[:fi.Erasure.BlockSize], bufB[:fi.Erasure.BlockSize]})
+		if err == nil {
+			toEncode = ra
+			defer ra.Close()
+		}
+		logger.LogIf(ctx, err)
+	}
+	n, erasureErr := erasure.Encode(ctx, toEncode, writers, buffer, writeQuorum)
+	closeBitrotWriters(writers)
+	if erasureErr != nil {
+		return ObjectInfo{}, toObjectErr(erasureErr, minioMetaTmpBucket, tempErasureObj)
+	}
+
+	// Should return IncompleteBody{} error when reader has fewer bytes
+	// than specified in request header.
+	if n < data.Size() {
+		return ObjectInfo{}, IncompleteBody{Bucket: bucket, Object: object}
+	}
+
+	var compIndex []byte
+	if opts.IndexCB != nil {
+		compIndex = opts.IndexCB()
+	}
+	if !opts.NoLock {
+		lk := er.NewNSLock(bucket, object)
+		lkctx, err := lk.GetLock(ctx, globalOperationTimeout)
+		if err != nil {
+			return ObjectInfo{}, err
+		}
+		ctx = lkctx.Context()
+		defer lk.Unlock(lkctx)
+	}
+
+	modTime := opts.MTime
+	if opts.MTime.IsZero() {
+		modTime = UTCNow()
+	}
+
+	for i, w := range writers {
+		if w == nil {
+			onlineDisks[i] = nil
+			continue
+		}
+		if len(inlineBuffers) > 0 && inlineBuffers[i] != nil {
+			partsMetadata[i].Data = inlineBuffers[i].Bytes()
+		} else {
+			partsMetadata[i].Data = nil
+		}
+		// No need to add checksum to part. We already have it on the object.
+		partsMetadata[i].AddObjectPart(1, "", n, data.ActualSize(), modTime, compIndex, nil)
+		partsMetadata[i].Versioned = opts.Versioned || opts.VersionSuspended
+	}
+
+	userDefined["etag"] = r.MD5CurrentHexString()
+	kind, _ := crypto.IsEncrypted(userDefined)
+	if opts.PreserveETag != "" {
+		if !opts.ReplicationRequest {
+			userDefined["etag"] = opts.PreserveETag
+		} else if kind != crypto.S3 {
+			// if we have a replication request
+			// and SSE-S3 is specified do not preserve
+			// the incoming etag.
+			userDefined["etag"] = opts.PreserveETag
+		}
+	}
+
+	// Guess content-type from the extension if possible.
+	if userDefined["content-type"] == "" {
+		userDefined["content-type"] = mimedb.TypeByExtension(path.Ext(object))
+	}
+
+	// Fill all the necessary metadata.
+	// Update `xl.meta` content on each disks.
+    // 填写所有必要的元数据。
+    // 更新每个磁盘上的 `xl.meta` 内容。
+	for index := range partsMetadata {
+		partsMetadata[index].Metadata = userDefined
+		partsMetadata[index].Size = n
+		partsMetadata[index].ModTime = modTime
+	}
+
+	if len(inlineBuffers) > 0 {
+		// Set an additional header when data is inlined.
+		for index := range partsMetadata {
+			partsMetadata[index].SetInlineData()
+		}
+	}
+
+	// Rename the successfully written temporary object to final location.
+    // 将成功写入的临时对象重命名为最终位置。
+	onlineDisks, versionsDisparity, err := renameData(ctx, onlineDisks, minioMetaTmpBucket, tempObj, partsMetadata, bucket, object, writeQuorum)
+	if err != nil {
+		if errors.Is(err, errFileNotFound) {
+			return ObjectInfo{}, toObjectErr(errErasureWriteQuorum, bucket, object)
+		}
+		logger.LogOnceIf(ctx, err, "erasure-object-rename-"+bucket+"-"+object)
+		return ObjectInfo{}, toObjectErr(err, bucket, object)
+	}
+
+	for i := 0; i < len(onlineDisks); i++ {
+		if onlineDisks[i] != nil && onlineDisks[i].IsOnline() {
+			// Object info is the same in all disks, so we can pick
+			// the first meta from online disk
+            // 所有磁盘中的对象信息都是相同的，因此我们可以选择
+            // 在线磁盘中的第一个元数据
+			fi = partsMetadata[i]
+			break
+		}
+	}
+
+	// For speedtest objects do not attempt to heal them.
+	if !opts.Speedtest {
+		// Whether a disk was initially or becomes offline
+		// during this upload, send it to the MRF list.
+		for i := 0; i < len(onlineDisks); i++ {
+			if onlineDisks[i] != nil && onlineDisks[i].IsOnline() {
+				continue
+			}
+
+			er.addPartial(bucket, object, fi.VersionID)
+			break
+		}
+
+		if versionsDisparity {
+			globalMRFState.addPartialOp(partialOperation{
+				bucket:      bucket,
+				object:      object,
+				queued:      time.Now(),
+				allVersions: true,
+				setIndex:    er.setIndex,
+				poolIndex:   er.poolIndex,
+			})
+		}
+	}
+
+	fi.ReplicationState = opts.PutReplicationState()
+
+	// we are adding a new version to this object under the namespace lock, so this is the latest version.
+	fi.IsLatest = true
+
+	return fi.ToObjectInfo(bucket, object, opts.Versioned || opts.VersionSuspended), nil
+}
+
 // Heal up to two versions of one object when there is disparity between disks
 func healObjectVersionsDisparity(bucket string, entry metaCacheEntry, scanMode madmin.HealScanMode) error {
 	if entry.isDir() {

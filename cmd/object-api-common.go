@@ -58,6 +58,7 @@ type storageOpts struct {
 }
 
 // Depending on the disk type network or local, initialize storage API.
+// 根据磁盘类型网络或本地，初始化存储API。
 func newStorageAPI(endpoint Endpoint, opts storageOpts) (storage StorageAPI, err error) {
 	if endpoint.IsLocal {
 		storage, err := newXLStorage(endpoint, opts.cleanUp)

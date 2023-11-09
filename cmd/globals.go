@@ -262,6 +262,7 @@ var (
 
 	// global Trace system to send HTTP request/response
 	// and Storage/OS calls info to registered listeners.
+    // 全局跟踪系统将 HTTP 请求/响应和存储/操作系统调用信息发送到注册的侦听器。
 	globalTrace = pubsub.New[madmin.TraceInfo, madmin.TraceType](8)
 
 	// global Listen system to send S3 API events to registered listeners
@@ -453,6 +454,7 @@ var (
 	globalDisableFreezeOnBoot bool
 
 	// Contains NIC interface name used for internode communication
+    // 包含用于节点间通信的 NIC 接口名称
 	globalInternodeInterface     string
 	globalInternodeInterfaceOnce sync.Once
 

@@ -126,6 +126,7 @@ func (e *Erasure) ShardSize() int64 {
 }
 
 // ShardFileSize - returns final erasure size from original size.
+// ShardFileSize - 返回原始大小的最终擦除大小。
 func (e *Erasure) ShardFileSize(totalLength int64) int64 {
 	if totalLength == 0 {
 		return 0

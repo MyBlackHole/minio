@@ -197,6 +197,9 @@ func TestErasureDecode(t *testing.T) {
 // Test erasureDecode with random offset and lengths.
 // This test is t.Skip()ed as it a long time to run, hence should be run
 // explicitly after commenting out t.Skip()
+// 使用随机偏移和长度测试erasureDecode。
+// 这个测试是 t.Skip()ed，因为它运行的时间很长，因此应该运行
+// 在注释掉 t.Skip() 之后显式地显示
 func TestErasureDecodeRandomOffsetLength(t *testing.T) {
 	if testing.Short() {
 		t.Skip()

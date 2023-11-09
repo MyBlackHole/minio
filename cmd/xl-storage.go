@@ -57,6 +57,7 @@ const (
 	largestFileThreshold = 64 * humanize.MiByte // Optimized for HDDs
 
 	// Small file threshold below which data accompanies metadata from storage layer.
+    // 小文件阈值，低于该阈值的数据会伴随来自存储层的元数据。
 	smallFileThreshold = 128 * humanize.KiByte // Optimized for NVMe/SSDs
 
 	// For hardrives it is possible to set this to a lower value to avoid any
@@ -229,6 +230,7 @@ func makeFormatErasureMetaVolumes(disk StorageAPI) error {
 }
 
 // Initialize a new storage disk.
+// 初始化一个新的存储磁盘。
 func newXLStorage(ep Endpoint, cleanUp bool) (s *xlStorage, err error) {
 	path := ep.Path
 	if path, err = getValidPath(path); err != nil {
@@ -1996,6 +1998,7 @@ func (s *xlStorage) CreateFile(ctx context.Context, volume, path string, fileSiz
 	return s.writeAllDirect(ctx, filePath, fileSize, r, os.O_CREATE|os.O_WRONLY|os.O_EXCL)
 }
 
+// put 最终写
 func (s *xlStorage) writeAllDirect(ctx context.Context, filePath string, fileSize int64, r io.Reader, flags int) (err error) {
 	if contextCanceled(ctx) {
 		return ctx.Err()

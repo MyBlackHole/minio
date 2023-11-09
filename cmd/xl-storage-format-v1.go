@@ -89,21 +89,28 @@ type StatInfo struct {
 }
 
 // ErasureInfo holds erasure coding and bitrot related information.
+// ErasureInfo 保存纠删码和 bitrot 相关信息。
 type ErasureInfo struct {
 	// Algorithm is the string representation of erasure-coding-algorithm
+    // Algorithm 是擦除编码算法的字符串表示形式
 	Algorithm string `json:"algorithm"`
 	// DataBlocks is the number of data blocks for erasure-coding
     // DataBlocks 是用于纠删码的数据块的数量
 	DataBlocks int `json:"data"`
 	// ParityBlocks is the number of parity blocks for erasure-coding
+    // ParityBlocks 是用于擦除编码的奇偶校验块的数量
 	ParityBlocks int `json:"parity"`
 	// BlockSize is the size of one erasure-coded block
+    // BlockSize 是一个纠删码块的大小
 	BlockSize int64 `json:"blockSize"`
 	// Index is the index of the current disk
+    // Index为当前磁盘的索引
 	Index int `json:"index"`
 	// Distribution is the distribution of the data and parity blocks
+    // Distribution是数据和奇偶校验块的分布
 	Distribution []int `json:"distribution"`
 	// Checksums holds all bitrot checksums of all erasure encoded blocks
+    // Checksums 保存所有纠删码块的所有 bitrot 校验和
 	Checksums []ChecksumInfo `json:"checksum,omitempty"`
 }
 
@@ -154,6 +161,7 @@ const (
 )
 
 // DefaultBitrotAlgorithm is the default algorithm used for bitrot protection.
+// DefaultBitrotAlgorithm 是用于 bitrot 保护的默认算法。
 const (
 	DefaultBitrotAlgorithm = HighwayHash256S
 )

@@ -218,8 +218,8 @@ func registerAPIRouter(router *mux.Router) {
 
 	for _, router := range routers {
 		// Register all rejected object APIs
-        // 注册所有被拒绝的对象API
-        // 保留 api
+		// 注册所有被拒绝的对象API
+		// 保留 api
 		for _, r := range rejectedObjAPIs {
 			t := router.Methods(r.methods...).
 				HandlerFunc(collectAPIStats(r.api, httpTraceAll(notImplementedHandler))).
@@ -297,6 +297,10 @@ func registerAPIRouter(router *mux.Router) {
 		// PutObject with auto-extract support for zip
 		router.Methods(http.MethodPut).Path("/{object:.+}").HeadersRegexp(xhttp.AmzSnowballExtract, "true").HandlerFunc(
 			collectAPIStats("putobject", maxClients(gz(httpTraceHdrs(api.PutObjectExtractHandler)))))
+
+		// AppendObject
+		router.Methods(http.MethodPost).Path("/{object:.+}").HandlerFunc(
+            collectAPIStats("appendobject", maxClients(gz(httpTraceHdrs(api.AppendObjectHandler))))).Queries("append", "").Queries("position", "{position:.*}")
 
 		// PutObject
 		router.Methods(http.MethodPut).Path("/{object:.+}").HandlerFunc(

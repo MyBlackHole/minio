@@ -21,10 +21,14 @@ import (
 	"context"
 	"io"
 	"testing"
+
+	"github.com/minio/minio/internal/logger"
 )
 
 func testBitrotReaderWriterAlgo(t *testing.T, bitrotAlgo BitrotAlgorithm) {
 	tmpDir := t.TempDir()
+
+    logger.Info(tmpDir)
 
 	volume := "testvol"
 	filePath := "testfile"

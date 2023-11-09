@@ -42,6 +42,7 @@ const (
 )
 
 // Parses location constraint from the incoming reader.
+// 解析来自传入读取器的位置约束。
 func parseLocationConstraint(r *http.Request) (location string, s3Error APIErrorCode) {
 	// If the request has no body with content-length set to 0,
 	// we do not have to validate location constraint. Bucket will
@@ -365,6 +366,7 @@ func methodNotAllowedHandler(api string) func(w http.ResponseWriter, r *http.Req
 }
 
 // If none of the http routes match respond with appropriate errors
+// 如果没有任何 http 路由匹配，则响应相应的错误
 func errorResponseHandler(w http.ResponseWriter, r *http.Request) {
 	if r.Method == http.MethodOptions {
 		return

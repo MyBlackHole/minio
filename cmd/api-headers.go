@@ -189,14 +189,14 @@ func setObjectHeaders(w http.ResponseWriter, objInfo ObjectInfo, rs *HTTPRangeSp
 	}
 
 	// For providing ranged content
-    // 范围读取支持
+	// 范围读取支持
 	start, rangeLen, err = rs.GetOffsetLength(totalObjectSize)
 	if err != nil {
 		return err
 	}
 
 	// Set content length.
-    // 设置大小
+	// 设置大小
 	w.Header().Set(xhttp.ContentLength, strconv.FormatInt(rangeLen, 10))
 	if rs != nil {
 		contentRange := fmt.Sprintf("bytes %d-%d/%d", start, start+rangeLen-1, totalObjectSize)

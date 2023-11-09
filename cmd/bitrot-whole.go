@@ -27,6 +27,7 @@ import (
 )
 
 // Implementation to calculate bitrot for the whole file.
+// 计算整个文件的 bitrot 的实现。
 type wholeBitrotWriter struct {
 	disk      StorageAPI
 	volume    string

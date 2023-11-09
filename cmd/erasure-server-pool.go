@@ -1030,6 +1030,47 @@ func (z *erasureServerPools) PutObject(ctx context.Context, bucket string, objec
 	return z.serverPools[idx].PutObject(ctx, bucket, object, data, opts)
 }
 
+func (z *erasureServerPools) AppendObject(ctx context.Context, bucket string, object string, data *PutObjReader, opts ObjectOptions) (ObjectInfo, error) {
+	// Validate put object input args.
+	if err := checkPutObjectArgs(ctx, bucket, object, z); err != nil {
+		return ObjectInfo{}, err
+	}
+
+	object = encodeDirObject(object)
+
+	if z.SinglePool() {
+		if !isMinioMetaBucketName(bucket) {
+			avail, err := hasSpaceFor(getDiskInfos(ctx, z.serverPools[0].getHashedSet(object).getDisks()...), data.Size())
+			if err != nil {
+				logger.LogOnceIf(ctx, err, "erasure-write-quorum")
+				return ObjectInfo{}, toObjectErr(errErasureWriteQuorum)
+			}
+			if !avail {
+				return ObjectInfo{}, toObjectErr(errDiskFull)
+			}
+		}
+		return z.serverPools[0].AppendObject(ctx, bucket, object, data, opts)
+	}
+	if !opts.NoLock {
+		ns := z.NewNSLock(bucket, object)
+		lkctx, err := ns.GetLock(ctx, globalOperationTimeout)
+		if err != nil {
+			return ObjectInfo{}, err
+		}
+		ctx = lkctx.Context()
+		defer ns.Unlock(lkctx)
+		opts.NoLock = true
+	}
+
+	idx, err := z.getPoolIdxNoLock(ctx, bucket, object, data.Size())
+	if err != nil {
+		return ObjectInfo{}, err
+	}
+
+	// Overwrite the object at the right pool
+	return z.serverPools[idx].AppendObject(ctx, bucket, object, data, opts)
+}
+
 func (z *erasureServerPools) deletePrefix(ctx context.Context, bucket string, prefix string) error {
 	for _, pool := range z.serverPools {
 		if _, err := pool.DeleteObject(ctx, bucket, prefix, ObjectOptions{DeletePrefix: true}); err != nil {

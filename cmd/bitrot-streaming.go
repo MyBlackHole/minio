@@ -108,9 +108,11 @@ func newStreamingBitrotWriter(disk StorageAPI, volume, filePath string, length i
 
 		totalFileSize := int64(-1) // For compressed objects length will be unknown (represented by length=-1)
 		if length != -1 {
+            // 用于存储 bitrot 校验和的大小。
 			bitrotSumsTotalSize := ceilFrac(length, shardSize) * int64(h.Size()) // Size used for storing bitrot checksums.
 			totalFileSize = bitrotSumsTotalSize + length
 		}
+        // 创建文件并写入
 		r.CloseWithError(disk.CreateFile(context.TODO(), volume, filePath, totalFileSize, r))
 	}()
 	return bw

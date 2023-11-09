@@ -41,6 +41,7 @@ const (
 	ObjectCreatedCopy
 	ObjectCreatedPost
 	ObjectCreatedPut
+	ObjectCreatedAppend
 	ObjectCreatedPutRetention
 	ObjectCreatedPutLegalHold
 	ObjectCreatedPutTagging

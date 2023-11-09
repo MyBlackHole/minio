@@ -222,6 +222,7 @@ func (fi FileInfo) Healing() bool {
 }
 
 // Heals an object by re-writing corrupt/missing erasure blocks.
+// 通过重写损坏/丢失的擦除块来修复对象。
 func (er *erasureObjects) healObject(ctx context.Context, bucket string, object string, versionID string, opts madmin.HealOpts) (result madmin.HealResultItem, err error) {
 	dryRun := opts.DryRun
 	scanMode := opts.ScanMode

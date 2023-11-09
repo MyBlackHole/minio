@@ -191,6 +191,7 @@ func (e *lockedLastMinuteLatency) total() AccElem {
 
 var maxConcurrentOnce sync.Once
 
+// 磁盘
 func newXLStorageDiskIDCheck(storage *xlStorage, healthCheck bool) *xlStorageDiskIDCheck {
 	// driveMaxConcurrent represents maximum number of running concurrent
 	// operations for local and (incoming) remote disk operations.

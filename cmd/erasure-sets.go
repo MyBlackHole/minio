@@ -117,6 +117,7 @@ func (s *erasureSets) getDiskMap() map[Endpoint]StorageAPI {
 
 // Initializes a new StorageAPI from the endpoint argument, returns
 // StorageAPI and also `format` which exists on the disk.
+// 从端点参数初始化一个新的 StorageAPI，返回 StorageAPI 以及磁盘上存在的“format”。
 func connectEndpoint(endpoint Endpoint) (StorageAPI, *formatErasureV3, error) {
 	disk, err := newStorageAPI(endpoint, storageOpts{
 		cleanUp:     false,
@@ -764,6 +765,11 @@ func (s *erasureSets) GetObjectNInfo(ctx context.Context, bucket, object string,
 func (s *erasureSets) PutObject(ctx context.Context, bucket string, object string, data *PutObjReader, opts ObjectOptions) (objInfo ObjectInfo, err error) {
 	set := s.getHashedSet(object)
 	return set.PutObject(ctx, bucket, object, data, opts)
+}
+
+func (s *erasureSets) AppendObject(ctx context.Context, bucket string, object string, data *PutObjReader, opts ObjectOptions) (objInfo ObjectInfo, err error) {
+	set := s.getHashedSet(object)
+	return set.ApendObject(ctx, bucket, object, data, opts)
 }
 
 // GetObjectInfo - reads object metadata from the hashedSet based on the object name.
