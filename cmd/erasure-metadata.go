@@ -69,6 +69,7 @@ func (e ErasureInfo) ShardSize() int64 {
 }
 
 // IsValid - tells if erasure info fields are valid.
+// IsValid - 告知纠错信息字段是否有效。
 func (fi FileInfo) IsValid() bool {
 	if fi.Deleted {
 		// Delete marker has no data, no need to check
@@ -86,6 +87,7 @@ func (fi FileInfo) IsValid() bool {
 }
 
 // ToObjectInfo - Converts metadata to object info.
+// ToObjectInfo - 将元数据转换为对象信息。
 func (fi FileInfo) ToObjectInfo(bucket, object string, versioned bool) ObjectInfo {
 	object = decodeDirObject(object)
 	versionID := fi.VersionID
@@ -251,6 +253,7 @@ func (fi *FileInfo) AddObjectPart(partNumber int, partETag string, partSize, act
 }
 
 // ObjectToPartOffset - translate offset of an object to offset of its individual part.
+// objectTopArtOffset-将对象的偏移转换为偏移其各个部分。
 func (fi FileInfo) ObjectToPartOffset(ctx context.Context, offset int64) (partIndex int, partOffset int64, err error) {
 	if offset == 0 {
 		// Special case - if offset is 0, then partIndex and partOffset are always 0.

@@ -31,6 +31,7 @@ const (
 
 // partialOperation is a successful upload/delete of an object
 // but not written in all disks (having quorum)
+// 部分操作
 type partialOperation struct {
 	bucket              string
 	object              string

@@ -59,6 +59,13 @@ import (
 // Currently these keys are:
 //   - X-Amz-Server-Side-Encryption-Customer-Key
 //   - X-Amz-Copy-Source-Server-Side-Encryption-Customer-Key
+// 多部分对象APIHandler
+// NewMultipartUploadHandler - 新的分段上传。
+// 注意：S3客户端可以在标头中发送密钥以进行加密相关作业，
+// 处理程序应确保在将这些键发送到对象层之前删除它们。
+// 目前这些键是：
+// - X-Amz-服务器端加密-客户密钥
+// - X-Amz-Copy-Source-服务器端加密-客户密钥
 func (api objectAPIHandlers) NewMultipartUploadHandler(w http.ResponseWriter, r *http.Request) {
 	ctx := newContext(r, w, "NewMultipartUpload")
 

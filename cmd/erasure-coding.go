@@ -32,6 +32,7 @@ import (
 )
 
 // Erasure - erasure encoding details.
+// Erasure - 纠错编码对象细节。
 type Erasure struct {
 	encoder                  func() reedsolomon.Encoder
 	dataBlocks, parityBlocks int
@@ -126,7 +127,7 @@ func (e *Erasure) ShardSize() int64 {
 }
 
 // ShardFileSize - returns final erasure size from original size.
-// ShardFileSize - 返回原始大小的最终擦除大小。
+// ShardFileSize - 返回原始大小的最终纠错对象大小。
 func (e *Erasure) ShardFileSize(totalLength int64) int64 {
 	if totalLength == 0 {
 		return 0
@@ -134,8 +135,11 @@ func (e *Erasure) ShardFileSize(totalLength int64) int64 {
 	if totalLength == -1 {
 		return -1
 	}
+    // 分片(块)数量
 	numShards := totalLength / e.blockSize
+    // 最后的块大小
 	lastBlockSize := totalLength % e.blockSize
+    // 最后一个分片大小
 	lastShardSize := ceilFrac(lastBlockSize, int64(e.dataBlocks))
 	return numShards*e.ShardSize() + lastShardSize
 }

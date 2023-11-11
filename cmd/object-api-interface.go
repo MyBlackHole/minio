@@ -59,16 +59,20 @@ const (
 // ObjectOptions表示ObjectLayer对象操作的对象选项
 type ObjectOptions struct {
 	ServerSideEncryption encrypt.ServerSide
+    // 指示存储桶之前是否已进行版本控制但当前已暂停。
 	VersionSuspended     bool      // indicates if the bucket was previously versioned but is currently suspended.
+    // 指示存储桶是否有版本控制
 	Versioned            bool      // indicates if the bucket is versioned
 	VersionID            string    // Specifies the versionID which needs to be overwritten or read
 	MTime                time.Time // Is only set in POST/PUT operations
 	Expires              time.Time // Is only used in POST/PUT operations
 
+    // 仅在删除标记复制的 DELETE 操作中设置
 	DeleteMarker            bool // Is only set in DELETE operations for delete marker replication
 	CheckDMReplicationReady bool // Is delete marker ready to be replicated - set only during HEAD
 	Tagging                 bool // Is only in GET/HEAD operations to return tagging metadata along with regular metadata and body.
 
+    //仅在 POST/PUT 操作的情况下设置
 	UserDefined         map[string]string   // only set in case of POST/PUT operations
 	ObjectAttributes    map[string]struct{} // Attribute tags defined by the users for the GetObjectAttributes request
 	MaxParts            int                 // used in GetObjectAttributes. Signals how many parts we should return
@@ -82,6 +86,7 @@ type ObjectOptions struct {
 	Expiration          ExpirationOptions
 	LifecycleAuditEvent lcAuditEvent
 
+    // x-amz-checksum-XXX 校验和发送到 PutObject/CompleteMultipartUpload。
 	WantChecksum *hash.Checksum // x-amz-checksum-XXX checksum sent to PutObject/ CompleteMultipartUpload.
 
 	NoDecryption                        bool      // indicates if the stream must be decrypted.

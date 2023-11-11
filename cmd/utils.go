@@ -726,6 +726,7 @@ func NewRemoteTargetHTTPTransport(insecure bool) func() *http.Transport {
 // ceilFrac takes a numerator and denominator representing a fraction
 // and returns its ceiling. If denominator is 0, it returns 0 instead
 // of crashing.
+// ceilFrac 采用代表分数的分子和分母并返回其上限。 如果分母为 0，则返回 0 而不会崩溃。
 func ceilFrac(numerator, denominator int64) (ceil int64) {
 	if denominator == 0 {
 		// do nothing on invalid input

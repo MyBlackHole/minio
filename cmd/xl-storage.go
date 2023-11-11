@@ -54,19 +54,25 @@ import (
 const (
 	nullVersionID = "null"
 	// Largest streams threshold per shard.
+    // 每个分片的最大流阈值。
 	largestFileThreshold = 64 * humanize.MiByte // Optimized for HDDs
 
 	// Small file threshold below which data accompanies metadata from storage layer.
     // 小文件阈值，低于该阈值的数据会伴随来自存储层的元数据。
+    // 128K
 	smallFileThreshold = 128 * humanize.KiByte // Optimized for NVMe/SSDs
 
 	// For hardrives it is possible to set this to a lower value to avoid any
 	// spike in latency. But currently we are simply keeping it optimal for SSDs.
+    // 对于硬盘驱动器，可以将其设置为较低的值以避免任何
+    // 延迟峰值。 但目前我们只是将其保持为 SSD 的最佳状态。
 
 	// bigFileThreshold is the point where we add readahead to put operations.
+    // bigFileThreshold 是我们向 put 操作添加预读的点。
 	bigFileThreshold = 128 * humanize.MiByte
 
 	// XL metadata file carries per object metadata.
+    // XL 元数据文件携带每个对象元数据。
 	xlStorageFormatFile = "xl.meta"
 )
 
@@ -1494,6 +1500,8 @@ func (s *xlStorage) readRaw(ctx context.Context, volume, volumeDir, filePath str
 
 // ReadXL reads from path/xl.meta, does not interpret the data it read. This
 // is a raw call equivalent of ReadVersion().
+// readxl从路径/xl.meta读取，不会解释其读取的数据。 这
+//是一个原始的呼叫等同于readversion（）。
 func (s *xlStorage) ReadXL(ctx context.Context, volume, path string, readData bool) (RawFileInfo, error) {
 	volumeDir, err := s.getVolDir(volume)
 	if err != nil {
@@ -1522,6 +1530,8 @@ type ReadOptions struct {
 // ReadVersion - reads metadata and returns FileInfo at path `xl.meta`
 // for all objects less than `32KiB` this call returns data as well
 // along with metadata.
+// ReadVersion - 读取元数据并返回路径 `xl.meta` 处的 FileInfo
+// 对于所有小于 `32KiB` 的对象，此调用也会返回数据以及元数据。
 func (s *xlStorage) ReadVersion(ctx context.Context, volume, path, versionID string, opts ReadOptions) (fi FileInfo, err error) {
 	volumeDir, err := s.getVolDir(volume)
 	if err != nil {
@@ -1577,6 +1587,7 @@ func (s *xlStorage) ReadVersion(ctx context.Context, volume, path, versionID str
 			_, lerr := Lstat(pathJoin(volumeDir, dataPath))
 			if lerr != nil {
 				// Set the inline header, our inlined data is fine.
+                // 没有分片文件代表是内联数据
 				fi.SetInlineData()
 				return fi, nil
 			}
@@ -1588,6 +1599,10 @@ func (s *xlStorage) ReadVersion(ctx context.Context, volume, path, versionID str
 		// - object has not yet transitioned
 		// - object size lesser than 128KiB
 		// - object has maximum of 1 parts
+        // 读取小对象的数据时
+        // - 对象尚未转换
+        // - 对象大小小于 128KiB
+        // - 对象最多有 1 个部分
 		if fi.TransitionStatus == "" &&
 			fi.DataDir != "" && fi.Size <= smallFileThreshold &&
 			len(fi.Parts) == 1 {
@@ -2006,6 +2021,8 @@ func (s *xlStorage) writeAllDirect(ctx context.Context, filePath string, fileSiz
 
 	// Create top level directories if they don't exist.
 	// with mode 0777 mkdir honors system umask.
+    // 如果不存在，请创建顶级目录。
+    // 使用模式0777 MKDIR荣誉系统透明度。
 	parentFilePath := pathutil.Dir(filePath)
 	if err = mkdirAll(parentFilePath, 0o777, s.drivePath); err != nil {
 		return osErrToFileErr(err)
@@ -2325,6 +2342,7 @@ func skipAccessChecks(volume string) (ok bool) {
 }
 
 // RenameData - rename source path to destination path atomically, metadata and data directory.
+// RenameData - 自动将源路径重命名为目标路径、元数据和数据目录。
 func (s *xlStorage) RenameData(ctx context.Context, srcVolume, srcPath string, fi FileInfo, dstVolume, dstPath string, opts RenameOptions) (sign uint64, err error) {
 	defer func() {
 		ignoredErrs := []error{

@@ -180,6 +180,7 @@ func readAllFileInfo(ctx context.Context, disks []StorageAPI, bucket, object, ve
 
 	g := errgroup.WithNErrs(len(disks))
 	// Read `xl.meta` in parallel across disks.
+    // 跨磁盘并行读取`xl.meta`。
 	for index := range disks {
 		index := index
 		g.Go(func() (err error) {
@@ -245,13 +246,21 @@ func shuffleDisksAndPartsMetadataByIndex(disks []StorageAPI, metaArr []FileInfo,
 // additional validation is attempted and invalid metadata is
 // automatically skipped only when fi.ModTime is non-zero
 // indicating that this is called during read-phase
+// 根据 fi.Distribution 返回打乱后的 partsMetadata。
+// 尝试进行额外验证，但元数据无效
+// 仅当 fi.ModTime 非零时自动跳过
+// 表明这是在读阶段调用的
 func shuffleDisksAndPartsMetadata(disks []StorageAPI, partsMetadata []FileInfo, fi FileInfo) (shuffledDisks []StorageAPI, shuffledPartsMetadata []FileInfo) {
+    // 下面两个对应的 (本质是打乱 disk)
+    // 打乱 disk
 	shuffledDisks = make([]StorageAPI, len(disks))
+    // 打乱的部分元数据
 	shuffledPartsMetadata = make([]FileInfo, len(partsMetadata))
 	distribution := fi.Erasure.Distribution
 
 	init := fi.ModTime.IsZero()
 	// Shuffle slice xl metadata for expected distribution.
+    // 随机排列切片 xl 元数据以实现预期分布。
 	for index := range partsMetadata {
 		if disks[index] == nil {
 			continue
@@ -260,6 +269,9 @@ func shuffleDisksAndPartsMetadata(disks []StorageAPI, partsMetadata []FileInfo, 
 			// Check for parts metadata validity for only
 			// fi.ModTime is not empty - ModTime is always set,
 			// if object was ever written previously.
+            // 仅检查部件元数据的有效性
+            // fi.ModTime 不为空 - ModTime 始终被设置，
+            // 如果对象之前曾被写入过。
 			continue
 		}
 		if !init && fi.XLV1 != partsMetadata[index].XLV1 {

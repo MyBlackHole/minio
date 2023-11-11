@@ -64,6 +64,7 @@ func (fi FileInfo) AcceptableDelta(maxTime time.Time, delta time.Duration) bool 
 }
 
 // DataShardFixed - data shard fixed?
+// DataShardFixed - 数据分片已修复？
 func (fi FileInfo) DataShardFixed() bool {
 	return fi.Metadata[reservedMetadataPrefixLowerDataShardFix] == "true"
 }

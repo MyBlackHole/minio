@@ -221,14 +221,17 @@ type FileInfo struct {
 	Metadata map[string]string `msg:"meta"`
 
 	// All the parts per object.
+    // 每个对象的所有分片。
 	Parts []ObjectPartInfo `msg:"parts"`
 
 	// Erasure info for all objects.
+    // 纠错对象的所有信息。
 	Erasure ErasureInfo `msg:"ei"`
 
 	MarkDeleted      bool             `msg:"md"` // mark this version as deleted
 	ReplicationState ReplicationState `msg:"rs"` // Internal replication state to be passed back in ObjectInfo
 
+    // 可选地携带对象数据 (小于 128k 时, 存到这里)
 	Data []byte `msg:"d,allownil"` // optionally carries object data
 
 	NumVersions      int       `msg:"nv"`
@@ -326,6 +329,7 @@ func (fi FileInfo) InlineData() bool {
 }
 
 // SetInlineData marks object (version) as inline.
+// SetInlineData 将对象（版本）标记为内联。
 func (fi *FileInfo) SetInlineData() {
 	if fi.Metadata == nil {
 		fi.Metadata = make(map[string]string, 1)

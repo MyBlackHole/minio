@@ -834,6 +834,10 @@ func (api objectAPIHandlers) getObjectAttributesHandler(ctx context.Context, obj
 // ----------
 // This implementation of the GET operation retrieves object. To use GET,
 // you must have READ access to the object.
+// getObjectHandler-获取对象
+// ---------------
+// get 操作检索对象的实现。 要使用，
+// 您必须对对象进行读取访问。
 func (api objectAPIHandlers) GetObjectHandler(w http.ResponseWriter, r *http.Request) {
 	ctx := newContext(r, w, "GetObject")
 

@@ -800,6 +800,8 @@ func TestPutObjectNoQuorumSmall(t *testing.T) {
 
 // Test PutObject twice, one small and another bigger
 // than small data threshold and checks reading them again
+// 测试 PutObject 两次，一次小，另一次大
+// 比小数据阈值并检查再次读取它们
 func TestPutObjectSmallInlineData(t *testing.T) {
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()

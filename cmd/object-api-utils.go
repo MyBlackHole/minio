@@ -334,6 +334,7 @@ func pathNeedsClean(path []byte) bool {
 }
 
 // mustGetUUID - get a random UUID.
+// MustGetUUID - 获取随机 UUID。
 func mustGetUUID() string {
 	u, err := uuid.NewRandom()
 	if err != nil {
@@ -353,6 +354,7 @@ func mustGetUUIDBytes() []byte {
 }
 
 // Create an s3 compatible MD5sum for complete multipart transaction.
+// 为完整的多部分事务创建一个兼容 s3 的 MD5sum。
 func getCompleteMultipartMD5(parts []CompletePart) string {
 	var finalMD5Bytes []byte
 	for _, part := range parts {

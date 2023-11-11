@@ -321,6 +321,7 @@ func (s *storageRESTServer) AppendFileHandler(w http.ResponseWriter, r *http.Req
 		return
 	}
 	err = s.getStorage().AppendFile(r.Context(), volume, filePath, buf)
+
 	if err != nil {
 		s.writeErrorResponse(w, err)
 	}

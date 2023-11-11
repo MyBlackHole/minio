@@ -231,6 +231,10 @@ func (api objectAPIHandlers) PutObjectACLHandler(w http.ResponseWriter, r *http.
 // -----------------
 // This operation uses the ACL
 // subresource to return the ACL of a specified object.
+// getObjectAclHandler-获取对象ACL
+// --------------------------------
+// 此操作使用ACL
+// 子资源返回指定对象的ACL。
 func (api objectAPIHandlers) GetObjectACLHandler(w http.ResponseWriter, r *http.Request) {
 	ctx := newContext(r, w, "GetObjectACL")
 

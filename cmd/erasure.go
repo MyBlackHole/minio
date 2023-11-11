@@ -42,9 +42,11 @@ var bucketOpIgnoredErrs = append(baseIgnoredErrs, errDiskAccessDenied, errUnform
 var bucketMetadataOpIgnoredErrs = append(bucketOpIgnoredErrs, errVolumeNotFound)
 
 // OfflineDisk represents an unavailable disk.
+// OfflineDisk 代表不可用的磁盘。
 var OfflineDisk StorageAPI // zero value is nil
 
-// erasureObjects - Implements ER object layer. // erasureObjects - 实现 ER(擦除|纠错) 对象层。
+// erasureObjects - Implements ER object layer. 
+// erasureObjects - 实现 ER(擦除|纠错) 对象层。
 type erasureObjects struct {
 	setDriveCount      int
 	defaultParityCount int
@@ -64,6 +66,14 @@ type erasureObjects struct {
 
 	// Locker mutex map.
 	nsMutex *nsLockMap
+
+	// // Byte pools used for temporary i/o buffers.
+    // // 用于临时 I/O 缓冲区的字节池。
+	// bp *bpool.BytePoolCap
+
+	// // Byte pools used for temporary i/o buffers,
+	// // legacy objects.
+	// bpOld *bpool.BytePoolCap
 }
 
 // NewNSLock - initialize a new namespace RWLocker instance.

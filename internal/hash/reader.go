@@ -313,6 +313,8 @@ func (r *Reader) Size() int64 { return r.size }
 
 // ActualSize returns the pre-modified size of the object.
 // DecompressedSize - For compressed objects.
+// ActualSize 返回对象修改前的大小。
+// DecompressedSize - 对于压缩对象。
 func (r *Reader) ActualSize() int64 { return r.actualSize }
 
 // ETag returns the ETag computed by an underlying etag.Tagger.

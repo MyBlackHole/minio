@@ -579,6 +579,10 @@ func writeAllDisks(ctx context.Context, disks []StorageAPI, dstBucket, dstEntry 
 // of the multipart transaction.
 //
 // Implements S3 compatible Upload Part API.
+// PutObjectPart - 读取传入流和内部纠删码
+// 他们。 此调用类似于单次 put 操作，但它是多分片事务的。
+//
+// 实现 S3 兼容的上传分片 API。
 func (er erasureObjects) PutObjectPart(ctx context.Context, bucket, object, uploadID string, partID int, r *PutObjReader, opts ObjectOptions) (pi PartInfo, err error) {
 	auditObjectErasureSet(ctx, object, &er)
 
@@ -610,6 +614,9 @@ func (er erasureObjects) PutObjectPart(ctx context.Context, bucket, object, uplo
 	// streamto avoid any concurrent updates.
 	//
 	// Must be held throughout this call.
+    // 对此部件 ID 进行写入锁定，仅当我们计划从该部件读取时才持有它流以避免任何并发更新。
+    //
+    // 必须在整个调用过程中保持。
 	partIDLock := er.NewNSLock(bucket, pathJoin(object, uploadID, strconv.Itoa(partID)))
 	plkctx, err := partIDLock.GetLock(ctx, globalOperationTimeout)
 	if err != nil {
@@ -751,7 +758,7 @@ func (er erasureObjects) PutObjectPart(ctx context.Context, bucket, object, uplo
 	}
 
 	// Write part metadata to all disks.
-    // 将部分(part)元数据写入所有磁盘。
+    // 将分片(part)元数据写入所有磁盘。
 	onlineDisks, err = writeAllDisks(ctx, onlineDisks, minioMetaMultipartBucket, partPath+".meta", partFI, writeQuorum)
 	if err != nil {
 		return pi, toObjectErr(err, minioMetaMultipartBucket, partPath)
@@ -965,6 +972,12 @@ func (er erasureObjects) ListObjectParts(ctx context.Context, bucket, object, up
 // md5sums of all the parts.
 //
 // Implements S3 compatible Complete multipart API.
+// CompleteMultipartUpload - 完成正在进行的分段上传
+// 收到客户端指示的所有部分后进行交易。
+// 返回通过连接所有个体计算出的 md5sum
+// 所有部分的 md5sums。
+//
+// 实现 S3 兼容的完整多部分 API。
 func (er erasureObjects) CompleteMultipartUpload(ctx context.Context, bucket string, object string, uploadID string, parts []CompletePart, opts ObjectOptions) (oi ObjectInfo, err error) {
 	auditObjectErasureSet(ctx, object, &er)
 
