@@ -245,13 +245,13 @@ func (er erasureObjects) GetObjectNInfo(ctx context.Context, bucket, object stri
 					// occurring disk mtimes that are somewhat same across
 					// the quorum. Allowing to skip those shards which we
 					// might think are wrong.
-                    // 如果磁盘 mTime 不匹配，则认为已过时
-                    // https://github.com/minio/minio/pull/13803
-                    //
-                    // 只有当我们能够找到最大值时，此检查才会激活
-                    // 发生的磁盘 mtime 之间有些相同
-                    // 法定人数。 允许跳过那些我们
-                    // 可能认为是错误的。
+					// 如果磁盘 mTime 不匹配，则认为已过时
+					// https://github.com/minio/minio/pull/13803
+					//
+					// 只有当我们能够找到最大值时，此检查才会激活
+					// 发生的磁盘 mtime 之间有些相同
+					// 法定人数。 允许跳过那些我们
+					// 可能认为是错误的。
 					onlineDisks[index] = OfflineDisk
 				}
 			}
@@ -294,7 +294,7 @@ func (er erasureObjects) GetObjectNInfo(ctx context.Context, bucket, object stri
 		unlockOnDefer = fi.InlineData()
 	}
 
-    // 又搞 pipe
+	// 又搞 pipe
 	pr, pw := xioutil.WaitPipe()
 	go func() {
 		pw.CloseWithError(er.getObjectWithFileInfo(ctx, bucket, object, off, length, pw, fi, metaArr, onlineDisks))
@@ -329,7 +329,7 @@ func (er erasureObjects) getObjectWithFileInfo(ctx context.Context, bucket, obje
 	}
 
 	// Get start part index and offset.
-    // 获取开始的分片索引与此分片索引的文件偏移
+	// 获取开始的分片索引与此分片索引的文件偏移
 	partIndex, partOffset, err := fi.ObjectToPartOffset(ctx, startOffset)
 	if err != nil {
 		return InvalidRange{startOffset, length, fi.Size}
@@ -342,7 +342,7 @@ func (er erasureObjects) getObjectWithFileInfo(ctx context.Context, bucket, obje
 	}
 
 	// Get last part index to read given length.
-    // 通过偏移量获取分片的偏移索引
+	// 通过偏移量获取分片的偏移索引
 	lastPartIndex, _, err := fi.ObjectToPartOffset(ctx, endOffset)
 	if err != nil {
 		return InvalidRange{startOffset, length, fi.Size}
@@ -388,9 +388,9 @@ func (er erasureObjects) getObjectWithFileInfo(ctx context.Context, bucket, obje
 			}
 			checksumInfo := metaArr[index].Erasure.GetChecksumInfo(partNumber)
 
-            // 拼接分片路径
+			// 拼接分片路径
 			partPath := pathJoin(object, metaArr[index].DataDir, fmt.Sprintf("part.%d", partNumber))
-            // 读者构建
+			// 读者构建
 			readers[index] = newBitrotReader(disk, metaArr[index].Data, bucket, partPath, tillOffset,
 				checksumInfo.Algorithm, checksumInfo.Hash, erasure.ShardSize())
 
@@ -1264,27 +1264,25 @@ func (er erasureObjects) ApendObject(ctx context.Context, bucket string, object 
 }
 
 func (er erasureObjects) appendObject(ctx context.Context, bucket string, object string, r *PutObjReader, opts ObjectOptions) (objInfo ObjectInfo, err error) {
-    var onlineDisks []StorageAPI
-    var erasure Erasure
-    var userDefined map[string]string
-    // Fetch buffer for I/O, returns from the pool if not allocates a new one and returns.
-    var buffer []byte
-    var tempErasureObj string
-    var tempObj string
-    var writeQuorum int
+	var onlineDisks []StorageAPI
+	var userDefined map[string]string
+	// Fetch buffer for I/O, returns from the pool if not allocates a new one and returns.
+	var buffer []byte
+	var erasureObj string
+	var writeQuorum int
 
 	auditObjectErasureSet(ctx, object, &er)
 
 	data := r.Reader
 
 	// Validate input data size and it can never be less than -1.
-    // 验证输入数据大小，并且永远不会小于-1。
+	// 验证输入数据大小，并且永远不会小于-1。
 	if data.Size() < -1 {
 		logger.LogIf(ctx, errInvalidArgument, logger.Application)
 		return ObjectInfo{}, toObjectErr(errInvalidArgument)
 	}
 
-    // 获取纠错对象锁锁
+	// 获取纠错对象锁锁
 	if !opts.NoLock {
 		lk := er.NewNSLock(bucket, object)
 		lkctx, err := lk.GetLock(ctx, globalOperationTimeout)
@@ -1296,118 +1294,109 @@ func (er erasureObjects) appendObject(ctx context.Context, bucket string, object
 	}
 
 	fi, partsMetadata, onlineDisks, err := er.getObjectFileInfo(ctx, bucket, object, opts, false)
-    if err != nil {
-        // 克隆一份
-        userDefined = cloneMSS(opts.UserDefined)
+	if err != nil {
+		// 克隆一份
+		userDefined = cloneMSS(opts.UserDefined)
 
-        storageDisks := er.getDisks()
+		storageDisks := er.getDisks()
 
-        parityDrives := len(storageDisks) / 2
-        if !opts.MaxParity {
-            // Get parity and data drive count based on storage class metadata
-            parityDrives = globalStorageClass.GetParityForSC(userDefined[xhttp.AmzStorageClass])
-            if parityDrives < 0 {
-                parityDrives = er.defaultParityCount
-            }
+		parityDrives := len(storageDisks) / 2
+		if !opts.MaxParity {
+			// Get parity and data drive count based on storage class metadata
+			parityDrives = globalStorageClass.GetParityForSC(userDefined[xhttp.AmzStorageClass])
+			if parityDrives < 0 {
+				parityDrives = er.defaultParityCount
+			}
 
-            // If we have offline disks upgrade the number of erasure codes for this object.
-            parityOrig := parityDrives
+			// If we have offline disks upgrade the number of erasure codes for this object.
+			parityOrig := parityDrives
 
-            var offlineDrives int
-            for _, disk := range storageDisks {
-                if disk == nil {
-                    parityDrives++
-                    offlineDrives++
-                    continue
-                }
-                if !disk.IsOnline() {
-                    parityDrives++
-                    offlineDrives++
-                    continue
-                }
-            }
+			var offlineDrives int
+			for _, disk := range storageDisks {
+				if disk == nil {
+					parityDrives++
+					offlineDrives++
+					continue
+				}
+				if !disk.IsOnline() {
+					parityDrives++
+					offlineDrives++
+					continue
+				}
+			}
 
-            if offlineDrives >= (len(storageDisks)+1)/2 {
-                // if offline drives are more than 50% of the drives
-                // we have no quorum, we shouldn't proceed just
-                // fail at that point.
-                return ObjectInfo{}, toObjectErr(errErasureWriteQuorum, bucket, object)
-            }
+			if offlineDrives >= (len(storageDisks)+1)/2 {
+				// if offline drives are more than 50% of the drives
+				// we have no quorum, we shouldn't proceed just
+				// fail at that point.
+				return ObjectInfo{}, toObjectErr(errErasureWriteQuorum, bucket, object)
+			}
 
-            if parityDrives >= len(storageDisks)/2 {
-                parityDrives = len(storageDisks) / 2
-            }
+			if parityDrives >= len(storageDisks)/2 {
+				parityDrives = len(storageDisks) / 2
+			}
 
-            if parityOrig != parityDrives {
-                userDefined[minIOErasureUpgraded] = strconv.Itoa(parityOrig) + "->" + strconv.Itoa(parityDrives)
-            }
-        }
-        dataDrives := len(storageDisks) - parityDrives
+			if parityOrig != parityDrives {
+				userDefined[minIOErasureUpgraded] = strconv.Itoa(parityOrig) + "->" + strconv.Itoa(parityDrives)
+			}
+		}
+		dataDrives := len(storageDisks) - parityDrives
 
-        // we now know the number of blocks this object needs for data and parity.
-        // writeQuorum is dataBlocks + 1
-        writeQuorum = dataDrives
-        if dataDrives == parityDrives {
-            writeQuorum++
-        }
+		// we now know the number of blocks this object needs for data and parity.
+		// writeQuorum is dataBlocks + 1
+		writeQuorum = dataDrives
+		if dataDrives == parityDrives {
+			writeQuorum++
+		}
 
-        fi := newFileInfo(pathJoin(bucket, object), dataDrives, parityDrives)
-        fi.VersionID = opts.VersionID
-        if opts.Versioned && fi.VersionID == "" {
-            fi.VersionID = mustGetUUID()
-        }
+		fi = newFileInfo(pathJoin(bucket, object), dataDrives, parityDrives)
+		fi.VersionID = opts.VersionID
+		if opts.Versioned && fi.VersionID == "" {
+			fi.VersionID = mustGetUUID()
+		}
 
-        fi.DataDir = mustGetUUID()
-        fi.Checksum = opts.WantChecksum.AppendTo(nil, nil)
-        if opts.EncryptFn != nil {
-            fi.Checksum = opts.EncryptFn("object-checksum", fi.Checksum)
-        }
+		fi.DataDir = mustGetUUID()
+		fi.Checksum = opts.WantChecksum.AppendTo(nil, nil)
+		if opts.EncryptFn != nil {
+			fi.Checksum = opts.EncryptFn("object-checksum", fi.Checksum)
+		}
 
-        // Initialize parts metadata
-        partsMetadata = make([]FileInfo, len(storageDisks))
+		// Initialize parts metadata
+		partsMetadata = make([]FileInfo, len(storageDisks))
 
-        // Initialize erasure metadata.
-        for index := range partsMetadata {
-            partsMetadata[index] = fi
-        }
+		// Initialize erasure metadata.
+		for index := range partsMetadata {
+			partsMetadata[index] = fi
+		}
 
-        // Order disks according to erasure distribution
-        onlineDisks, partsMetadata = shuffleDisksAndPartsMetadata(storageDisks, partsMetadata, fi)
+		// Order disks according to erasure distribution
+		onlineDisks, partsMetadata = shuffleDisksAndPartsMetadata(storageDisks, partsMetadata, fi)
+	} else {
+		writeQuorum = fi.WriteQuorum(er.defaultWQuorum())
+		userDefined = fi.Metadata
+	}
 
-        erasure, err = NewErasure(ctx, fi.Erasure.DataBlocks, fi.Erasure.ParityBlocks, fi.Erasure.BlockSize)
-        if err != nil {
-            return ObjectInfo{}, toObjectErr(err, bucket, object)
-        }
+	partName := "part.1"
+	erasureObj = pathJoin(object, fi.DataDir, partName)
+	erasure, err := NewErasure(ctx, fi.Erasure.DataBlocks, fi.Erasure.ParityBlocks, fi.Erasure.BlockSize)
+	if err != nil {
+		return ObjectInfo{}, toObjectErr(err, bucket, object)
+	}
 
-        switch size := data.Size(); {
-        case size == 0:
-            buffer = make([]byte, 1) // Allocate atleast a byte to reach EOF
-        case size >= fi.Erasure.BlockSize || size == -1:
-            buffer = er.bp.Get()
-            defer er.bp.Put(buffer)
-        case size < fi.Erasure.BlockSize:
-            // No need to allocate fully blockSizeV1 buffer if the incoming data is smaller.
-            buffer = make([]byte, size, 2*size+int64(fi.Erasure.ParityBlocks+fi.Erasure.DataBlocks-1))
-        }
+	switch size := data.Size(); {
+	case size == 0:
+		buffer = make([]byte, 1) // Allocate atleast a byte to reach EOF
+	case size >= fi.Erasure.BlockSize || size == -1:
+		buffer = er.bp.Get()
+		defer er.bp.Put(buffer)
+	case size < fi.Erasure.BlockSize:
+		// No need to allocate fully blockSizeV1 buffer if the incoming data is smaller.
+		buffer = make([]byte, size, 2*size+int64(fi.Erasure.ParityBlocks+fi.Erasure.DataBlocks-1))
+	}
 
-        if len(buffer) > int(fi.Erasure.BlockSize) {
-            buffer = buffer[:fi.Erasure.BlockSize]
-        }
-
-        uniqueID := mustGetUUID()
-        tempObj = uniqueID
-
-        partName := "part.1"
-        tempErasureObj = pathJoin(uniqueID, fi.DataDir, partName)
-
-    } else {
-        writeQuorum = fi.WriteQuorum(er.defaultWQuorum())
-        tempObj = mustGetUUID()
-        userDefined = fi.Metadata
-        tempErasureObj = pathJoin(tempObj, fi.DataDir, fmt.Sprintf("part.%d", fi.Parts[0].Number))
-    }
-
-    defer er.deleteAll(context.Background(), minioMetaTmpBucket, tempObj)
+	if len(buffer) > int(fi.Erasure.BlockSize) {
+		buffer = buffer[:fi.Erasure.BlockSize]
+	}
 
 	shardFileSize := erasure.ShardFileSize(data.Size())
 	writers := make([]io.Writer, len(onlineDisks))
@@ -1420,27 +1409,15 @@ func (er erasureObjects) appendObject(ctx context.Context, bucket string, object
 			continue
 		}
 
-		writers[i] = newBitrotWriter(disk, minioMetaTmpBucket, tempErasureObj, shardFileSize, DefaultBitrotAlgorithm, erasure.ShardSize())
+		writers[i] = newBitrotAppendWriter(disk, bucket, erasureObj, shardFileSize, DefaultBitrotAlgorithm, erasure.ShardSize())
 	}
 
 	toEncode := io.Reader(data)
-	if data.Size() > bigFileThreshold {
-		// We use 2 buffers, so we always have a full buffer of input.
-		bufA := er.bp.Get()
-		bufB := er.bp.Get()
-		defer er.bp.Put(bufA)
-		defer er.bp.Put(bufB)
-		ra, err := readahead.NewReaderBuffer(data, [][]byte{bufA[:fi.Erasure.BlockSize], bufB[:fi.Erasure.BlockSize]})
-		if err == nil {
-			toEncode = ra
-			defer ra.Close()
-		}
-		logger.LogIf(ctx, err)
-	}
+
 	n, erasureErr := erasure.Encode(ctx, toEncode, writers, buffer, writeQuorum)
 	closeBitrotWriters(writers)
 	if erasureErr != nil {
-		return ObjectInfo{}, toObjectErr(erasureErr, minioMetaTmpBucket, tempErasureObj)
+		return ObjectInfo{}, toObjectErr(erasureErr, minioMetaTmpBucket, erasureObj)
 	}
 
 	// Should return IncompleteBody{} error when reader has fewer bytes
@@ -1452,15 +1429,6 @@ func (er erasureObjects) appendObject(ctx context.Context, bucket string, object
 	var compIndex []byte
 	if opts.IndexCB != nil {
 		compIndex = opts.IndexCB()
-	}
-	if !opts.NoLock {
-		lk := er.NewNSLock(bucket, object)
-		lkctx, err := lk.GetLock(ctx, globalOperationTimeout)
-		if err != nil {
-			return ObjectInfo{}, err
-		}
-		ctx = lkctx.Context()
-		defer lk.Unlock(lkctx)
 	}
 
 	modTime := opts.MTime
@@ -1474,8 +1442,17 @@ func (er erasureObjects) appendObject(ctx context.Context, bucket string, object
 			continue
 		}
 		// No need to add checksum to part. We already have it on the object.
-        partsMetadata[i].Data = nil
-		partsMetadata[i].AddObjectPart(1, "", n, data.ActualSize(), modTime, compIndex, nil)
+		partsMetadata[i].Data = nil
+
+        if len(partsMetadata[i].Parts) > 0 {
+            partsMetadata[i].Parts[0].Size += n
+            partsMetadata[i].Parts[0].ActualSize += data.ActualSize()
+            partsMetadata[i].Parts[0].ModTime = modTime
+            partsMetadata[i].Parts[0].Index = compIndex
+        } else {
+            partsMetadata[i].AddObjectPart(1, "", n, data.ActualSize(), modTime, compIndex, nil)
+        }
+
 		partsMetadata[i].Versioned = opts.Versioned || opts.VersionSuspended
 	}
 
@@ -1499,17 +1476,26 @@ func (er erasureObjects) appendObject(ctx context.Context, bucket string, object
 
 	// Fill all the necessary metadata.
 	// Update `xl.meta` content on each disks.
-    // 填写所有必要的元数据。
-    // 更新每个磁盘上的 `xl.meta` 内容。
+	// 填写所有必要的元数据。
+	// 更新每个磁盘上的 `xl.meta` 内容。
 	for index := range partsMetadata {
 		partsMetadata[index].Metadata = userDefined
-		partsMetadata[index].Size = n
+		partsMetadata[index].Size += n
 		partsMetadata[index].ModTime = modTime
+
+  //       // 官方版本暂时不支持
+		// partsMetadata[index].Erasure.Checksums = []ChecksumInfo{
+		// 	{
+		// 		PartNumber: 1,
+		// 		Algorithm:  HighwayHash256,
+		// 		Hash:       nil,
+		// 	},
+		// }
 	}
 
 	// Rename the successfully written temporary object to final location.
-    // 将成功写入的临时对象重命名为最终位置。
-	onlineDisks, versionsDisparity, err := renameData(ctx, onlineDisks, minioMetaTmpBucket, tempObj, partsMetadata, bucket, object, writeQuorum)
+	// 将成功写入的临时对象重命名为最终位置。
+	onlineDisks, versionsDisparity, err := renameData(ctx, onlineDisks, bucket, object, partsMetadata, bucket, object, writeQuorum)
 	if err != nil {
 		if errors.Is(err, errFileNotFound) {
 			return ObjectInfo{}, toObjectErr(errErasureWriteQuorum, bucket, object)
@@ -1522,20 +1508,20 @@ func (er erasureObjects) appendObject(ctx context.Context, bucket string, object
 		if onlineDisks[i] != nil && onlineDisks[i].IsOnline() {
 			// Object info is the same in all disks, so we can pick
 			// the first meta from online disk
-            // 所有磁盘中的对象信息都是相同的，因此我们可以选择
-            // 在线磁盘中的第一个元数据
+			// 所有磁盘中的对象信息都是相同的，因此我们可以选择
+			// 在线磁盘中的第一个元数据
 			fi = partsMetadata[i]
 			break
 		}
 	}
 
 	// For speedtest objects do not attempt to heal them.
-    // 对于速度测试对象，不要尝试修复它们。
+	// 对于速度测试对象，不要尝试修复它们。
 	if !opts.Speedtest {
 		// Whether a disk was initially or becomes offline
 		// during this upload, send it to the MRF list.
-        // 磁盘最初处于离线状态还是变为离线状态
-        // 在上传过程中，将其发送到 MRF 列表。
+		// 磁盘最初处于离线状态还是变为离线状态
+		// 在上传过程中，将其发送到 MRF 列表。
 		for i := 0; i < len(onlineDisks); i++ {
 			if onlineDisks[i] != nil && onlineDisks[i].IsOnline() {
 				continue
@@ -1546,7 +1532,7 @@ func (er erasureObjects) appendObject(ctx context.Context, bucket string, object
 		}
 
 		if versionsDisparity {
-            // 版本存在差距
+			// 版本存在差距
 			globalMRFState.addPartialOp(partialOperation{
 				bucket:      bucket,
 				object:      object,
@@ -1561,7 +1547,7 @@ func (er erasureObjects) appendObject(ctx context.Context, bucket string, object
 	fi.ReplicationState = opts.PutReplicationState()
 
 	// we are adding a new version to this object under the namespace lock, so this is the latest version.
-    // 我们正在命名空间锁下向该对象添加新版本，因此这是最新版本。
+	// 我们正在命名空间锁下向该对象添加新版本，因此这是最新版本。
 	fi.IsLatest = true
 
 	return fi.ToObjectInfo(bucket, object, opts.Versioned || opts.VersionSuspended), nil
@@ -1642,7 +1628,7 @@ func (er erasureObjects) putObject(ctx context.Context, bucket string, object st
 
 	storageDisks := er.getDisks()
 
-    // 奇偶校验驱动器数量
+	// 奇偶校验驱动器数量
 	parityDrives := len(storageDisks) / 2
 	if !opts.MaxParity {
 		// Get parity and data drive count based on storage class metadata
@@ -1683,7 +1669,7 @@ func (er erasureObjects) putObject(ctx context.Context, bucket string, object st
 			userDefined[minIOErasureUpgraded] = strconv.Itoa(parityOrig) + "->" + strconv.Itoa(parityDrives)
 		}
 	}
-    // 数据驱动器数量
+	// 数据驱动器数量
 	dataDrives := len(storageDisks) - parityDrives
 
 	// we now know the number of blocks this object needs for data and parity.
@@ -1694,8 +1680,8 @@ func (er erasureObjects) putObject(ctx context.Context, bucket string, object st
 	}
 
 	// Initialize parts metadata
-    // 初始化(部分)元数据
-    // 副本在多个 disk 上是一致的
+	// 初始化(部分)元数据
+	// 副本在多个 disk 上是一致的
 	partsMetadata := make([]FileInfo, len(storageDisks))
 
 	fi := newFileInfo(pathJoin(bucket, object), dataDrives, parityDrives)
@@ -1718,7 +1704,7 @@ func (er erasureObjects) putObject(ctx context.Context, bucket string, object st
 	}
 
 	// Order disks according to erasure distribution
-    // 根据纠错分布对磁盘进行排序
+	// 根据纠错分布对磁盘进行排序
 	var onlineDisks []StorageAPI
 	onlineDisks, partsMetadata = shuffleDisksAndPartsMetadata(storageDisks, partsMetadata, fi)
 
@@ -1749,10 +1735,10 @@ func (er erasureObjects) putObject(ctx context.Context, bucket string, object st
 
 	defer er.deleteAll(context.Background(), minioMetaTmpBucket, tempObj)
 
-    // 分片文件大小
+	// 分片文件大小
 	shardFileSize := erasure.ShardFileSize(data.Size())
 	writers := make([]io.Writer, len(onlineDisks))
-    // 内联数据 buf
+	// 内联数据 buf
 	var inlineBuffers []*bytes.Buffer
 	if shardFileSize >= 0 {
 		if !opts.Versioned && shardFileSize < smallFileThreshold {
@@ -1785,7 +1771,7 @@ func (er erasureObjects) putObject(ctx context.Context, bucket string, object st
 				sz = data.ActualSize()
 			}
 			inlineBuffers[i] = bytes.NewBuffer(make([]byte, 0, sz))
-            // 最终调用(writers[i].Write)写输入到内联 buf (inlineBuffers)
+			// 最终调用(writers[i].Write)写输入到内联 buf (inlineBuffers)
 			writers[i] = newStreamingBitrotWriterBuffer(inlineBuffers[i], DefaultBitrotAlgorithm, erasure.ShardSize())
 			continue
 		}
@@ -1793,7 +1779,7 @@ func (er erasureObjects) putObject(ctx context.Context, bucket string, object st
 		writers[i] = newBitrotWriter(disk, minioMetaTmpBucket, tempErasureObj, shardFileSize, DefaultBitrotAlgorithm, erasure.ShardSize())
 	}
 
-    // 构建读者
+	// 构建读者
 	toEncode := io.Reader(data)
 	if data.Size() > bigFileThreshold {
 		// We use 2 buffers, so we always have a full buffer of input.
@@ -1808,8 +1794,8 @@ func (er erasureObjects) putObject(ctx context.Context, bucket string, object st
 		}
 		logger.LogIf(ctx, err)
 	}
-    // 从 toEncode 到 writers 到 inlineBuffers
-    // 从 toEncode 到 writers 到 file
+	// 从 toEncode 到 writers 到 inlineBuffers
+	// 从 toEncode 到 writers 到 file
 	n, erasureErr := erasure.Encode(ctx, toEncode, writers, buffer, writeQuorum)
 	closeBitrotWriters(writers)
 	if erasureErr != nil {
@@ -1884,14 +1870,14 @@ func (er erasureObjects) putObject(ctx context.Context, bucket string, object st
 
 	if len(inlineBuffers) > 0 {
 		// Set an additional header when data is inlined.
-        // 数据内联时设置附加标头。
+		// 数据内联时设置附加标头。
 		for index := range partsMetadata {
 			partsMetadata[index].SetInlineData()
 		}
 	}
 
 	// Rename the successfully written temporary object to final location.
-    // 将成功写入的临时对象重命名为最终位置。
+	// 将成功写入的临时对象重命名为最终位置。
 	onlineDisks, versionsDisparity, err := renameData(ctx, onlineDisks, minioMetaTmpBucket, tempObj, partsMetadata, bucket, object, writeQuorum)
 	if err != nil {
 		if errors.Is(err, errFileNotFound) {

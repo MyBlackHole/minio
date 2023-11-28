@@ -791,6 +791,7 @@ func serverMain(ctx *cli.Context) {
 	var newObject ObjectLayer
 	bootstrapTrace("newObjectLayer", func() {
 		var err error
+        // 初始化对象层
 		newObject, err = newObjectLayer(GlobalContext, globalEndpoints)
 		if err != nil {
 			logFatalErrs(err, Endpoint{}, true)

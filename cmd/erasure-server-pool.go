@@ -174,6 +174,7 @@ func newErasureServerPools(ctx context.Context, endpointServerPools EndpointServ
 	z.poolMeta.dontSave = true
 
 	// initialize the object layer.
+    // 初始化对象层
 	setObjectLayer(z)
 
 	r := rand.New(rand.NewSource(time.Now().UnixNano()))

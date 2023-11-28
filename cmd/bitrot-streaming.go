@@ -27,6 +27,7 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/dustin/go-humanize"
 	xhttp "github.com/minio/minio/internal/http"
 	"github.com/minio/minio/internal/ioutil"
 	"github.com/minio/minio/internal/logger"
@@ -117,6 +118,47 @@ func newStreamingBitrotWriter(disk StorageAPI, volume, filePath string, length i
 	}()
 	return bw
 }
+
+func newStreamingBitrotAppendWriter(disk StorageAPI, volume, filePath string, length int64, algo BitrotAlgorithm, shardSize int64) io.Writer {
+    // 管道传输
+	r, w := io.Pipe()
+	h := algo.New()
+
+	bw := &streamingBitrotWriter{
+		iow:          ioutil.NewDeadlineWriter(w, diskMaxTimeout),
+		closeWithErr: w.CloseWithError,
+		h:            h,
+		shardSize:    shardSize,
+		canClose:     &sync.WaitGroup{},
+	}
+	bw.canClose.Add(1)
+	go func() {
+		defer bw.canClose.Done()
+        defer r.Close()
+        var writen int
+
+        data := make([]byte, 4 * humanize.MiByte)
+        for {
+            n, er := r.Read(data)
+            if er != nil {
+                if er != io.EOF {
+					logger.LogOnceIf(GlobalContext, fmt.Errorf("Read %s", er.Error()), "filePath-"+filePath)
+                }
+                break
+            }
+            // 创建文件并写入
+            er = disk.AppendFile(context.TODO(), volume, filePath, data[:n])
+            if er != nil {
+                logger.LogOnceIf(GlobalContext, fmt.Errorf("AppendFile %s", er.Error()), "filePath-"+filePath)
+                break
+            }
+            writen += n
+        }
+        logger.Info("%d\n", writen)
+	}()
+	return bw
+}
+
 
 // ReadAt() implementation which verifies the bitrot hash available as part of the stream.
 type streamingBitrotReader struct {

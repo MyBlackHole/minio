@@ -395,6 +395,7 @@ func pickValidFileInfo(ctx context.Context, metaArr []FileInfo, modTime time.Tim
 }
 
 // writeUniqueFileInfo - writes unique `xl.meta` content for each disk concurrently.
+// writeuniquefileinfo-同时为每个磁盘编写唯一的xl.meta`内容。
 func writeUniqueFileInfo(ctx context.Context, disks []StorageAPI, bucket, prefix string, files []FileInfo, quorum int) ([]StorageAPI, error) {
 	g := errgroup.WithNErrs(len(disks))
 

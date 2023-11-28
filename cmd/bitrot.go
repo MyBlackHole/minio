@@ -112,6 +112,14 @@ func newBitrotWriter(disk StorageAPI, volume, filePath string, length int64, alg
 	return newWholeBitrotWriter(disk, volume, filePath, algo, shardSize)
 }
 
+
+func newBitrotAppendWriter(disk StorageAPI, volume, filePath string, length int64, algo BitrotAlgorithm, shardSize int64) io.Writer {
+	if algo == HighwayHash256S {
+		return newStreamingBitrotAppendWriter(disk, volume, filePath, length, algo, shardSize)
+	}
+	return newWholeBitrotWriter(disk, volume, filePath, algo, shardSize)
+}
+
 func newBitrotReader(disk StorageAPI, data []byte, bucket string, filePath string, tillOffset int64, algo BitrotAlgorithm, sum []byte, shardSize int64) io.ReaderAt {
 	if algo == HighwayHash256S {
 		return newStreamingBitrotReader(disk, data, bucket, filePath, tillOffset, algo, shardSize)

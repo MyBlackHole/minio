@@ -58,6 +58,7 @@ func commonETags(etags []string) (etag string, maxima int) {
 }
 
 // commonTime returns a maximally occurring time from a list of time.
+// commonTime 返回时间列表中出现次数最多的时间。
 func commonTimeAndOccurence(times []time.Time, group time.Duration) (maxTime time.Time, maxima int) {
 	timeOccurenceMap := make(map[int64]int, len(times))
 	groupNano := group.Nanoseconds()
