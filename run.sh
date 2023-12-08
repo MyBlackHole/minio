@@ -1,3 +1,8 @@
+# cmd/object-handlers.go:3204
+# cmd/erasure-server-pool.go:81
+# cmd/erasure-sets.go
+# erasure-object.go
+
 _MINIO_DEBUG_NO_EXIT="debug" dlv debug main.go -- server ./database
 
 # 验证

@@ -139,6 +139,7 @@ func newErasureServerPools(ctx context.Context, endpointServerPools EndpointServ
 			return nil, fmt.Errorf("all pools must have same deployment ID - expected %s, got %s for pool(%s)", deploymentID, formats[i].ID, humanize.Ordinal(i+1))
 		}
 
+        // 对象层的对象集创建
 		z.serverPools[i], err = newErasureSets(ctx, ep, storageDisks[i], formats[i], commonParityDrives, i)
 		if err != nil {
 			return nil, err
