@@ -125,7 +125,7 @@ func newStreamingBitrotAppendWriter(disk StorageAPI, volume, filePath string, le
 	h := algo.New()
 
 	bw := &streamingBitrotWriter{
-		iow:          ioutil.NewDeadlineWriter(w, diskMaxTimeout),
+		iow:          ioutil.NewDeadlineWriter(w, globalDriveConfig.GetMaxTimeout()),
 		closeWithErr: w.CloseWithError,
 		h:            h,
 		shardSize:    shardSize,
