@@ -58,6 +58,7 @@ type erasureObjects struct {
 	getDisks func() []StorageAPI
 
 	// getLockers returns list of remote and local lockers.
+    // getLockers 返回远程和本地储的锁列表。
 	getLockers func() ([]dsync.NetLocker, string)
 
 	// getEndpoints returns list of endpoint strings belonging this set.
@@ -65,6 +66,7 @@ type erasureObjects struct {
 	getEndpoints func() []Endpoint
 
 	// Locker mutex map.
+    // 互斥锁映射
 	nsMutex *nsLockMap
 
 	// // Byte pools used for temporary i/o buffers.

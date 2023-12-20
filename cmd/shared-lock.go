@@ -29,9 +29,12 @@ var sharedLockTimeout = newDynamicTimeoutWithOpts(dynamicTimeoutOpts{
 })
 
 type sharedLock struct {
+    // 锁上下文队列
+    // 用于传递给其它节点同步
 	lockContext chan LockContext
 }
 
+// 后台例程
 func (ld sharedLock) backgroundRoutine(ctx context.Context, objAPI ObjectLayer, lockName string) {
 	for {
 		locker := objAPI.NewNSLock(minioMetaBucket, lockName)
@@ -52,6 +55,7 @@ func (ld sharedLock) backgroundRoutine(ctx context.Context, objAPI ObjectLayer, 
 				break keepLock
 			case ld.lockContext <- lkctx:
 				// Send the lock context to anyone asking for it
+                // 将锁定上下文发送给任何需要它的人
 			}
 		}
 	}

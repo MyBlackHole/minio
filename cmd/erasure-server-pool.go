@@ -53,6 +53,7 @@ type erasureServerPools struct {
 	rebalMu   sync.RWMutex
 	rebalMeta *rebalanceMeta
 
+    // 部署 id
 	deploymentID     [16]byte
 	distributionAlgo string
 
@@ -70,6 +71,7 @@ func (z *erasureServerPools) SinglePool() bool {
 }
 
 // Initialize new pool of erasure sets.
+// 初始化纠错对象集数据池
 func newErasureServerPools(ctx context.Context, endpointServerPools EndpointServerPools) (ObjectLayer, error) {
 	var (
 		deploymentID       string

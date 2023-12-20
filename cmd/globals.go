@@ -273,6 +273,7 @@ var (
 	globalConsoleSys *HTTPConsoleLoggerSys
 
 	// All unique drives for this deployment
+    // 所有 minio 服务节点
 	globalEndpoints EndpointServerPools
 	// All unique nodes for this deployment
 	globalNodes []Node

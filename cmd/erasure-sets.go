@@ -350,6 +350,7 @@ const defaultMonitorConnectEndpointInterval = defaultMonitorNewDiskInterval + ti
 
 // Initialize new set of erasure coded sets.
 func newErasureSets(ctx context.Context, endpoints PoolEndpoints, storageDisks []StorageAPI, format *formatErasureV3, defaultParityCount, poolIdx int) (*erasureSets, error) {
+    // 计算纠错对象集合个数
 	setCount := len(format.Erasure.Sets)
 	setDriveCount := len(format.Erasure.Sets[0])
 
@@ -361,7 +362,9 @@ func newErasureSets(ctx context.Context, endpoints PoolEndpoints, storageDisks [
 	// Initialize the erasure sets instance.
 	s := &erasureSets{
 		sets:               make([]*erasureObjects, setCount),
+        // 纠错对象磁盘设备初始化
 		erasureDisks:       make([][]StorageAPI, setCount),
+        // 纠错对象锁初始化
 		erasureLockers:     make([][]dsync.NetLocker, setCount),
 		erasureLockOwner:   globalLocalNodeName,
 		endpoints:          endpoints,
@@ -382,13 +385,16 @@ func newErasureSets(ctx context.Context, endpoints PoolEndpoints, storageDisks [
 		s.erasureDisks[i] = make([]StorageAPI, setDriveCount)
 	}
 
+    // 初始化纠错对象锁内容
 	erasureLockers := map[string]dsync.NetLocker{}
 	for _, endpoint := range endpoints.Endpoints {
 		if _, ok := erasureLockers[endpoint.Host]; !ok {
+            // 赋值对象锁 api 接口
 			erasureLockers[endpoint.Host] = newLockAPI(endpoint)
 		}
 	}
 
+    // 赋值, 锁 api 初始化完毕
 	for i := 0; i < setCount; i++ {
 		lockerEpSet := set.NewStringSet()
 		for j := 0; j < setDriveCount; j++ {

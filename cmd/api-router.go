@@ -61,6 +61,7 @@ func newObjectLayerFn() ObjectLayer {
 	return globalObjectAPI
 }
 
+// 设置全局对象层对象
 func setObjectLayer(o ObjectLayer) {
 	globalObjLayerMutex.Lock()
 	globalObjectAPI = o

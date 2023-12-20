@@ -312,8 +312,10 @@ func serverHandleCmdArgs(ctxt serverCtxt) {
 	// Register root CAs for remote ENVs
 	env.RegisterGlobalCAs(globalRootCAs)
 
+    // 所以节点端点列表
 	globalEndpoints, setupType, err = createServerEndpoints(globalMinioAddr, ctxt.Layout.pools, ctxt.Layout.legacy)
 	logger.FatalIf(err, "Invalid command line arguments")
+    // 所以节点列表
 	globalNodes = globalEndpoints.GetNodes()
 
 	globalIsErasure = (setupType == ErasureSetupType)
@@ -648,6 +650,7 @@ func serverMain(ctx *cli.Context) {
 	loadEnvVarsFromFiles()
 
 	// Handle all server command args and build the disks layout
+    // 处理所有服务器命令参数并构建磁盘布局
 	bootstrapTrace("serverHandleCmdArgs", func() {
 		err := buildServerCtxt(ctx, &globalServerCtxt)
 		logger.FatalIf(err, "Unable to prepare the list of endpoints")
@@ -811,6 +814,7 @@ func serverMain(ctx *cli.Context) {
 	}
 
 	bootstrapTrace("newSharedLock", func() {
+        // 创建对象层对象全局共享锁
 		globalLeaderLock = newSharedLock(GlobalContext, newObject, "leader.lock")
 	})
 
