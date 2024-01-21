@@ -1388,8 +1388,8 @@ func (er erasureObjects) appendObject(ctx context.Context, bucket string, object
 	case size == 0:
 		buffer = make([]byte, 1) // Allocate atleast a byte to reach EOF
 	case size >= fi.Erasure.BlockSize || size == -1:
-		buffer = er.bp.Get()
-		defer er.bp.Put(buffer)
+        buffer = globalBytePoolCap.Get()
+        defer globalBytePoolCap.Put(buffer)
 	case size < fi.Erasure.BlockSize:
 		// No need to allocate fully blockSizeV1 buffer if the incoming data is smaller.
 		buffer = make([]byte, size, 2*size+int64(fi.Erasure.ParityBlocks+fi.Erasure.DataBlocks-1))
