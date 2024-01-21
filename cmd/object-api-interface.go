@@ -72,11 +72,12 @@ type ObjectOptions struct {
 	CheckDMReplicationReady bool // Is delete marker ready to be replicated - set only during HEAD
 	Tagging                 bool // Is only in GET/HEAD operations to return tagging metadata along with regular metadata and body.
 
-    //仅在 POST/PUT 操作的情况下设置
+    // 仅在 POST/PUT 操作的情况下设置
 	UserDefined         map[string]string   // only set in case of POST/PUT operations
 	ObjectAttributes    map[string]struct{} // Attribute tags defined by the users for the GetObjectAttributes request
 	MaxParts            int                 // used in GetObjectAttributes. Signals how many parts we should return
 	PartNumberMarker    int                 // used in GetObjectAttributes. Signals the part number after which results should be returned
+    // 仅在 GetObject/HeadObject 的情况下有用
 	PartNumber          int                 // only useful in case of GetObject/HeadObject
     // 仅在 GetObject/HeadObject/CopyObjectPart 前提评估期间设置
 	CheckPrecondFn      CheckPreconditionFn // only set during GetObject/HeadObject/CopyObjectPart preconditional valuation
@@ -91,7 +92,7 @@ type ObjectOptions struct {
 
 	NoDecryption                        bool      // indicates if the stream must be decrypted.
 	PreserveETag                        string    // preserves this etag during a PUT call.
-    // 向下层指示调用者是否希望持有锁。
+    // 向下层指示调用者是否已持有锁。
 	NoLock                              bool      // indicates to lower layers if the caller is expecting to hold locks.
 	ProxyRequest                        bool      // only set for GET/HEAD in active-active replication scenario
 	ProxyHeaderSet                      bool      // only set for GET/HEAD in active-active replication scenario

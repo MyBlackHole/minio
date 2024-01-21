@@ -783,6 +783,7 @@ func (api objectAPIHandlers) PutBucketHandler(w http.ResponseWriter, r *http.Req
 	}
 
 	// Parse incoming location constraint.
+    // 解析传入位置约束
 	_, s3Error = parseLocationConstraint(r)
 	if s3Error != ErrNone {
 		writeErrorResponse(ctx, w, errorCodes.ToAPIErr(s3Error), r.URL)
@@ -1569,6 +1570,9 @@ func (api objectAPIHandlers) GetBucketPolicyStatusHandler(w http.ResponseWriter,
 // The operation returns a 200 OK if the bucket exists and you
 // have permission to access it. Otherwise, the operation might
 // return responses such as 404 Not Found and 403 Forbidden.
+// 此操作可用于确定存储桶是否存在。
+// 如果存储桶存在并且您有权访问它，则该操作将返回 200 OK。
+// 否则，该操作可能会返回诸如 404 Not Found 和 403 Forbidden 之类的响应。
 func (api objectAPIHandlers) HeadBucketHandler(w http.ResponseWriter, r *http.Request) {
 	ctx := newContext(r, w, "HeadBucket")
 

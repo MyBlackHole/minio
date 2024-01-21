@@ -209,6 +209,7 @@ func healBucketLocal(ctx context.Context, bucket string, opts madmin.HealOpts) (
 	return res, nil
 }
 
+// 列出本地所有桶
 func listBucketsLocal(ctx context.Context, opts BucketOptions) (buckets []BucketInfo, err error) {
 	globalLocalDrivesMu.RLock()
 	localDrives := globalLocalDrives
@@ -220,6 +221,7 @@ func listBucketsLocal(ctx context.Context, opts BucketOptions) (buckets []Bucket
 	healBuckets := map[string]VolInfo{}
 
 	// lists all unique buckets across drives.
+    // 列出驱动器上的所有唯一存储桶。
 	if err := listAllBuckets(ctx, localDrives, healBuckets, quorum); err != nil {
 		return nil, err
 	}
@@ -369,6 +371,7 @@ func makeBucketLocal(ctx context.Context, bucket string, opts MakeBucketOptions)
 	}
 
 	errs := g.Wait()
+    // 本地磁盘要过半成功
 	return reduceWriteQuorumErrs(ctx, errs, bucketOpIgnoredErrs, (len(localDrives)/2)+1)
 }
 
@@ -457,6 +460,7 @@ func (s *peerS3Server) DeleteBucketHandler(w http.ResponseWriter, r *http.Reques
 }
 
 // MakeBucketHandler implements peer create bucket call.
+// 实现对等式创建存储键调用。
 func (s *peerS3Server) MakeBucketHandler(w http.ResponseWriter, r *http.Request) {
 	if !s.IsValid(w, r) {
 		return
@@ -475,6 +479,7 @@ func (s *peerS3Server) MakeBucketHandler(w http.ResponseWriter, r *http.Request)
 }
 
 // registerPeerS3Handlers - register peer s3 router.
+// 注册对等S3路由器。
 func registerPeerS3Handlers(router *mux.Router) {
 	server := &peerS3Server{}
 	subrouter := router.PathPrefix(peerS3Prefix).Subrouter()

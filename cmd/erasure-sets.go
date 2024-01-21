@@ -48,9 +48,10 @@ type setsDsyncLockers [][]dsync.NetLocker
 // erasureSets implements ObjectLayer combining a static list of erasure coded
 // object sets. NOTE: There is no dynamic scaling allowed or intended in
 // current design.
-// erasureSets 实现了 ObjectLayer 组合了纠删码的静态列表
-// 对象集。 注意： 不允许或不打算进行动态缩放
-// 当前设计。
+//
+// erasureSets 实现了 ObjectLayer 组合了纠删码的静态列表对象集。 
+// 注意： 
+// 当前设计不允许或不打算进行动态缩放。
 type erasureSets struct {
 	sets []*erasureObjects
 
@@ -61,6 +62,7 @@ type erasureSets struct {
 	erasureDisksMu sync.RWMutex
 
 	// Re-ordered list of disks per set.
+    // 每组磁盘的重新排序列表
 	erasureDisks [][]StorageAPI
 
 	// Distributed locker clients.
@@ -88,6 +90,7 @@ type erasureSets struct {
 	setReconnectEvent chan int
 
 	// Distribution algorithm of choice.
+    // 选择的分配算法
 	distributionAlgo string
 	deploymentID     [16]byte
 
@@ -334,6 +337,7 @@ func (s *erasureSets) GetEndpoints(setIndex int) func() []Endpoint {
 }
 
 // GetDisks returns a closure for a given set, which provides list of disks per set.
+// 返回给定集合的闭包，其中提供每个集合的磁盘列表。
 func (s *erasureSets) GetDisks(setIndex int) func() []StorageAPI {
 	return func() []StorageAPI {
 		s.erasureDisksMu.RLock()
@@ -551,6 +555,7 @@ func (s *erasureSets) cleanupStaleUploads(ctx context.Context) {
 	}
 }
 
+// 对象位置属性
 type auditObjectOp struct {
 	Name  string   `json:"name"`
 	Pool  int      `json:"poolId"`
@@ -559,6 +564,7 @@ type auditObjectOp struct {
 }
 
 // Add erasure set information to the current context
+// 将纠错对象集信息添加到当前上下文中
 func auditObjectErasureSet(ctx context.Context, object string, set *erasureObjects) {
 	if len(logger.AuditTargets()) == 0 {
 		return
@@ -715,6 +721,7 @@ func hashKey(algo string, key string, cardinality int, id [16]byte) int {
 }
 
 // Returns always a same erasure coded set for a given input.
+// 获取纠错集索引id
 func (s *erasureSets) getHashedSetIndex(input string) int {
 	return hashKey(s.distributionAlgo, input, len(s.sets), s.deploymentID)
 }
@@ -780,6 +787,7 @@ func (s *erasureSets) AppendObject(ctx context.Context, bucket string, object st
 
 // GetObjectInfo - reads object metadata from the hashedSet based on the object name.
 func (s *erasureSets) GetObjectInfo(ctx context.Context, bucket, object string, opts ObjectOptions) (objInfo ObjectInfo, err error) {
+    // 根据对象获取到存储的
 	set := s.getHashedSet(object)
 	return set.GetObjectInfo(ctx, bucket, object, opts)
 }

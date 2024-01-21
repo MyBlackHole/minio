@@ -69,6 +69,7 @@ const (
 	AmzDeleteMarker = "x-amz-delete-marker"
 
 	// S3 object tagging
+    // S3 对象标记
 	AmzObjectTagging = "X-Amz-Tagging"
 	AmzTagCount      = "x-amz-tagging-count"
 	AmzTagDirective  = "X-Amz-Tagging-Directive"

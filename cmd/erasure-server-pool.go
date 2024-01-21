@@ -45,7 +45,7 @@ import (
 	"github.com/minio/pkg/v2/wildcard"
 )
 
-// 服务池
+// 纠错对象服务池
 type erasureServerPools struct {
 	poolMetaMutex sync.RWMutex
 	poolMeta      poolMeta
@@ -57,7 +57,7 @@ type erasureServerPools struct {
 	deploymentID     [16]byte
 	distributionAlgo string
 
-    // 对象集列表
+    // 纠错对象集列表
 	serverPools []*erasureSets
 
 	// Active decommission canceler
@@ -66,6 +66,7 @@ type erasureServerPools struct {
 	s3Peer *S3PeerSys
 }
 
+// 单池
 func (z *erasureServerPools) SinglePool() bool {
 	return len(z.serverPools) == 1
 }
@@ -105,6 +106,9 @@ func newErasureServerPools(ctx context.Context, endpointServerPools EndpointServ
 	var localDrives []StorageAPI
 	local := endpointServerPools.FirstLocal()
 	for i, ep := range endpointServerPools {
+        // http://192.168.3.17/home/minio/data1 http://192.168.3.17/home/minio/data2
+        // http://192.168.3.18/home/minio/data1 http://192.168.3.18/home/minio/data2
+
 		// If storage class is not set during startup, default values are used
 		// -- Default for Reduced Redundancy Storage class is, parity = 2
 		// -- Default for Standard Storage class is, parity = 2 - disks 4, 5
@@ -157,6 +161,7 @@ func newErasureServerPools(ctx context.Context, endpointServerPools EndpointServ
 
 		for _, storageDisk := range storageDisks[i] {
 			if storageDisk != nil && storageDisk.IsLocal() {
+                // 记录本地磁盘设备驱动
 				localDrives = append(localDrives, storageDisk)
 			}
 		}
@@ -164,6 +169,7 @@ func newErasureServerPools(ctx context.Context, endpointServerPools EndpointServ
 
 	if !globalIsDistErasure {
 		globalLocalDrivesMu.Lock()
+        // 设置全局本地磁盘设备驱动
 		globalLocalDrives = localDrives
 		globalLocalDrivesMu.Unlock()
 	}
@@ -198,6 +204,7 @@ func newErasureServerPools(ctx context.Context, endpointServerPools EndpointServ
 	return z, nil
 }
 
+// 获取对象锁
 func (z *erasureServerPools) NewNSLock(bucket string, objects ...string) RWLocker {
 	poolID := hashKey(z.distributionAlgo, "", len(z.serverPools), z.deploymentID)
 	if len(objects) >= 1 {
@@ -761,6 +768,8 @@ func (z *erasureServerPools) NSScanner(ctx context.Context, updates chan<- DataU
 // MakeBucket - creates a new bucket across all serverPools simultaneously
 // even if one of the sets fail to create buckets, we proceed all the successful
 // operations.
+// 同时在所有ServerPools上创建一个新的存储桶，
+// 即使其中一个集合未能创建存储桶，我们仍能继续所有成功的操作。
 func (z *erasureServerPools) MakeBucket(ctx context.Context, bucket string, opts MakeBucketOptions) error {
 	// Verify if bucket is valid.
 	if !isMinioMetaBucketName(bucket) {
@@ -770,6 +779,7 @@ func (z *erasureServerPools) MakeBucket(ctx context.Context, bucket string, opts
 
 		if !opts.NoLock {
 			// Lock the bucket name before creating.
+            // 在创建之前锁定存储桶名。
 			lk := z.NewNSLock(minioMetaTmpBucket, bucket+".lck")
 			lkctx, err := lk.GetLock(ctx, globalOperationTimeout)
 			if err != nil {
@@ -793,6 +803,7 @@ func (z *erasureServerPools) MakeBucket(ctx context.Context, bucket string, opts
 	}
 
 	// If it doesn't exist we get a new, so ignore errors
+    // 如果不存在，我们会得到一个新的，所以忽略错误
 	meta := newBucketMetadata(bucket)
 	meta.SetCreatedAt(opts.CreatedAt)
 	if opts.LockEnabled {
@@ -804,10 +815,12 @@ func (z *erasureServerPools) MakeBucket(ctx context.Context, bucket string, opts
 		meta.VersioningConfigXML = enabledBucketVersioningConfig
 	}
 
+    // 保存桶元数据到所有对等节点
 	if err := meta.Save(context.Background(), z); err != nil {
 		return toObjectErr(err, bucket)
 	}
 
+    // 自己
 	globalBucketMetadataSys.Set(bucket, meta)
 
 	// Success.
@@ -978,6 +991,7 @@ func (z *erasureServerPools) GetObjectInfo(ctx context.Context, bucket, object s
 		opts.NoLock = true // avoid taking locks at lower levels for multi-pool setups.
 
 		// Lock the object before reading.
+        // 在读取之前锁定对象
 		lk := z.NewNSLock(bucket, object)
 		lkctx, err := lk.GetRLock(ctx, globalOperationTimeout)
 		if err != nil {
@@ -1898,6 +1912,8 @@ var listBucketsCache timedValue
 // List all buckets from one of the serverPools, we are not doing merge
 // sort here just for simplification. As per design it is assumed
 // that all buckets are present on all serverPools.
+// 列出其中一个服务器池中的所有存储桶，我们并不是在此处进行合并排序只是为了简化。 
+// 根据设计，假定所有服务器上都存在所有存储库。
 func (z *erasureServerPools) ListBuckets(ctx context.Context, opts BucketOptions) (buckets []BucketInfo, err error) {
 	if opts.Cached {
 		listBucketsCache.Once.Do(func() {
@@ -1934,6 +1950,7 @@ func (z *erasureServerPools) ListBuckets(ctx context.Context, opts BucketOptions
 		return nil, err
 	}
 	for i := range buckets {
+        // 获取创建时间
 		createdAt, err := globalBucketMetadataSys.CreatedAt(buckets[i].Name)
 		if err == nil {
 			buckets[i].Created = createdAt

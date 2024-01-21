@@ -101,12 +101,15 @@ func isValidVolname(volname string) bool {
 // xlStorage - implements StorageAPI interface.
 type xlStorage struct {
 	// Indicate of NSScanner is in progress in this disk
+    // 指示 NSScanner 正在该磁盘中进行
 	scanning int32
 
+    // 设备路径
 	drivePath string
 	endpoint  Endpoint
 
 	globalSync bool
+    // 指示该磁盘是否支持 ODirect
 	oDirect    bool // indicates if this disk supports ODirect
 	rootDisk   bool
 
@@ -134,6 +137,7 @@ type xlStorage struct {
 }
 
 // checkPathLength - returns error if given path name length more than 255
+// 验证路径长度
 func checkPathLength(pathName string) error {
 	// Apple OS X path length is limited to 1016
 	if runtime.GOOS == "darwin" && len(pathName) > 1016 {
@@ -2040,10 +2044,14 @@ func (s *xlStorage) writeAllDirect(ctx context.Context, filePath string, fileSiz
 		return osErrToFileErr(err)
 	}
 
+    // 缓存指针
 	var bufp *[]byte
+    // 获取缓存空间
+    // 设置归还缓存函数到退出调用栈
 	switch {
 	case fileSize > 0 && fileSize >= largestFileThreshold:
 		// use a larger 4MiB buffer for a really large streams.
+        // 对于非常大的流，使用更大的 4MiB 缓冲区。
 		bufp = xioutil.ODirectPoolXLarge.Get().(*[]byte)
 		defer xioutil.ODirectPoolXLarge.Put(bufp)
 	case fileSize <= smallFileThreshold:
@@ -2065,6 +2073,7 @@ func (s *xlStorage) writeAllDirect(ctx context.Context, filePath string, fileSiz
 		return err
 	}
 
+    // 写入量判断
 	if written < fileSize && fileSize >= 0 {
 		w.Close()
 		return errLessData
@@ -2074,6 +2083,7 @@ func (s *xlStorage) writeAllDirect(ctx context.Context, filePath string, fileSiz
 	}
 
 	// Only interested in flushing the size_t not mtime/atime
+    // 只对刷新 size_t 感兴趣，而不对 mtime/atime 感兴趣
 	if err = Fdatasync(w); err != nil {
 		w.Close()
 		return err
@@ -2327,6 +2337,7 @@ func (s *xlStorage) Delete(ctx context.Context, volume string, path string, dele
 	return s.deleteFile(volumeDir, filePath, deleteOpts.Recursive, deleteOpts.Immediate)
 }
 
+// 需要跳过的检查
 func skipAccessChecks(volume string) (ok bool) {
 	for _, prefix := range []string{
 		minioMetaTmpDeletedBucket,

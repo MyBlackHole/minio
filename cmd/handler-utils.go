@@ -67,6 +67,7 @@ func parseLocationConstraint(r *http.Request) (location string, s3Error APIError
 
 // Validates input location is same as configured region
 // of MinIO server.
+// 验证输入位置与 Minio 服务器的配置区域相同
 func isValidLocation(location string) bool {
 	return globalSite.Region == "" || globalSite.Region == location
 }

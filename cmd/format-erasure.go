@@ -118,6 +118,9 @@ type formatErasureV3 struct {
 		// Sets field carries the input disk order generated the first
 		// time when fresh disks were supplied, it is a two dimensional
 		// array second dimension represents list of disks used per set.
+        // 设置字段携带输入的第一个生成的磁盘顺序
+        // 提供新磁盘的时间，它是一个二维的
+        // 数组第二维表示每组使用的磁盘列表。
 		Sets [][]string `json:"sets"`
 		// Distribution algorithm represents the hashing algorithm
 		// to pick the right set index for an object.
@@ -669,6 +672,8 @@ func closeStorageDisks(storageDisks ...StorageAPI) {
 
 // Initialize storage disks for each endpoint.
 // Errors are returned for each endpoint with matching index.
+// 初始化每个端点的存储磁盘。
+// 为具有匹配索引的每个端点返回错误。
 func initStorageDisksWithErrors(endpoints Endpoints, opts storageOpts) ([]StorageAPI, []error) {
 	// Bootstrap disks.
 	storageDisks := make([]StorageAPI, len(endpoints))

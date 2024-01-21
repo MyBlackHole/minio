@@ -383,6 +383,7 @@ func initAllSubsystems(ctx context.Context) {
 
 	// Create new bucket metadata system.
 	if globalBucketMetadataSys == nil {
+        // 创建新的水桶元数据系统
 		globalBucketMetadataSys = NewBucketMetadataSys()
 	} else {
 		// Reinitialize safely when testing.
@@ -652,6 +653,7 @@ func serverMain(ctx *cli.Context) {
 	// Handle all server command args and build the disks layout
     // 处理所有服务器命令参数并构建磁盘布局
 	bootstrapTrace("serverHandleCmdArgs", func() {
+        // 解析 cmd 输入参数
 		err := buildServerCtxt(ctx, &globalServerCtxt)
 		logger.FatalIf(err, "Unable to prepare the list of endpoints")
 
@@ -691,6 +693,7 @@ func serverMain(ctx *cli.Context) {
 	bootstrapTrace("initHelp", initHelp)
 
 	// Initialize all sub-systems
+    // 初始化所有子系统
 	bootstrapTrace("initAllSubsystems", func() {
 		initAllSubsystems(GlobalContext)
 	})
@@ -764,6 +767,7 @@ func serverMain(ctx *cli.Context) {
 
 		httpServer.TCPOptions.Trace = bootstrapTraceMsg
 		go func() {
+            // 初始化服务
 			serveFn, err := httpServer.Init(GlobalContext, func(listenAddr string, err error) {
 				logger.LogIf(GlobalContext, fmt.Errorf("Unable to listen on `%s`: %v", listenAddr, err))
 			})
@@ -771,6 +775,7 @@ func serverMain(ctx *cli.Context) {
 				globalHTTPServerErrorCh <- err
 				return
 			}
+            // 启动服务
 			globalHTTPServerErrorCh <- serveFn()
 		}()
 
@@ -958,6 +963,7 @@ func serverMain(ctx *cli.Context) {
 		// List buckets to initialize bucket metadata sub-sys.
 		bootstrapTrace("listBuckets", func() {
 			for {
+                // 列出以初始化存储桶元数据子-Sys的存储桶
 				buckets, err = newObject.ListBuckets(GlobalContext, BucketOptions{})
 				if err != nil {
 					if configRetriableErrors(err) {
@@ -973,6 +979,7 @@ func serverMain(ctx *cli.Context) {
 		})
 
 		// Initialize bucket metadata sub-system.
+        // 初始化桶元数据子系统。
 		bootstrapTrace("globalBucketMetadataSys.Init", func() {
 			globalBucketMetadataSys.Init(GlobalContext, buckets, newObject)
 		})

@@ -237,6 +237,7 @@ type FileInfo struct {
 	NumVersions      int       `msg:"nv"`
 	SuccessorModTime time.Time `msg:"smt"`
 
+    // 表示这是第一次调用写入 FileInfo。
 	Fresh bool `msg:"fr"` // indicates this is a first time call to write FileInfo.
 
 	// Position of this version or object in a multi-object delete call,

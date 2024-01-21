@@ -60,6 +60,7 @@ func setCommonHeaders(w http.ResponseWriter) {
 	w.Header().Set(xhttp.AcceptRanges, "bytes")
 
 	// Remove sensitive information
+    // 删除敏感信息
 	crypto.RemoveSensitiveHeaders(w.Header())
 }
 
@@ -101,6 +102,7 @@ func encodeResponseJSON(response interface{}) []byte {
 }
 
 // Write parts count
+// 写入分片数
 func setPartsCountHeaders(w http.ResponseWriter, objInfo ObjectInfo) {
 	if strings.Contains(objInfo.ETag, "-") && len(objInfo.Parts) > 0 {
 		w.Header()[xhttp.AmzMpPartsCount] = []string{strconv.Itoa(len(objInfo.Parts))}

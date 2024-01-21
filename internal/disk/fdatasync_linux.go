@@ -37,6 +37,7 @@ import (
 //
 // The aim of fdatasync() is to reduce disk activity for applications that
 // do not require all metadata to be synchronized with the disk.
+// 只同步 fd 数据部分(mate 信息不等待同步)
 func Fdatasync(f *os.File) error {
 	return syscall.Fdatasync(int(f.Fd()))
 }

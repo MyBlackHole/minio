@@ -79,6 +79,7 @@ type erasureObjects struct {
 }
 
 // NewNSLock - initialize a new namespace RWLocker instance.
+// 初始化一个新的命名空间 RWLocker 实例。
 func (er erasureObjects) NewNSLock(bucket string, objects ...string) RWLocker {
 	return er.nsMutex.NewNSLock(er.getLockers, bucket, objects...)
 }

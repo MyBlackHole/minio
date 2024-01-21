@@ -792,6 +792,7 @@ func (er erasureObjects) getObjectFileInfo(ctx context.Context, bucket, object s
 	}
 
 	done := make(chan bool, er.setDriveCount)
+    // 取出所有磁盘
 	disks := er.getDisks()
 
 	mrfCheck := make(chan FileInfo)

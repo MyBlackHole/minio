@@ -119,11 +119,13 @@ func (client *remotePeerS3Client) callWithContext(ctx context.Context, method st
 
 // S3PeerSys - S3 peer call system.
 type S3PeerSys struct {
+    // 不包括自己 ?
 	peerClients []peerS3Client // Excludes self
 	poolsCount  int
 }
 
 // NewS3PeerSys - creates new S3 peer calls.
+// 创建新的 S3 对等调用。
 func NewS3PeerSys(endpoints EndpointServerPools) *S3PeerSys {
 	return &S3PeerSys{
 		peerClients: newPeerS3Clients(endpoints.GetNodes()),
@@ -233,6 +235,7 @@ func (sys *S3PeerSys) ListBuckets(ctx context.Context, opts BucketOptions) ([]Bu
 	errs := g.Wait()
 
 	// The list of buckets in a map to avoid duplication
+    // 映射中的桶列表以避免重复
 	resultMap := make(map[string]BucketInfo)
 
 	for poolIdx := 0; poolIdx < sys.poolsCount; poolIdx++ {
@@ -392,17 +395,21 @@ func (client *remotePeerS3Client) GetBucketInfo(ctx context.Context, bucket stri
 }
 
 // MakeBucket creates bucket across all peers
+// 在所有同等对端中创建桶
 func (sys *S3PeerSys) MakeBucket(ctx context.Context, bucket string, opts MakeBucketOptions) error {
 	g := errgroup.WithNErrs(len(sys.peerClients))
+    // 遍历所有对端节点
 	for idx, client := range sys.peerClients {
 		client := client
 		g.Go(func() error {
 			if client == nil {
 				return errPeerOffline
 			}
+            // 执行创建 remotePeerS3.MakeBucket
 			return client.MakeBucket(ctx, bucket, opts)
 		}, idx)
 	}
+    // 等待并行结果
 	errs := g.Wait()
 
 	for poolIdx := 0; poolIdx < sys.poolsCount; poolIdx++ {
@@ -412,6 +419,7 @@ func (sys *S3PeerSys) MakeBucket(ctx context.Context, bucket string, opts MakeBu
 				perPoolErrs = append(perPoolErrs, errs[i])
 			}
 		}
+        // 过半数则成功
 		if poolErr := reduceWriteQuorumErrs(ctx, perPoolErrs, bucketOpIgnoredErrs, len(perPoolErrs)/2+1); poolErr != nil {
 			return toObjectErr(poolErr, bucket)
 		}

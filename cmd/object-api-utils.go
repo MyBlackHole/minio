@@ -55,6 +55,7 @@ import (
 
 const (
 	// MinIO meta bucket.
+    // minio 的元数据存放桶
 	minioMetaBucket = ".minio.sys"
 	// Multipart meta prefix.
 	mpartMetaPrefix = "multipart"
@@ -987,7 +988,9 @@ type SealMD5CurrFn func([]byte) []byte
 // PutObjReader is a type that wraps sio.EncryptReader and
 // underlying hash.Reader in a struct
 type PutObjReader struct {
+    // 实际数据流
 	*hash.Reader              // actual data stream
+    // 原始数据流
 	rawReader    *hash.Reader // original data stream
 	sealMD5Fn    SealMD5CurrFn
 }
@@ -1043,7 +1046,7 @@ func (p *PutObjReader) WithEncryption(encReader *hash.Reader, objEncKey *crypto.
 
 // NewPutObjReader returns a new PutObjReader. It uses given hash.Reader's
 // MD5Current method to construct md5sum when requested downstream.
-// NewPutObjReader 返回一个新的 PutObjReader。 它使用给定的 hash.Reader's
+// 返回一个新的 PutObjReader。 它使用给定的 hash.Reader's
 // 当下游请求时构造 md5sum 的 MD5Current 方法。
 func NewPutObjReader(rawReader *hash.Reader) *PutObjReader {
 	return &PutObjReader{Reader: rawReader, rawReader: rawReader}

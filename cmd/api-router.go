@@ -497,6 +497,7 @@ func registerAPIRouter(router *mux.Router) {
 		collectAPIStats("listbuckets", maxClients(gz(httpTraceAll(api.ListBucketsHandler)))))
 
 	// If none of the routes match add default error handler routes
+    // 如果没有任何路由匹配添加默认错误处理程序路由
 	apiRouter.NotFoundHandler = collectAPIStats("notfound", httpTraceAll(errorResponseHandler))
 	apiRouter.MethodNotAllowedHandler = collectAPIStats("methodnotallowed", httpTraceAll(methodNotAllowedHandler("S3")))
 }

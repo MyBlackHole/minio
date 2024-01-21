@@ -156,6 +156,7 @@ func isServerResolvable(endpoint Endpoint, timeout time.Duration) error {
 // time. additionally make sure to close all the disks used in this attempt.
 func connectLoadInitFormats(verboseLogging bool, firstDisk bool, endpoints Endpoints, poolCount, setCount, setDriveCount int, deploymentID, distributionAlgo string) (storageDisks []StorageAPI, format *formatErasureV3, err error) {
 	// Initialize all storage disks
+    // 初始化所有存储磁盘
 	storageDisks, errs := initStorageDisksWithErrors(endpoints, storageOpts{cleanUp: true, healthCheck: true})
 
 	defer func(storageDisks []StorageAPI) {
@@ -277,6 +278,7 @@ func connectLoadInitFormats(verboseLogging bool, firstDisk bool, endpoints Endpo
 }
 
 // Format disks before initialization of object layer.
+// 在对象层初始化之前格式化磁盘。
 func waitForFormatErasure(firstDisk bool, endpoints Endpoints, poolCount, setCount, setDriveCount int, deploymentID, distributionAlgo string) ([]StorageAPI, *formatErasureV3, error) {
 	if len(endpoints) == 0 || setCount == 0 || setDriveCount == 0 {
 		return nil, nil, errInvalidArgument

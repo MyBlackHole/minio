@@ -338,6 +338,7 @@ func (sys *BucketMetadataSys) GetSSEConfig(bucket string) (*bucketsse.BucketSSEC
 }
 
 // CreatedAt returns the time of creation of bucket
+// 返回创建存储桶的时间
 func (sys *BucketMetadataSys) CreatedAt(bucket string) (time.Time, error) {
 	meta, _, err := sys.GetConfig(GlobalContext, bucket)
 	if err != nil {
@@ -463,6 +464,7 @@ func (sys *BucketMetadataSys) GetConfig(ctx context.Context, bucket string) (met
 }
 
 // Init - initializes bucket metadata system for all buckets.
+// 将所有存储桶初始化桶元数据系统。
 func (sys *BucketMetadataSys) Init(ctx context.Context, buckets []BucketInfo, objAPI ObjectLayer) error {
 	if objAPI == nil {
 		return errServerNotInitialized
@@ -471,6 +473,7 @@ func (sys *BucketMetadataSys) Init(ctx context.Context, buckets []BucketInfo, ob
 	sys.objAPI = objAPI
 
 	// Load bucket metadata sys.
+    // 加载桶元数据系统。
 	sys.init(ctx, buckets)
 	return nil
 }

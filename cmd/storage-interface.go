@@ -69,6 +69,7 @@ type StorageAPI interface {
 	NSScanner(ctx context.Context, cache dataUsageCache, updates chan<- dataUsageEntry, scanMode madmin.HealScanMode, shouldSleep func() bool) (dataUsageCache, error)
 
 	// Volume operations.
+    // 桶操作
 	MakeVol(ctx context.Context, volume string) (err error)
 	MakeVolBulk(ctx context.Context, volumes ...string) (err error)
 	ListVols(ctx context.Context) (vols []VolInfo, err error)
@@ -79,6 +80,7 @@ type StorageAPI interface {
 	WalkDir(ctx context.Context, opts WalkDirOptions, wr io.Writer) error
 
 	// Metadata operations
+    // 元数据操作
 	DeleteVersion(ctx context.Context, volume, path string, fi FileInfo, forceDelMarker bool, opts DeleteOptions) error
 	DeleteVersions(ctx context.Context, volume string, versions []FileInfoVersions, opts DeleteOptions) []error
 	WriteMetadata(ctx context.Context, volume, path string, fi FileInfo) error
@@ -88,6 +90,7 @@ type StorageAPI interface {
 	RenameData(ctx context.Context, srcVolume, srcPath string, fi FileInfo, dstVolume, dstPath string, opts RenameOptions) (uint64, error)
 
 	// File operations.
+    // 文件操作
 	ListDir(ctx context.Context, volume, dirPath string, count int) ([]string, error)
 	ReadFile(ctx context.Context, volume string, path string, offset int64, buf []byte, verifier *BitrotVerifier) (n int64, err error)
 	AppendFile(ctx context.Context, volume string, path string, buf []byte) (err error)
@@ -111,6 +114,7 @@ type StorageAPI interface {
 	SetDiskLoc(poolIdx, setIdx, diskIdx int)    // Set location indexes.
 }
 
+// 无法识别磁盘
 type unrecognizedDisk struct {
 	storage StorageAPI
 }

@@ -38,7 +38,7 @@ import (
 )
 
 //go:generate stringer -type=storageMetric -trimprefix=storageMetric $GOFILE
-
+// 存储指标
 type storageMetric uint8
 
 const (
@@ -77,6 +77,7 @@ const (
 )
 
 // Detects change in underlying disk.
+// 检测底层磁盘的变化。
 type xlStorageDiskIDCheck struct {
 	totalWrites           atomic.Uint64
 	totalDeletes          atomic.Uint64
@@ -85,8 +86,10 @@ type xlStorageDiskIDCheck struct {
 
 	// apiCalls should be placed first so alignment is guaranteed for atomic operations.
 	apiCalls     [storageMetricLast]uint64
+    // api 延时?
 	apiLatencies [storageMetricLast]*lockedLastMinuteLatency
 	diskID       string
+    // 对应的磁盘
 	storage      *xlStorage
 	health       *diskHealthTracker
 
@@ -96,6 +99,7 @@ type xlStorageDiskIDCheck struct {
 
 	// driveMaxConcurrent represents maximum number of running concurrent
 	// operations for local and (incoming) remote disk operations.
+    // 表示本地和（传入）远程磁盘操作的运行并发操作的最大数量。
 	driveMaxConcurrent int
 
 	metricsCache timedValue
@@ -136,6 +140,7 @@ func (p *xlStorageDiskIDCheck) getMetrics() DiskMetrics {
 }
 
 // lockedLastMinuteLatency accumulates totals lockless for each second.
+// 累计每秒无锁的总数。
 type lockedLastMinuteLatency struct {
 	cachedSec int64
 	cached    atomic.Pointer[AccElem]
@@ -191,7 +196,7 @@ func (e *lockedLastMinuteLatency) total() AccElem {
 
 var maxConcurrentOnce sync.Once
 
-// 磁盘
+// 创建磁盘检查对象
 func newXLStorageDiskIDCheck(storage *xlStorage, healthCheck bool) *xlStorageDiskIDCheck {
 	// driveMaxConcurrent represents maximum number of running concurrent
 	// operations for local and (incoming) remote disk operations.
@@ -1238,6 +1243,8 @@ func diskHealthCheckOK(ctx context.Context, err error) bool {
 // that updates status of the provided tracker.
 // Use through diskHealthReader or diskHealthWriter.
 type diskHealthWrapper struct {
+    // 跟踪对象
+    // 用于记录日志
 	tracker *healthDiskCtxValue
 	r       io.Reader
 	w       io.Writer

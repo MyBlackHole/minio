@@ -30,6 +30,7 @@ import (
 )
 
 // globalGrid is the global grid manager.
+// 全局网络管理
 var globalGrid atomic.Pointer[grid.Manager]
 
 // globalGridStart is a channel that will block startup of grid connections until closed.

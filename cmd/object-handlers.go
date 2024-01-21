@@ -93,6 +93,7 @@ const (
 )
 
 // setHeadGetRespHeaders - set any requested parameters as response headers.
+// setHeadGetRespHeaders - 将任何请求的参数设置为响应标头。
 func setHeadGetRespHeaders(w http.ResponseWriter, reqParams url.Values) {
 	for k, v := range reqParams {
 		if header, ok := supportedHeadGetReqParams[strings.ToLower(k)]; ok {
@@ -872,7 +873,7 @@ func (api objectAPIHandlers) headObjectHandler(ctx context.Context, objectAPI Ob
 		writeErrorResponseHeadersOnly(w, errorCodes.ToAPIErr(ErrBadRequest))
 		return
 	}
-
+    // erasureServerPools.GetObjectInfo
 	getObjectInfo := objectAPI.GetObjectInfo
 
 	opts, err := getOpts(ctx, r, bucket, object)
@@ -1163,11 +1164,13 @@ func (api objectAPIHandlers) headObjectHandler(ctx context.Context, objectAPI Ob
 	}
 
 	// Set Parts Count Header
+    // 设置分片头
 	if opts.PartNumber > 0 && len(objInfo.Parts) > 0 {
 		setPartsCountHeaders(w, objInfo)
 	}
 
 	// Set any additional requested response headers.
+    // 设置请求参数到响应头
 	setHeadGetRespHeaders(w, r.Form)
 
 	// Successful response.
@@ -2374,6 +2377,7 @@ func (api objectAPIHandlers) PutObjectHandler(w http.ResponseWriter, r *http.Req
 	}
 
 	// Do not send checksums in events to avoid leaks.
+    // 不要在事件中发送校验和以避免泄漏。
 	hash.TransferChecksumHeader(w, r)
 	writeSuccessResponseHeadersOnly(w)
 

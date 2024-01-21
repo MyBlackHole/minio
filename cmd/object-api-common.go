@@ -37,6 +37,7 @@ const (
 	blockSizeV2 = 1 * humanize.MiByte
 
 	// Buckets meta prefix.
+    // 桶元数据前缀。
 	bucketMetaPrefix = "buckets"
 
 	// Deleted Buckets prefix.
@@ -53,7 +54,9 @@ var globalObjLayerMutex sync.RWMutex
 var globalObjectAPI ObjectLayer
 
 type storageOpts struct {
+    // 清理
 	cleanUp     bool
+    // 监控检测
 	healthCheck bool
 }
 

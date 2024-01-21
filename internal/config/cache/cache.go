@@ -63,6 +63,7 @@ var DefaultKVS = config.KVS{
 // Config represents the subnet related configuration
 type Config struct {
 	// Flag indicating whether cache is enabled.
+    // 指示缓存是否启用的标志。
 	Enable bool `json:"enable"`
 
 	// Endpoint for caching uses remote mcache server to

@@ -66,6 +66,11 @@ var (
 // Only changing meaning of fields requires a version bump.
 // bucketMetadataFormat refers to the format.
 // bucketMetadataVersion can be used to track a rolling upgrade of a field.
+// 桶装含量包含桶元。 
+// 添加/删除字段时，请使用上述GO生成元帅代码。
+// 仅更改字段的含义需要版本凸起。 
+// BucketMetadatAtaFormat是指该格式。 
+// 可以使用BucketMetAdatAtaversion跟踪字段的滚动升级。
 type BucketMetadata struct {
 	Name                        string
 	Created                     time.Time
@@ -434,6 +439,7 @@ func (b *BucketMetadata) defaultTimestamps() {
 }
 
 // Save config to supplied ObjectLayer api.
+// 将配置保存到提供的 Objectlayer API。
 func (b *BucketMetadata) Save(ctx context.Context, api ObjectLayer) error {
 	if err := b.parseAllConfigs(ctx, api); err != nil {
 		return err
@@ -442,6 +448,7 @@ func (b *BucketMetadata) Save(ctx context.Context, api ObjectLayer) error {
 	data := make([]byte, 4, b.Msgsize()+4)
 
 	// Initialize the header.
+    // 初始化标头。
 	binary.LittleEndian.PutUint16(data[0:2], bucketMetadataFormat)
 	binary.LittleEndian.PutUint16(data[2:4], bucketMetadataVersion)
 
@@ -451,11 +458,13 @@ func (b *BucketMetadata) Save(ctx context.Context, api ObjectLayer) error {
 		return err
 	}
 
+    // buckets/{bucket.name}/.metadata.bin
 	configFile := path.Join(bucketMetaPrefix, b.Name, bucketMetadataFile)
 	return saveConfig(ctx, api, configFile, data)
 }
 
 // migrate config for remote targets by encrypting data if currently unencrypted and kms is configured.
+// 通过对远程目标进行迁移配置，如果当前未加密和KMS配置了数据，则通过加密数据。
 func (b *BucketMetadata) migrateTargetConfig(ctx context.Context, objectAPI ObjectLayer) error {
 	var err error
 	// early return if no targets or already encrypted
@@ -474,6 +483,7 @@ func (b *BucketMetadata) migrateTargetConfig(ctx context.Context, objectAPI Obje
 }
 
 // encrypt bucket metadata if kms is configured.
+// 如果配置了 kms，请加密桶元数据。
 func encryptBucketMetadata(ctx context.Context, bucket string, input []byte, kmsContext kms.Context) (output, metabytes []byte, err error) {
 	if GlobalKMS == nil {
 		output = input
@@ -502,6 +512,7 @@ func encryptBucketMetadata(ctx context.Context, bucket string, input []byte, kms
 }
 
 // decrypt bucket metadata if kms is configured.
+// 如果配置了KMS，则解密存储桶元数据。
 func decryptBucketMetadata(input []byte, bucket string, meta map[string]string, kmsContext kms.Context) ([]byte, error) {
 	if GlobalKMS == nil {
 		return nil, errKMSNotConfigured

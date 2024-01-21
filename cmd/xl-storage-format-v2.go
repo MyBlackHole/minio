@@ -699,6 +699,7 @@ func (j xlMetaV2Object) ToFileInfo(volume, path string, allParts bool) (FileInfo
 const metaDataReadDefault = 4 << 10
 
 // Return used metadata byte slices here.
+// 此处返回使用的元数据字节切片。
 var metaDataPool = sync.Pool{New: func() interface{} { return make([]byte, 0, metaDataReadDefault) }}
 
 // metaDataPoolGet will return a byte slice with capacity at least metaDataReadDefault.

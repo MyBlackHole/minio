@@ -40,6 +40,7 @@ const (
 )
 
 // aligned sync.Pool's
+// 对齐缓存池
 var (
 	ODirectPoolXLarge = sync.Pool{
 		New: func() interface{} {
@@ -370,10 +371,12 @@ func CopyAligned(w io.Writer, r io.Reader, alignedBuf []byte, totalSize int64, f
 		if len(buf)%DirectioAlignSize == 0 {
 			var n int
 			// buf is aligned for directio write()
+            // 对齐写入
 			n, err = w.Write(buf)
 			nw = int64(n)
 		} else {
 			// buf is not aligned, hence use writeUnaligned()
+            // 非对齐写入
 			nw, err = writeUnaligned(w, buf)
 		}
 

@@ -50,6 +50,7 @@ type apiConfig struct {
 	staleUploadsExpiry          time.Duration
 	staleUploadsCleanupInterval time.Duration
 	deleteCleanupInterval       time.Duration
+    // 启用 O_DSYNC?
 	enableODirect               bool
 	gzipObjects                 bool
 	rootAccess                  bool
@@ -299,8 +300,10 @@ func maxClients(f http.HandlerFunc) http.HandlerFunc {
 			}
 		}
 
+        // 获取请求池
 		pool, deadline := globalAPIConfig.getRequestsPool()
 		if pool == nil {
+            // 默认走这个路径
 			f.ServeHTTP(w, r)
 			return
 		}

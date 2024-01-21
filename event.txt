@@ -1,0 +1,1970 @@
+16/01/24 11:36 ./database/wdg1/.git/FETCH_HEAD/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/FETCH_HEAD/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/FETCH_HEAD/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/config/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/config/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/ORIG_HEAD/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/config/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/ORIG_HEAD/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/ORIG_HEAD/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ db95f826-29d2-4370-91a1-e4e424e872af CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ db95f826-29d2-4370-91a1-e4e424e872af OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ db95f826-29d2-4370-91a1-e4e424e872af ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ db95f826-29d2-4370-91a1-e4e424e872af CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5e4d6851-6b3a-4775-959c-6d4fa10056ec CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5e4d6851-6b3a-4775-959c-6d4fa10056ec OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/db95f826-29d2-4370-91a1-e4e424e872af/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5e4d6851-6b3a-4775-959c-6d4fa10056ec ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5e4d6851-6b3a-4775-959c-6d4fa10056ec CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 6be5fd82-2b5e-479e-b8d5-a7778d500c27 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 6be5fd82-2b5e-479e-b8d5-a7778d500c27 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 6be5fd82-2b5e-479e-b8d5-a7778d500c27 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 6be5fd82-2b5e-479e-b8d5-a7778d500c27 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/HEAD/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/COMMIT_EDITMSG/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/COMMIT_EDITMSG/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/HEAD/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/COMMIT_EDITMSG/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/HEAD/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8c1adf0f-87d1-44d8-a672-03dfa7fe77be CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8c1adf0f-87d1-44d8-a672-03dfa7fe77be OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8c1adf0f-87d1-44d8-a672-03dfa7fe77be ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8c1adf0f-87d1-44d8-a672-03dfa7fe77be CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8a31cd4b-09ee-41bc-beaa-6832c1838ba7 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8a31cd4b-09ee-41bc-beaa-6832c1838ba7 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8a31cd4b-09ee-41bc-beaa-6832c1838ba7 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8a31cd4b-09ee-41bc-beaa-6832c1838ba7 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/description/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/description/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/description/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3b3fbc9a-20ed-4dc2-80b1-20e5654e54e6 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3b3fbc9a-20ed-4dc2-80b1-20e5654e54e6 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3b3fbc9a-20ed-4dc2-80b1-20e5654e54e6 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3b3fbc9a-20ed-4dc2-80b1-20e5654e54e6 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/3b3fbc9a-20ed-4dc2-80b1-20e5654e54e6/ xl.meta CREATE
+16/01/24 11:36 ./database/.minio.sys/tmp/3b3fbc9a-20ed-4dc2-80b1-20e5654e54e6/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/hooks/applypatch-msg.sample/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/hooks/applypatch-msg.sample/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/hooks/applypatch-msg.sample/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/hooks/commit-msg.sample/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/hooks/fsmonitor-watchman.sample/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/hooks/commit-msg.sample/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/hooks/commit-msg.sample/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/hooks/fsmonitor-watchman.sample/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/hooks/fsmonitor-watchman.sample/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 2ccb36ba-0bd3-4a26-85ad-70e0a5e24964 CREATE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/post-update.sample/ xl.meta OPEN
+16/01/24 11:36 ./database/.minio.sys/tmp/ 0eeae684-3f34-4214-81fe-a56fd19f0ce1 CREATE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/post-update.sample/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/hooks/post-update.sample/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 28c37983-7be8-43a3-b903-951b73405987 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 2ccb36ba-0bd3-4a26-85ad-70e0a5e24964 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 2ccb36ba-0bd3-4a26-85ad-70e0a5e24964 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 2ccb36ba-0bd3-4a26-85ad-70e0a5e24964 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 0eeae684-3f34-4214-81fe-a56fd19f0ce1 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 0eeae684-3f34-4214-81fe-a56fd19f0ce1 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 0eeae684-3f34-4214-81fe-a56fd19f0ce1 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 28c37983-7be8-43a3-b903-951b73405987 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 28c37983-7be8-43a3-b903-951b73405987 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 28c37983-7be8-43a3-b903-951b73405987 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-applypatch.sample/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-applypatch.sample/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-applypatch.sample/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 92fdda48-4325-4593-afa0-a4e7175ba135 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 92fdda48-4325-4593-afa0-a4e7175ba135 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 92fdda48-4325-4593-afa0-a4e7175ba135 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 92fdda48-4325-4593-afa0-a4e7175ba135 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 85670ca7-4ffe-4513-9ac5-94d05abb4253 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 85670ca7-4ffe-4513-9ac5-94d05abb4253 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 85670ca7-4ffe-4513-9ac5-94d05abb4253 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 85670ca7-4ffe-4513-9ac5-94d05abb4253 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-commit.sample/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-commit.sample/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-commit.sample/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-merge-commit.sample/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-merge-commit.sample/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-merge-commit.sample/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-push.sample/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-push.sample/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-push.sample/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 87d6d65c-3820-44fc-aa89-cfe2960c8f30 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 87d6d65c-3820-44fc-aa89-cfe2960c8f30 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 87d6d65c-3820-44fc-aa89-cfe2960c8f30 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ dbc9a713-9e5d-4253-b2e1-56deb4f15ff5 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 87d6d65c-3820-44fc-aa89-cfe2960c8f30 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 87d6d65c-3820-44fc-aa89-cfe2960c8f30 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bb9d0f63-3d5f-491f-9c0b-ece0cef8349f CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ dbc9a713-9e5d-4253-b2e1-56deb4f15ff5 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ dbc9a713-9e5d-4253-b2e1-56deb4f15ff5 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ dbc9a713-9e5d-4253-b2e1-56deb4f15ff5 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bb9d0f63-3d5f-491f-9c0b-ece0cef8349f OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bb9d0f63-3d5f-491f-9c0b-ece0cef8349f ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bb9d0f63-3d5f-491f-9c0b-ece0cef8349f CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/6be5fd82-2b5e-479e-b8d5-a7778d500c27/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/8c1adf0f-87d1-44d8-a672-03dfa7fe77be/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/5e4d6851-6b3a-4775-959c-6d4fa10056ec/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/5e4d6851-6b3a-4775-959c-6d4fa10056ec/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/8c1adf0f-87d1-44d8-a672-03dfa7fe77be/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/6be5fd82-2b5e-479e-b8d5-a7778d500c27/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8c1adf0f-87d1-44d8-a672-03dfa7fe77be MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/ HEAD MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/HEAD/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/ HEAD MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/db95f826-29d2-4370-91a1-e4e424e872af/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8c1adf0f-87d1-44d8-a672-03dfa7fe77be MOVED_TO,ISDIR
+Couldn't watch new directory ./database/.minio.sys/tmp/8c1adf0f-87d1-44d8-a672-03dfa7fe77be/: No such file or directory
+16/01/24 11:36 ./database/wdg1/.git/HEAD/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 6be5fd82-2b5e-479e-b8d5-a7778d500c27 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/ ORIG_HEAD MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/ORIG_HEAD/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/ ORIG_HEAD MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 6be5fd82-2b5e-479e-b8d5-a7778d500c27 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/ORIG_HEAD/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ db95f826-29d2-4370-91a1-e4e424e872af MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/ FETCH_HEAD MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/FETCH_HEAD/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/ FETCH_HEAD MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ db95f826-29d2-4370-91a1-e4e424e872af MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/FETCH_HEAD/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8c1adf0f-87d1-44d8-a672-03dfa7fe77be OPEN,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/HEAD/  OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8c1adf0f-87d1-44d8-a672-03dfa7fe77be ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/HEAD/  ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8c1adf0f-87d1-44d8-a672-03dfa7fe77be MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ d1b00f6c-ee4b-41b1-8a9f-51aadd20c901 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/HEAD/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ d1b00f6c-ee4b-41b1-8a9f-51aadd20c901 ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/HEAD/  ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ d1b00f6c-ee4b-41b1-8a9f-51aadd20c901 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/HEAD/  CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ db95f826-29d2-4370-91a1-e4e424e872af MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ c12d2c2f-284b-403a-9df9-89d8fb9009f5 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/FETCH_HEAD/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 6be5fd82-2b5e-479e-b8d5-a7778d500c27 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ b07e3a38-6673-4ce3-b95a-d48c76a41018 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/ORIG_HEAD/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-rebase.sample/ xl.meta OPEN
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5e4d6851-6b3a-4775-959c-6d4fa10056ec MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/ config MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/config/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/ config MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5e4d6851-6b3a-4775-959c-6d4fa10056ec MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/config/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-rebase.sample/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-rebase.sample/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ d1b00f6c-ee4b-41b1-8a9f-51aadd20c901 OPEN,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/HEAD/  OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ d1b00f6c-ee4b-41b1-8a9f-51aadd20c901 ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/HEAD/  ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ d1b00f6c-ee4b-41b1-8a9f-51aadd20c901 ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/HEAD/  ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ d1b00f6c-ee4b-41b1-8a9f-51aadd20c901 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/HEAD/  CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5e4d6851-6b3a-4775-959c-6d4fa10056ec MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 4de043b8-6833-4e19-bd64-1e6ccc96386a MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/config/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 23c7997d-68f9-4b95-9676-86094e9b28ee CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 23c7997d-68f9-4b95-9676-86094e9b28ee OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 23c7997d-68f9-4b95-9676-86094e9b28ee ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 23c7997d-68f9-4b95-9676-86094e9b28ee CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/23c7997d-68f9-4b95-9676-86094e9b28ee/ xl.meta MODIFY
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-receive.sample/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-receive.sample/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-receive.sample/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ aca7e3ff-65f9-4a36-8e0a-1eff7eccf252 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ aca7e3ff-65f9-4a36-8e0a-1eff7eccf252 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ aca7e3ff-65f9-4a36-8e0a-1eff7eccf252 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ aca7e3ff-65f9-4a36-8e0a-1eff7eccf252 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/bb9d0f63-3d5f-491f-9c0b-ece0cef8349f/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/dbc9a713-9e5d-4253-b2e1-56deb4f15ff5/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/87d6d65c-3820-44fc-aa89-cfe2960c8f30/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/85670ca7-4ffe-4513-9ac5-94d05abb4253/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/8a31cd4b-09ee-41bc-beaa-6832c1838ba7/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/8a31cd4b-09ee-41bc-beaa-6832c1838ba7/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/85670ca7-4ffe-4513-9ac5-94d05abb4253/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/0eeae684-3f34-4214-81fe-a56fd19f0ce1/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/bb9d0f63-3d5f-491f-9c0b-ece0cef8349f/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/dbc9a713-9e5d-4253-b2e1-56deb4f15ff5/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/87d6d65c-3820-44fc-aa89-cfe2960c8f30/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/28c37983-7be8-43a3-b903-951b73405987/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/92fdda48-4325-4593-afa0-a4e7175ba135/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/0eeae684-3f34-4214-81fe-a56fd19f0ce1/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/92fdda48-4325-4593-afa0-a4e7175ba135/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/2ccb36ba-0bd3-4a26-85ad-70e0a5e24964/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/3b3fbc9a-20ed-4dc2-80b1-20e5654e54e6/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/2ccb36ba-0bd3-4a26-85ad-70e0a5e24964/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/3b3fbc9a-20ed-4dc2-80b1-20e5654e54e6/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/hooks/update.sample/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/hooks/push-to-checkout.sample/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/hooks/update.sample/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/hooks/push-to-checkout.sample/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/hooks/update.sample/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/hooks/push-to-checkout.sample/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/hooks/prepare-commit-msg.sample/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/hooks/prepare-commit-msg.sample/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/hooks/prepare-commit-msg.sample/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8a31cd4b-09ee-41bc-beaa-6832c1838ba7 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/ COMMIT_EDITMSG MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/COMMIT_EDITMSG/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/ COMMIT_EDITMSG MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8a31cd4b-09ee-41bc-beaa-6832c1838ba7 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/COMMIT_EDITMSG/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/index/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/index/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/index/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 85670ca7-4ffe-4513-9ac5-94d05abb4253 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/ pre-applypatch.sample MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-applypatch.sample/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/hooks/ pre-applypatch.sample MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 85670ca7-4ffe-4513-9ac5-94d05abb4253 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-applypatch.sample/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 76459a1e-d7d2-4452-be46-1ce8da72ee5f CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 76459a1e-d7d2-4452-be46-1ce8da72ee5f OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 76459a1e-d7d2-4452-be46-1ce8da72ee5f ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 76459a1e-d7d2-4452-be46-1ce8da72ee5f CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 847b1799-eb51-4036-882f-37881a42a613 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 847b1799-eb51-4036-882f-37881a42a613 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 847b1799-eb51-4036-882f-37881a42a613 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 847b1799-eb51-4036-882f-37881a42a613 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ b1d927d5-2a84-4e8a-8307-d425ec9b61a4 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ b1d927d5-2a84-4e8a-8307-d425ec9b61a4 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ b1d927d5-2a84-4e8a-8307-d425ec9b61a4 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ b1d927d5-2a84-4e8a-8307-d425ec9b61a4 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1a4f05a7-eba8-48f0-a91b-699a9279081b CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1a4f05a7-eba8-48f0-a91b-699a9279081b OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1a4f05a7-eba8-48f0-a91b-699a9279081b ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 28c37983-7be8-43a3-b903-951b73405987 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1a4f05a7-eba8-48f0-a91b-699a9279081b ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/ fsmonitor-watchman.sample MOVED_TO,ISDIR
+16/01/24 11:36   MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1a4f05a7-eba8-48f0-a91b-699a9279081b CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/ fsmonitor-watchman.sample MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 28c37983-7be8-43a3-b903-951b73405987 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/fsmonitor-watchman.sample/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/1a4f05a7-eba8-48f0-a91b-699a9279081b/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/ 92fdda48-4325-4593-afa0-a4e7175ba135 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/ post-update.sample MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/post-update.sample/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/hooks/ post-update.sample MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 92fdda48-4325-4593-afa0-a4e7175ba135 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/post-update.sample/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/hooks/ fsmonitor-watchman.sample OPEN,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/ fsmonitor-watchman.sample ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/ fsmonitor-watchman.sample CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bb9d0f63-3d5f-491f-9c0b-ece0cef8349f MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/ pre-push.sample MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-push.sample/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/hooks/ pre-push.sample MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bb9d0f63-3d5f-491f-9c0b-ece0cef8349f MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-push.sample/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 28c37983-7be8-43a3-b903-951b73405987 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 75bf6280-3487-4abd-9578-e82b28e8b445 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/fsmonitor-watchman.sample/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 87d6d65c-3820-44fc-aa89-cfe2960c8f30 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/ pre-commit.sample MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-commit.sample/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/hooks/ pre-commit.sample MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 87d6d65c-3820-44fc-aa89-cfe2960c8f30 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-commit.sample/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 92fdda48-4325-4593-afa0-a4e7175ba135 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ dfa90d5e-ec14-47b8-909f-2aa7c3661f95 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/post-update.sample/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ dbc9a713-9e5d-4253-b2e1-56deb4f15ff5 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/ pre-merge-commit.sample MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-merge-commit.sample/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/hooks/ pre-merge-commit.sample MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ dbc9a713-9e5d-4253-b2e1-56deb4f15ff5 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-merge-commit.sample/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ bb9d0f63-3d5f-491f-9c0b-ece0cef8349f MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ a1054f37-5076-43f8-9849-0d71432dd1f3 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-push.sample/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 0eeae684-3f34-4214-81fe-a56fd19f0ce1 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/ commit-msg.sample MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/commit-msg.sample/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/hooks/ commit-msg.sample MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 0eeae684-3f34-4214-81fe-a56fd19f0ce1 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/commit-msg.sample/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 87d6d65c-3820-44fc-aa89-cfe2960c8f30 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 01869070-4638-49fa-b131-474b267215d1 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-commit.sample/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3b3fbc9a-20ed-4dc2-80b1-20e5654e54e6 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/ description MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/description/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/ description MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3b3fbc9a-20ed-4dc2-80b1-20e5654e54e6 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/description/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ dbc9a713-9e5d-4253-b2e1-56deb4f15ff5 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 889488aa-c86d-417a-9d97-40972496f47e MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-merge-commit.sample/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 2ccb36ba-0bd3-4a26-85ad-70e0a5e24964 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/ applypatch-msg.sample MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/applypatch-msg.sample/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/hooks/ applypatch-msg.sample MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 2ccb36ba-0bd3-4a26-85ad-70e0a5e24964 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/applypatch-msg.sample/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 0eeae684-3f34-4214-81fe-a56fd19f0ce1 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ a4e6e931-de62-4958-b3e1-d36a0246107c MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/commit-msg.sample/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8a31cd4b-09ee-41bc-beaa-6832c1838ba7 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 55cf090d-550c-40c9-9276-f4035484c96b MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/COMMIT_EDITMSG/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3b3fbc9a-20ed-4dc2-80b1-20e5654e54e6 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 2983cfc7-70ca-4b7f-ac13-1a87af8d7e44 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/description/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 85670ca7-4ffe-4513-9ac5-94d05abb4253 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ ac1e3380-b804-4c9f-965a-db540443949b MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-applypatch.sample/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 2ccb36ba-0bd3-4a26-85ad-70e0a5e24964 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 9a16f96e-6f64-4e08-a5b2-ebc5bd6ea3cd MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/applypatch-msg.sample/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/aca7e3ff-65f9-4a36-8e0a-1eff7eccf252/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/23c7997d-68f9-4b95-9676-86094e9b28ee/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/aca7e3ff-65f9-4a36-8e0a-1eff7eccf252/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/logs/HEAD/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/dev-2310/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/master/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/logs/HEAD/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/dev-2310/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/dev-2310/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/logs/HEAD/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/master/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/master/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 23c7997d-68f9-4b95-9676-86094e9b28ee MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/ pre-rebase.sample MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-rebase.sample/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/hooks/ pre-rebase.sample MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 23c7997d-68f9-4b95-9676-86094e9b28ee MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-rebase.sample/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ aca7e3ff-65f9-4a36-8e0a-1eff7eccf252 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/ pre-receive.sample MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-receive.sample/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/hooks/ pre-receive.sample MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ aca7e3ff-65f9-4a36-8e0a-1eff7eccf252 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-receive.sample/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/info/exclude/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/info/exclude/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/info/exclude/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/HEAD/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/HEAD/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/HEAD/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1f915b1f-9f91-4bf1-807e-ee0eebbff953 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1f915b1f-9f91-4bf1-807e-ee0eebbff953 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1e8ff553-7427-47d9-9893-4e50921bf584 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1f915b1f-9f91-4bf1-807e-ee0eebbff953 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1f915b1f-9f91-4bf1-807e-ee0eebbff953 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1e8ff553-7427-47d9-9893-4e50921bf584 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ e6be1597-977d-4ba6-a95a-c49e847c27ef CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1e8ff553-7427-47d9-9893-4e50921bf584 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1e8ff553-7427-47d9-9893-4e50921bf584 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 23c7997d-68f9-4b95-9676-86094e9b28ee MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ e6be1597-977d-4ba6-a95a-c49e847c27ef OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ a548c7f8-c365-4fd5-9a43-6c6d8cbab955 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-rebase.sample/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ e6be1597-977d-4ba6-a95a-c49e847c27ef ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ e6be1597-977d-4ba6-a95a-c49e847c27ef CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ a548c7f8-c365-4fd5-9a43-6c6d8cbab955 OPEN,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-rebase.sample/  OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ a548c7f8-c365-4fd5-9a43-6c6d8cbab955 ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-rebase.sample/  ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ a548c7f8-c365-4fd5-9a43-6c6d8cbab955 ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-rebase.sample/  ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ a548c7f8-c365-4fd5-9a43-6c6d8cbab955 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-rebase.sample/  CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4366dc90-60cc-4f5e-988a-578ee4997b93 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ aca7e3ff-65f9-4a36-8e0a-1eff7eccf252 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 73bc5a46-1929-496c-898e-3fd05e3f377b MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/pre-receive.sample/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4366dc90-60cc-4f5e-988a-578ee4997b93 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4366dc90-60cc-4f5e-988a-578ee4997b93 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4366dc90-60cc-4f5e-988a-578ee4997b93 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 87865413-afb3-4961-ab19-43c97bf13df5 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 87865413-afb3-4961-ab19-43c97bf13df5 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 87865413-afb3-4961-ab19-43c97bf13df5 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 87865413-afb3-4961-ab19-43c97bf13df5 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/dev-2401/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/dev-2401/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/dev-2401/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3b5d07dd-907f-4ed6-8530-4d8b6b6c96ab CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3b5d07dd-907f-4ed6-8530-4d8b6b6c96ab OPEN,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/dev-probe/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/change-version/ xl.meta OPEN
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3b5d07dd-907f-4ed6-8530-4d8b6b6c96ab ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3b5d07dd-907f-4ed6-8530-4d8b6b6c96ab CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/dev-probe/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/change-version/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/dev-probe/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/change-version/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ b5991217-1d8f-4e6c-9a7c-c0f61477b9f8 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ b5991217-1d8f-4e6c-9a7c-c0f61477b9f8 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ b5991217-1d8f-4e6c-9a7c-c0f61477b9f8 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ b5991217-1d8f-4e6c-9a7c-c0f61477b9f8 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 55ad3acf-d32d-4c87-8604-73e2f9ee1f55 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 55ad3acf-d32d-4c87-8604-73e2f9ee1f55 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 55ad3acf-d32d-4c87-8604-73e2f9ee1f55 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 55ad3acf-d32d-4c87-8604-73e2f9ee1f55 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/heads/master/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/heads/zh_master/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/heads/zh_master/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/heads/zh_master/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/heads/master/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/heads/master/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8738d440-89b5-4ec3-9ecf-a5289f2c5664 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8738d440-89b5-4ec3-9ecf-a5289f2c5664 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8738d440-89b5-4ec3-9ecf-a5289f2c5664 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8738d440-89b5-4ec3-9ecf-a5289f2c5664 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 9ba2c7fe-a290-4d6a-8723-2e4dfd315d96 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 9ba2c7fe-a290-4d6a-8723-2e4dfd315d96 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 9ba2c7fe-a290-4d6a-8723-2e4dfd315d96 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 9ba2c7fe-a290-4d6a-8723-2e4dfd315d96 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/00/d77df38925cdac0cc9b2b00b69a03e510e6307/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/00/d77df38925cdac0cc9b2b00b69a03e510e6307/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/00/d77df38925cdac0cc9b2b00b69a03e510e6307/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/01/46fc08b63629966e319e7697ee894a303f870e/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/01/46fc08b63629966e319e7697ee894a303f870e/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/01/46fc08b63629966e319e7697ee894a303f870e/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 39e173b7-32b8-4ddd-b058-8fd92b9c8b88 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 39e173b7-32b8-4ddd-b058-8fd92b9c8b88 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 39e173b7-32b8-4ddd-b058-8fd92b9c8b88 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 39e173b7-32b8-4ddd-b058-8fd92b9c8b88 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/76459a1e-d7d2-4452-be46-1ce8da72ee5f/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/847b1799-eb51-4036-882f-37881a42a613/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/b1d927d5-2a84-4e8a-8307-d425ec9b61a4/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/76459a1e-d7d2-4452-be46-1ce8da72ee5f/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/b1d927d5-2a84-4e8a-8307-d425ec9b61a4/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/847b1799-eb51-4036-882f-37881a42a613/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4a1db00f-1087-4543-86fe-4d710dcf2335 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/1a4f05a7-eba8-48f0-a91b-699a9279081b/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4a1db00f-1087-4543-86fe-4d710dcf2335 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4a1db00f-1087-4543-86fe-4d710dcf2335 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4a1db00f-1087-4543-86fe-4d710dcf2335 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/4a1db00f-1087-4543-86fe-4d710dcf2335/ xl.meta CREATE
+16/01/24 11:36 ./database/.minio.sys/tmp/4a1db00f-1087-4543-86fe-4d710dcf2335/ xl.meta OPEN
+16/01/24 11:36 ./database/.minio.sys/tmp/ b1d927d5-2a84-4e8a-8307-d425ec9b61a4 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/ prepare-commit-msg.sample MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/prepare-commit-msg.sample/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/hooks/ prepare-commit-msg.sample MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ b1d927d5-2a84-4e8a-8307-d425ec9b61a4 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/prepare-commit-msg.sample/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 847b1799-eb51-4036-882f-37881a42a613 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/ update.sample MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/update.sample/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/hooks/ update.sample MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 847b1799-eb51-4036-882f-37881a42a613 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/update.sample/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 76459a1e-d7d2-4452-be46-1ce8da72ee5f MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/ push-to-checkout.sample MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/push-to-checkout.sample/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/hooks/ push-to-checkout.sample MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 76459a1e-d7d2-4452-be46-1ce8da72ee5f MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/push-to-checkout.sample/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1a4f05a7-eba8-48f0-a91b-699a9279081b MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/ index MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/index/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/ index MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1a4f05a7-eba8-48f0-a91b-699a9279081b MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/index/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ b1d927d5-2a84-4e8a-8307-d425ec9b61a4 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ f72de065-f8a1-4f68-b903-dd87ef68413b MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/prepare-commit-msg.sample/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 847b1799-eb51-4036-882f-37881a42a613 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 1e5f0f75-dc63-4532-9d46-afcbbf14c529 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/update.sample/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 76459a1e-d7d2-4452-be46-1ce8da72ee5f MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 70be70cd-3867-45c2-bdc0-f96030c725c8 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/hooks/push-to-checkout.sample/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1a4f05a7-eba8-48f0-a91b-699a9279081b MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ f1b4c687-0e3b-43d1-88b9-f06654f89e18 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/index/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/87865413-afb3-4961-ab19-43c97bf13df5/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/1e8ff553-7427-47d9-9893-4e50921bf584/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/1f915b1f-9f91-4bf1-807e-ee0eebbff953/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/8738d440-89b5-4ec3-9ecf-a5289f2c5664/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/3b5d07dd-907f-4ed6-8530-4d8b6b6c96ab/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/4366dc90-60cc-4f5e-988a-578ee4997b93/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/1f915b1f-9f91-4bf1-807e-ee0eebbff953/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/87865413-afb3-4961-ab19-43c97bf13df5/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/8738d440-89b5-4ec3-9ecf-a5289f2c5664/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/e6be1597-977d-4ba6-a95a-c49e847c27ef/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/55ad3acf-d32d-4c87-8604-73e2f9ee1f55/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/3b5d07dd-907f-4ed6-8530-4d8b6b6c96ab/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/b5991217-1d8f-4e6c-9a7c-c0f61477b9f8/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/e6be1597-977d-4ba6-a95a-c49e847c27ef/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/4366dc90-60cc-4f5e-988a-578ee4997b93/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/55ad3acf-d32d-4c87-8604-73e2f9ee1f55/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/1e8ff553-7427-47d9-9893-4e50921bf584/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/b5991217-1d8f-4e6c-9a7c-c0f61477b9f8/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/11/65febd927aa6ed70f88800558a6d8b5eb35b62/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/0d/1c2023331f169537ec88527452e6b10b43c253/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/14/620700d1b28a7e53cfee58e7959406412119a5/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/0d/1c2023331f169537ec88527452e6b10b43c253/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/11/65febd927aa6ed70f88800558a6d8b5eb35b62/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/0d/1c2023331f169537ec88527452e6b10b43c253/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/11/65febd927aa6ed70f88800558a6d8b5eb35b62/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/14/620700d1b28a7e53cfee58e7959406412119a5/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/14/620700d1b28a7e53cfee58e7959406412119a5/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/9ba2c7fe-a290-4d6a-8723-2e4dfd315d96/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/9ba2c7fe-a290-4d6a-8723-2e4dfd315d96/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/1a/318df7d887fe16d09e473f0ff9e2007a3d0db2/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/1a/318df7d887fe16d09e473f0ff9e2007a3d0db2/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/1a/318df7d887fe16d09e473f0ff9e2007a3d0db2/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1f915b1f-9f91-4bf1-807e-ee0eebbff953 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/ HEAD MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/HEAD/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/logs/ HEAD MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1f915b1f-9f91-4bf1-807e-ee0eebbff953 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/HEAD/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 67be4c3c-1065-405c-a9b7-c85ced559a08 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 67be4c3c-1065-405c-a9b7-c85ced559a08 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8738d440-89b5-4ec3-9ecf-a5289f2c5664 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/heads/ master MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/heads/master/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 67be4c3c-1065-405c-a9b7-c85ced559a08 ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/heads/ master MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8738d440-89b5-4ec3-9ecf-a5289f2c5664 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/heads/master/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 67be4c3c-1065-405c-a9b7-c85ced559a08 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 67be4c3c-1065-405c-a9b7-c85ced559a08 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1f915b1f-9f91-4bf1-807e-ee0eebbff953 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ c264cef2-054c-4efb-a48a-9261a4441da1 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/HEAD/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1e8ff553-7427-47d9-9893-4e50921bf584 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/ dev-2310 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/dev-2310/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/ dev-2310 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1e8ff553-7427-47d9-9893-4e50921bf584 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/dev-2310/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ e75b63b8-c11e-4414-bc3b-3c72ba9722ae CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ e75b63b8-c11e-4414-bc3b-3c72ba9722ae OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ e75b63b8-c11e-4414-bc3b-3c72ba9722ae ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ e75b63b8-c11e-4414-bc3b-3c72ba9722ae CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 87865413-afb3-4961-ab19-43c97bf13df5 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/e75b63b8-c11e-4414-bc3b-3c72ba9722ae/ xl.meta CREATE
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/ HEAD MOVED_TO,ISDIR
+16/01/24 11:36   MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/e75b63b8-c11e-4414-bc3b-3c72ba9722ae/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/ HEAD MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 87865413-afb3-4961-ab19-43c97bf13df5 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/HEAD/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/ HEAD OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8738d440-89b5-4ec3-9ecf-a5289f2c5664 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/ HEAD ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 0bf129fc-c65b-48df-88ce-f15c48b8cef6 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/heads/master/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/ HEAD ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/ HEAD CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ e6be1597-977d-4ba6-a95a-c49e847c27ef MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/ master MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/master/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/ master MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ e6be1597-977d-4ba6-a95a-c49e847c27ef MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/master/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1e8ff553-7427-47d9-9893-4e50921bf584 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 946e5dde-1b09-4e27-9c9a-903df081773d MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/dev-2310/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 0bf129fc-c65b-48df-88ce-f15c48b8cef6 OPEN,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/heads/master/  OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 0bf129fc-c65b-48df-88ce-f15c48b8cef6 ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/heads/master/  ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 0bf129fc-c65b-48df-88ce-f15c48b8cef6 ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/heads/master/  ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 0bf129fc-c65b-48df-88ce-f15c48b8cef6 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/heads/master/  CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4366dc90-60cc-4f5e-988a-578ee4997b93 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/info/ exclude MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/info/exclude/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/info/ exclude MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4366dc90-60cc-4f5e-988a-578ee4997b93 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/info/exclude/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 87865413-afb3-4961-ab19-43c97bf13df5 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 9213f228-d90a-436f-97a0-0aaca23cd18a MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/HEAD/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 55ad3acf-d32d-4c87-8604-73e2f9ee1f55 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/ change-version MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/change-version/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/ change-version MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 55ad3acf-d32d-4c87-8604-73e2f9ee1f55 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/change-version/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ e6be1597-977d-4ba6-a95a-c49e847c27ef MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 68ca3e30-80ce-4032-a261-ee66991435d3 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/master/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ b5991217-1d8f-4e6c-9a7c-c0f61477b9f8 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/ dev-probe MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/dev-probe/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/ dev-probe MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ b5991217-1d8f-4e6c-9a7c-c0f61477b9f8 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/dev-probe/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4366dc90-60cc-4f5e-988a-578ee4997b93 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 6d42825e-04e6-4663-9ef2-71412687e6a3 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/info/exclude/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3b5d07dd-907f-4ed6-8530-4d8b6b6c96ab MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/ dev-2401 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/dev-2401/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/ dev-2401 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3b5d07dd-907f-4ed6-8530-4d8b6b6c96ab MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/dev-2401/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 55ad3acf-d32d-4c87-8604-73e2f9ee1f55 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 4a08941c-13b5-41ff-a0d0-4a3be576473e MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/change-version/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 9ba2c7fe-a290-4d6a-8723-2e4dfd315d96 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/heads/ zh_master MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/heads/zh_master/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/heads/ zh_master MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 9ba2c7fe-a290-4d6a-8723-2e4dfd315d96 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/heads/zh_master/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ b5991217-1d8f-4e6c-9a7c-c0f61477b9f8 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 860b44ad-1558-4d62-8e60-2556f2ef2794 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/dev-probe/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ b31c4a33-dfea-4a40-bd73-da1bc1e8a075 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3b5d07dd-907f-4ed6-8530-4d8b6b6c96ab MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 6a37a0f1-4605-4dd9-a2c4-b1863588a368 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/remotes/origin/dev-2401/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ b31c4a33-dfea-4a40-bd73-da1bc1e8a075 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 9ba2c7fe-a290-4d6a-8723-2e4dfd315d96 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ d9f5f31d-67df-4647-86c4-fc00992112d8 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ b31c4a33-dfea-4a40-bd73-da1bc1e8a075 ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/logs/refs/heads/zh_master/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ b31c4a33-dfea-4a40-bd73-da1bc1e8a075 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ b31c4a33-dfea-4a40-bd73-da1bc1e8a075 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/b31c4a33-dfea-4a40-bd73-da1bc1e8a075/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/ 32a0244b-5aab-4b25-a2f7-adadfba4630a CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 32a0244b-5aab-4b25-a2f7-adadfba4630a OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 32a0244b-5aab-4b25-a2f7-adadfba4630a ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 32a0244b-5aab-4b25-a2f7-adadfba4630a CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/32a0244b-5aab-4b25-a2f7-adadfba4630a/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/4a1db00f-1087-4543-86fe-4d710dcf2335/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/4a1db00f-1087-4543-86fe-4d710dcf2335/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/39e173b7-32b8-4ddd-b058-8fd92b9c8b88/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/39e173b7-32b8-4ddd-b058-8fd92b9c8b88/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4a1db00f-1087-4543-86fe-4d710dcf2335 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/01/ 46fc08b63629966e319e7697ee894a303f870e MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/01/46fc08b63629966e319e7697ee894a303f870e/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/01/ 46fc08b63629966e319e7697ee894a303f870e MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4a1db00f-1087-4543-86fe-4d710dcf2335 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/01/46fc08b63629966e319e7697ee894a303f870e/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 39e173b7-32b8-4ddd-b058-8fd92b9c8b88 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/00/ d77df38925cdac0cc9b2b00b69a03e510e6307 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/00/d77df38925cdac0cc9b2b00b69a03e510e6307/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/00/ d77df38925cdac0cc9b2b00b69a03e510e6307 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 39e173b7-32b8-4ddd-b058-8fd92b9c8b88 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/00/d77df38925cdac0cc9b2b00b69a03e510e6307/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4a1db00f-1087-4543-86fe-4d710dcf2335 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 6d1b8e6f-4113-4e5e-9c90-6e71350c0425 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/01/46fc08b63629966e319e7697ee894a303f870e/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 39e173b7-32b8-4ddd-b058-8fd92b9c8b88 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 28554d15-e007-48c9-865d-2845d4cfe297 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/00/d77df38925cdac0cc9b2b00b69a03e510e6307/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/26/06b3f3f4f12cd439be5637686e7ec7c5249dec/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/49/09ad782473db37de1454f3b95cd0d486c3a8e5/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/26/06b3f3f4f12cd439be5637686e7ec7c5249dec/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/49/09ad782473db37de1454f3b95cd0d486c3a8e5/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/49/09ad782473db37de1454f3b95cd0d486c3a8e5/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/26/06b3f3f4f12cd439be5637686e7ec7c5249dec/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/44/dc9dcd047a345578f312b98ac6c00aef1e630e/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/44/dc9dcd047a345578f312b98ac6c00aef1e630e/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/44/dc9dcd047a345578f312b98ac6c00aef1e630e/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/49/82621fa5ac212122c9c59db3faed1c605e6461/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/49/82621fa5ac212122c9c59db3faed1c605e6461/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/49/82621fa5ac212122c9c59db3faed1c605e6461/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 0c351748-d288-485e-b78a-c3d958a7d99b CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 0c351748-d288-485e-b78a-c3d958a7d99b OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 0c351748-d288-485e-b78a-c3d958a7d99b ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 0c351748-d288-485e-b78a-c3d958a7d99b CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/29/50c55e09608ab7a5a0fc2dfbf77f9ed4b669a6/ xl.meta OPEN
+16/01/24 11:36 ./database/.minio.sys/tmp/ 6cf40999-4fae-4b75-915c-7f6e2f13f346 CREATE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/4b/82784b93ba9a31789938404e101975771ad952/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/29/50c55e09608ab7a5a0fc2dfbf77f9ed4b669a6/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/29/50c55e09608ab7a5a0fc2dfbf77f9ed4b669a6/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/4b/82784b93ba9a31789938404e101975771ad952/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/4b/82784b93ba9a31789938404e101975771ad952/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/25/6e9a74d1c93eb51fc1d48aab50e78de889f0d7/ xl.meta OPEN
+16/01/24 11:36 ./database/.minio.sys/tmp/ 6cf40999-4fae-4b75-915c-7f6e2f13f346 OPEN,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/25/6e9a74d1c93eb51fc1d48aab50e78de889f0d7/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/25/6e9a74d1c93eb51fc1d48aab50e78de889f0d7/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 6cf40999-4fae-4b75-915c-7f6e2f13f346 ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/1f/8d74ae6c392e3dedd1582d60bf415bcf9eb524/ xl.meta OPEN
+16/01/24 11:36 ./database/.minio.sys/tmp/ 6cf40999-4fae-4b75-915c-7f6e2f13f346 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/1f/8d74ae6c392e3dedd1582d60bf415bcf9eb524/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/1f/8d74ae6c392e3dedd1582d60bf415bcf9eb524/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 439c719a-077e-45ab-8fd1-4e81e888d168 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 439c719a-077e-45ab-8fd1-4e81e888d168 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 439c719a-077e-45ab-8fd1-4e81e888d168 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 439c719a-077e-45ab-8fd1-4e81e888d168 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1a9dfbb5-ca13-4db2-b804-25a19932e8c7 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1a9dfbb5-ca13-4db2-b804-25a19932e8c7 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1a9dfbb5-ca13-4db2-b804-25a19932e8c7 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1a9dfbb5-ca13-4db2-b804-25a19932e8c7 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 14aa93b1-f789-4dd8-a1f3-a1ba3f3b6499 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 14aa93b1-f789-4dd8-a1f3-a1ba3f3b6499 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 14aa93b1-f789-4dd8-a1f3-a1ba3f3b6499 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 14aa93b1-f789-4dd8-a1f3-a1ba3f3b6499 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 844f0f4a-cbae-4a51-a761-6201d7b3ea39 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 844f0f4a-cbae-4a51-a761-6201d7b3ea39 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 7e163f7c-d4d6-400f-8eb0-30e08c42e31d CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 844f0f4a-cbae-4a51-a761-6201d7b3ea39 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 844f0f4a-cbae-4a51-a761-6201d7b3ea39 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 7e163f7c-d4d6-400f-8eb0-30e08c42e31d OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ aa657ea8-35f5-44aa-ae66-c11e4dbdd1f1 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 7e163f7c-d4d6-400f-8eb0-30e08c42e31d ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 7e163f7c-d4d6-400f-8eb0-30e08c42e31d CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ aa657ea8-35f5-44aa-ae66-c11e4dbdd1f1 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ aa657ea8-35f5-44aa-ae66-c11e4dbdd1f1 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ aa657ea8-35f5-44aa-ae66-c11e4dbdd1f1 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/3b/11b029520e4cdc911daec5e2a139f16962f519/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/3b/11b029520e4cdc911daec5e2a139f16962f519/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/3b/11b029520e4cdc911daec5e2a139f16962f519/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/54/5739eafc738dc087040af73f1bb9f41805863c/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/54/5739eafc738dc087040af73f1bb9f41805863c/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/54/5739eafc738dc087040af73f1bb9f41805863c/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/e75b63b8-c11e-4414-bc3b-3c72ba9722ae/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/67be4c3c-1065-405c-a9b7-c85ced559a08/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8e229f0b-aba5-46be-8da5-4ede08515bdf CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/e75b63b8-c11e-4414-bc3b-3c72ba9722ae/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/67be4c3c-1065-405c-a9b7-c85ced559a08/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8e229f0b-aba5-46be-8da5-4ede08515bdf OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8e229f0b-aba5-46be-8da5-4ede08515bdf ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8e229f0b-aba5-46be-8da5-4ede08515bdf CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/53/24e59e665176605d5dc75427af106cdac8b875/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/56/d37d46db8b9a109bd3da4e22a512aabfbdffd0/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/56/d37d46db8b9a109bd3da4e22a512aabfbdffd0/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/53/24e59e665176605d5dc75427af106cdac8b875/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/56/d37d46db8b9a109bd3da4e22a512aabfbdffd0/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/53/24e59e665176605d5dc75427af106cdac8b875/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 0974e072-e089-452f-a4f8-bfd7ff0e66d3 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 0974e072-e089-452f-a4f8-bfd7ff0e66d3 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ e75b63b8-c11e-4414-bc3b-3c72ba9722ae MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/11/ 65febd927aa6ed70f88800558a6d8b5eb35b62 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 0974e072-e089-452f-a4f8-bfd7ff0e66d3 ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/11/65febd927aa6ed70f88800558a6d8b5eb35b62/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/11/ 65febd927aa6ed70f88800558a6d8b5eb35b62 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ e75b63b8-c11e-4414-bc3b-3c72ba9722ae MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/11/65febd927aa6ed70f88800558a6d8b5eb35b62/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 0974e072-e089-452f-a4f8-bfd7ff0e66d3 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 0974e072-e089-452f-a4f8-bfd7ff0e66d3 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 2706498b-d389-46d7-a3ce-3a828dd75a58 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 2706498b-d389-46d7-a3ce-3a828dd75a58 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 67be4c3c-1065-405c-a9b7-c85ced559a08 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/0d/ 1c2023331f169537ec88527452e6b10b43c253 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/0d/1c2023331f169537ec88527452e6b10b43c253/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 2706498b-d389-46d7-a3ce-3a828dd75a58 ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/0d/ 1c2023331f169537ec88527452e6b10b43c253 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 67be4c3c-1065-405c-a9b7-c85ced559a08 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/0d/1c2023331f169537ec88527452e6b10b43c253/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 2706498b-d389-46d7-a3ce-3a828dd75a58 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 2706498b-d389-46d7-a3ce-3a828dd75a58 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ e75b63b8-c11e-4414-bc3b-3c72ba9722ae MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ ee2304aa-70ed-4c12-b2b9-0e355156fb0a MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/11/65febd927aa6ed70f88800558a6d8b5eb35b62/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 27b34a9b-3b55-488e-b2d5-b817b9f90840 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 27b34a9b-3b55-488e-b2d5-b817b9f90840 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 27b34a9b-3b55-488e-b2d5-b817b9f90840 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 67be4c3c-1065-405c-a9b7-c85ced559a08 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 750d4fe8-d6a3-4ea9-9d74-043f0b7a8b70 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/0d/1c2023331f169537ec88527452e6b10b43c253/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 27b34a9b-3b55-488e-b2d5-b817b9f90840 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 27b34a9b-3b55-488e-b2d5-b817b9f90840 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/5a/5d1a3f9da45d6229ce8a585a146caa8bc0f389/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/5a/5d1a3f9da45d6229ce8a585a146caa8bc0f389/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/5a/5d1a3f9da45d6229ce8a585a146caa8bc0f389/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/5a/45a7eb0b0ab41db4c5c3d0b5de72d17766e119/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/5a/45a7eb0b0ab41db4c5c3d0b5de72d17766e119/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/5a/45a7eb0b0ab41db4c5c3d0b5de72d17766e119/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 90e66396-4bea-47c7-9285-ee63596f0e33 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 90e66396-4bea-47c7-9285-ee63596f0e33 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 90e66396-4bea-47c7-9285-ee63596f0e33 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 90e66396-4bea-47c7-9285-ee63596f0e33 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3a1f29cd-85c2-4bac-9fa7-00aac782e7a5 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3a1f29cd-85c2-4bac-9fa7-00aac782e7a5 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3a1f29cd-85c2-4bac-9fa7-00aac782e7a5 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3a1f29cd-85c2-4bac-9fa7-00aac782e7a5 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/1a9dfbb5-ca13-4db2-b804-25a19932e8c7/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/439c719a-077e-45ab-8fd1-4e81e888d168/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/1a9dfbb5-ca13-4db2-b804-25a19932e8c7/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/6cf40999-4fae-4b75-915c-7f6e2f13f346/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/439c719a-077e-45ab-8fd1-4e81e888d168/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/0c351748-d288-485e-b78a-c3d958a7d99b/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/6cf40999-4fae-4b75-915c-7f6e2f13f346/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/0c351748-d288-485e-b78a-c3d958a7d99b/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/32a0244b-5aab-4b25-a2f7-adadfba4630a/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/b31c4a33-dfea-4a40-bd73-da1bc1e8a075/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1a9dfbb5-ca13-4db2-b804-25a19932e8c7 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/29/ 50c55e09608ab7a5a0fc2dfbf77f9ed4b669a6 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/29/50c55e09608ab7a5a0fc2dfbf77f9ed4b669a6/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/29/ 50c55e09608ab7a5a0fc2dfbf77f9ed4b669a6 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1a9dfbb5-ca13-4db2-b804-25a19932e8c7 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/29/50c55e09608ab7a5a0fc2dfbf77f9ed4b669a6/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 0c351748-d288-485e-b78a-c3d958a7d99b MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/26/ 06b3f3f4f12cd439be5637686e7ec7c5249dec MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/26/06b3f3f4f12cd439be5637686e7ec7c5249dec/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/26/ 06b3f3f4f12cd439be5637686e7ec7c5249dec MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 0c351748-d288-485e-b78a-c3d958a7d99b MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/26/06b3f3f4f12cd439be5637686e7ec7c5249dec/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 6cf40999-4fae-4b75-915c-7f6e2f13f346 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/49/ 09ad782473db37de1454f3b95cd0d486c3a8e5 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/49/09ad782473db37de1454f3b95cd0d486c3a8e5/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/49/ 09ad782473db37de1454f3b95cd0d486c3a8e5 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 6cf40999-4fae-4b75-915c-7f6e2f13f346 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/49/09ad782473db37de1454f3b95cd0d486c3a8e5/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 439c719a-077e-45ab-8fd1-4e81e888d168 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/49/ 82621fa5ac212122c9c59db3faed1c605e6461 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/49/82621fa5ac212122c9c59db3faed1c605e6461/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/49/ 82621fa5ac212122c9c59db3faed1c605e6461 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 439c719a-077e-45ab-8fd1-4e81e888d168 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/49/82621fa5ac212122c9c59db3faed1c605e6461/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 0c351748-d288-485e-b78a-c3d958a7d99b MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ e63645a2-ad4c-45cf-a3d4-2a40a562b39d MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/26/06b3f3f4f12cd439be5637686e7ec7c5249dec/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 32a0244b-5aab-4b25-a2f7-adadfba4630a MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/1a/ 318df7d887fe16d09e473f0ff9e2007a3d0db2 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/1a/318df7d887fe16d09e473f0ff9e2007a3d0db2/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/1a/ 318df7d887fe16d09e473f0ff9e2007a3d0db2 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 32a0244b-5aab-4b25-a2f7-adadfba4630a MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/1a/318df7d887fe16d09e473f0ff9e2007a3d0db2/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 1a9dfbb5-ca13-4db2-b804-25a19932e8c7 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ aee28403-c829-41cd-8ace-0e3beab4bcc6 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/29/50c55e09608ab7a5a0fc2dfbf77f9ed4b669a6/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ b31c4a33-dfea-4a40-bd73-da1bc1e8a075 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/14/ 620700d1b28a7e53cfee58e7959406412119a5 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/14/620700d1b28a7e53cfee58e7959406412119a5/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/14/ 620700d1b28a7e53cfee58e7959406412119a5 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ b31c4a33-dfea-4a40-bd73-da1bc1e8a075 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/14/620700d1b28a7e53cfee58e7959406412119a5/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 32a0244b-5aab-4b25-a2f7-adadfba4630a MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ f244ab75-876f-4c55-b40b-cace88bf9970 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/1a/318df7d887fe16d09e473f0ff9e2007a3d0db2/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 6cf40999-4fae-4b75-915c-7f6e2f13f346 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ dc5ebc31-9743-4de6-9afb-fcbc6970ceb0 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/49/09ad782473db37de1454f3b95cd0d486c3a8e5/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 439c719a-077e-45ab-8fd1-4e81e888d168 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ b8b4d59b-53c8-4fec-9f2a-4bb2f0e5a40f MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/49/82621fa5ac212122c9c59db3faed1c605e6461/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ b31c4a33-dfea-4a40-bd73-da1bc1e8a075 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ ea5e88c7-8c5b-4059-bf23-e6a0c960203d MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/14/620700d1b28a7e53cfee58e7959406412119a5/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/844f0f4a-cbae-4a51-a761-6201d7b3ea39/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/7e163f7c-d4d6-400f-8eb0-30e08c42e31d/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/0974e072-e089-452f-a4f8-bfd7ff0e66d3/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/aa657ea8-35f5-44aa-ae66-c11e4dbdd1f1/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/8e229f0b-aba5-46be-8da5-4ede08515bdf/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/0974e072-e089-452f-a4f8-bfd7ff0e66d3/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/14aa93b1-f789-4dd8-a1f3-a1ba3f3b6499/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/7e163f7c-d4d6-400f-8eb0-30e08c42e31d/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/aa657ea8-35f5-44aa-ae66-c11e4dbdd1f1/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/844f0f4a-cbae-4a51-a761-6201d7b3ea39/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/14aa93b1-f789-4dd8-a1f3-a1ba3f3b6499/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/2706498b-d389-46d7-a3ce-3a828dd75a58/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/8e229f0b-aba5-46be-8da5-4ede08515bdf/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/2706498b-d389-46d7-a3ce-3a828dd75a58/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/27b34a9b-3b55-488e-b2d5-b817b9f90840/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/27b34a9b-3b55-488e-b2d5-b817b9f90840/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/69/319ec88779d7b65b813d07bb785b849a71da93/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/5c/49448661955ea67722dcd6dc60d4bab65a6fba/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/7e/3f63831e8bddadc9bf99d978cc30354f83bd78/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/69/319ec88779d7b65b813d07bb785b849a71da93/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/69/319ec88779d7b65b813d07bb785b849a71da93/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/5c/49448661955ea67722dcd6dc60d4bab65a6fba/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/5c/49448661955ea67722dcd6dc60d4bab65a6fba/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/7e/3f63831e8bddadc9bf99d978cc30354f83bd78/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/7e/3f63831e8bddadc9bf99d978cc30354f83bd78/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/63/1b3008a34a853ea855dc3318397adde5c12f6b/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/63/1b3008a34a853ea855dc3318397adde5c12f6b/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/63/1b3008a34a853ea855dc3318397adde5c12f6b/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/77/4c97c1ace81e50b9956f358666dffc2b0fc331/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/67/ad34e542266947ccb35ddc848e5aa74420a007/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/77/4c97c1ace81e50b9956f358666dffc2b0fc331/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/77/4c97c1ace81e50b9956f358666dffc2b0fc331/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 0974e072-e089-452f-a4f8-bfd7ff0e66d3 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/54/ 5739eafc738dc087040af73f1bb9f41805863c MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/54/5739eafc738dc087040af73f1bb9f41805863c/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/54/ 5739eafc738dc087040af73f1bb9f41805863c MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 0974e072-e089-452f-a4f8-bfd7ff0e66d3 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/54/5739eafc738dc087040af73f1bb9f41805863c/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/67/ad34e542266947ccb35ddc848e5aa74420a007/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/67/ad34e542266947ccb35ddc848e5aa74420a007/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ e84bf4a6-b1b8-4ede-aaa7-ba3be332c73f CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ e84bf4a6-b1b8-4ede-aaa7-ba3be332c73f OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ e84bf4a6-b1b8-4ede-aaa7-ba3be332c73f ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ e84bf4a6-b1b8-4ede-aaa7-ba3be332c73f CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ cd525c4f-ee87-4c8e-84df-a4971b27ecb6 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ cd525c4f-ee87-4c8e-84df-a4971b27ecb6 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ cd525c4f-ee87-4c8e-84df-a4971b27ecb6 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ cd525c4f-ee87-4c8e-84df-a4971b27ecb6 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 65572aef-beff-4667-8c6a-bd40110fae32 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 65572aef-beff-4667-8c6a-bd40110fae32 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 65572aef-beff-4667-8c6a-bd40110fae32 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 65572aef-beff-4667-8c6a-bd40110fae32 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/65572aef-beff-4667-8c6a-bd40110fae32/ xl.meta CREATE
+16/01/24 11:36 ./database/.minio.sys/tmp/65572aef-beff-4667-8c6a-bd40110fae32/ xl.meta OPEN
+16/01/24 11:36 ./database/.minio.sys/tmp/ aa657ea8-35f5-44aa-ae66-c11e4dbdd1f1 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/44/ dc9dcd047a345578f312b98ac6c00aef1e630e MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/44/dc9dcd047a345578f312b98ac6c00aef1e630e/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/44/ dc9dcd047a345578f312b98ac6c00aef1e630e MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ aa657ea8-35f5-44aa-ae66-c11e4dbdd1f1 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/44/dc9dcd047a345578f312b98ac6c00aef1e630e/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 49c78f11-9a9a-4eb4-8595-8267485a5553 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 49c78f11-9a9a-4eb4-8595-8267485a5553 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 0974e072-e089-452f-a4f8-bfd7ff0e66d3 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 60d34571-b525-43d5-8f3e-36422ef0484c MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/54/5739eafc738dc087040af73f1bb9f41805863c/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8e229f0b-aba5-46be-8da5-4ede08515bdf MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/3b/ 11b029520e4cdc911daec5e2a139f16962f519 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/3b/11b029520e4cdc911daec5e2a139f16962f519/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/3b/ 11b029520e4cdc911daec5e2a139f16962f519 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8e229f0b-aba5-46be-8da5-4ede08515bdf MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/3b/11b029520e4cdc911daec5e2a139f16962f519/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ aa657ea8-35f5-44aa-ae66-c11e4dbdd1f1 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 182bb0b8-16a8-47c8-bee4-d1ad8a2e51f7 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/44/dc9dcd047a345578f312b98ac6c00aef1e630e/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 49c78f11-9a9a-4eb4-8595-8267485a5553 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 49c78f11-9a9a-4eb4-8595-8267485a5553 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 844f0f4a-cbae-4a51-a761-6201d7b3ea39 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/25/ 6e9a74d1c93eb51fc1d48aab50e78de889f0d7 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/25/6e9a74d1c93eb51fc1d48aab50e78de889f0d7/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/25/ 6e9a74d1c93eb51fc1d48aab50e78de889f0d7 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 844f0f4a-cbae-4a51-a761-6201d7b3ea39 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/25/6e9a74d1c93eb51fc1d48aab50e78de889f0d7/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ ef1eb84c-adbc-4edc-9132-27898ba762cb CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ ef1eb84c-adbc-4edc-9132-27898ba762cb OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8e229f0b-aba5-46be-8da5-4ede08515bdf MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 12221b86-2e63-4ea6-9524-bc28bd1b1495 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/3b/11b029520e4cdc911daec5e2a139f16962f519/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ ef1eb84c-adbc-4edc-9132-27898ba762cb ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ ef1eb84c-adbc-4edc-9132-27898ba762cb CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 7e163f7c-d4d6-400f-8eb0-30e08c42e31d MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/1f/ 8d74ae6c392e3dedd1582d60bf415bcf9eb524 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/1f/8d74ae6c392e3dedd1582d60bf415bcf9eb524/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/1f/ 8d74ae6c392e3dedd1582d60bf415bcf9eb524 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 7e163f7c-d4d6-400f-8eb0-30e08c42e31d MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/1f/8d74ae6c392e3dedd1582d60bf415bcf9eb524/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 844f0f4a-cbae-4a51-a761-6201d7b3ea39 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 6ab77a34-f217-459a-954c-437535475706 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/25/6e9a74d1c93eb51fc1d48aab50e78de889f0d7/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 2706498b-d389-46d7-a3ce-3a828dd75a58 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/56/ d37d46db8b9a109bd3da4e22a512aabfbdffd0 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/56/d37d46db8b9a109bd3da4e22a512aabfbdffd0/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/56/ d37d46db8b9a109bd3da4e22a512aabfbdffd0 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 2706498b-d389-46d7-a3ce-3a828dd75a58 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/56/d37d46db8b9a109bd3da4e22a512aabfbdffd0/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 6dbc2c2d-ab56-470a-866e-b0a8b01a0d6c CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 6dbc2c2d-ab56-470a-866e-b0a8b01a0d6c OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 14aa93b1-f789-4dd8-a1f3-a1ba3f3b6499 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 6dbc2c2d-ab56-470a-866e-b0a8b01a0d6c ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/4b/ 82784b93ba9a31789938404e101975771ad952 MOVED_TO,ISDIR
+16/01/24 11:36   MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 6dbc2c2d-ab56-470a-866e-b0a8b01a0d6c CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/4b/ 82784b93ba9a31789938404e101975771ad952 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 14aa93b1-f789-4dd8-a1f3-a1ba3f3b6499 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/4b/82784b93ba9a31789938404e101975771ad952/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 7e163f7c-d4d6-400f-8eb0-30e08c42e31d MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 4846bbb4-ae4c-4a5a-b058-27edca678800 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/1f/8d74ae6c392e3dedd1582d60bf415bcf9eb524/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/6dbc2c2d-ab56-470a-866e-b0a8b01a0d6c/ xl.meta MODIFY
+16/01/24 11:36 ./database/wdg1/.git/objects/4b/ 82784b93ba9a31789938404e101975771ad952 OPEN,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/4b/ 82784b93ba9a31789938404e101975771ad952 ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/4b/ 82784b93ba9a31789938404e101975771ad952 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 27b34a9b-3b55-488e-b2d5-b817b9f90840 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/53/ 24e59e665176605d5dc75427af106cdac8b875 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/53/24e59e665176605d5dc75427af106cdac8b875/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/53/ 24e59e665176605d5dc75427af106cdac8b875 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 27b34a9b-3b55-488e-b2d5-b817b9f90840 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/53/24e59e665176605d5dc75427af106cdac8b875/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 2706498b-d389-46d7-a3ce-3a828dd75a58 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 06abe810-c31d-45ff-bbac-a9c921022971 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/56/d37d46db8b9a109bd3da4e22a512aabfbdffd0/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 14aa93b1-f789-4dd8-a1f3-a1ba3f3b6499 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ e0add92a-ad25-4d25-9de9-bd6d4bdfc590 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/4b/82784b93ba9a31789938404e101975771ad952/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 27b34a9b-3b55-488e-b2d5-b817b9f90840 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 9122206f-f100-41df-9e5d-32c342d5df6f MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/53/24e59e665176605d5dc75427af106cdac8b875/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/3a1f29cd-85c2-4bac-9fa7-00aac782e7a5/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/90e66396-4bea-47c7-9285-ee63596f0e33/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/3a1f29cd-85c2-4bac-9fa7-00aac782e7a5/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/90e66396-4bea-47c7-9285-ee63596f0e33/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3a1f29cd-85c2-4bac-9fa7-00aac782e7a5 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/5a/ 45a7eb0b0ab41db4c5c3d0b5de72d17766e119 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/5a/45a7eb0b0ab41db4c5c3d0b5de72d17766e119/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/5a/ 45a7eb0b0ab41db4c5c3d0b5de72d17766e119 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3a1f29cd-85c2-4bac-9fa7-00aac782e7a5 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/5a/45a7eb0b0ab41db4c5c3d0b5de72d17766e119/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 90e66396-4bea-47c7-9285-ee63596f0e33 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/5a/ 5d1a3f9da45d6229ce8a585a146caa8bc0f389 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/5a/5d1a3f9da45d6229ce8a585a146caa8bc0f389/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/5a/ 5d1a3f9da45d6229ce8a585a146caa8bc0f389 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 90e66396-4bea-47c7-9285-ee63596f0e33 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/5a/5d1a3f9da45d6229ce8a585a146caa8bc0f389/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3a1f29cd-85c2-4bac-9fa7-00aac782e7a5 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ cae02be3-e755-4751-ad51-3033f9f66198 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/5a/45a7eb0b0ab41db4c5c3d0b5de72d17766e119/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/8b/007afe4c42fa2446993b63d81a2f9da61531b6/ xl.meta OPEN
+16/01/24 11:36 ./database/.minio.sys/tmp/ 90e66396-4bea-47c7-9285-ee63596f0e33 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 0d67e180-0fcc-4c85-adb8-499f7f2c601e MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/5a/5d1a3f9da45d6229ce8a585a146caa8bc0f389/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/8b/007afe4c42fa2446993b63d81a2f9da61531b6/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/8b/007afe4c42fa2446993b63d81a2f9da61531b6/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ f824da07-5fec-4767-a03c-245ddc8c9c0b CREATE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/81/d4e62bed9d25cbe614eb09a6b7796b6453879e/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/89/ba2552448f373a50d1521a4a86c52f514c7eaa/ xl.meta OPEN
+16/01/24 11:36 ./database/.minio.sys/tmp/ f824da07-5fec-4767-a03c-245ddc8c9c0b OPEN,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/89/ba2552448f373a50d1521a4a86c52f514c7eaa/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/81/d4e62bed9d25cbe614eb09a6b7796b6453879e/ xl.meta ACCESS
+16/01/24 11:36 ./database/.minio.sys/tmp/ f824da07-5fec-4767-a03c-245ddc8c9c0b ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/81/d4e62bed9d25cbe614eb09a6b7796b6453879e/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/89/ba2552448f373a50d1521a4a86c52f514c7eaa/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ f824da07-5fec-4767-a03c-245ddc8c9c0b ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ f824da07-5fec-4767-a03c-245ddc8c9c0b CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/8c/31a41fb3cc180e67acfd77dff23b1889197a3e/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/8c/31a41fb3cc180e67acfd77dff23b1889197a3e/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/8c/31a41fb3cc180e67acfd77dff23b1889197a3e/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/9b/f7e1a7fbd823bf687615b3f4242898e0360395/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/99/f53168da1381bfc223607eb7e51b359d7ba6ef/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/9b/f7e1a7fbd823bf687615b3f4242898e0360395/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/9b/f7e1a7fbd823bf687615b3f4242898e0360395/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/99/f53168da1381bfc223607eb7e51b359d7ba6ef/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/99/f53168da1381bfc223607eb7e51b359d7ba6ef/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/97/dbe8182f0b43990a625c9fff0e8b1fe7aff72c/ xl.meta OPEN
+16/01/24 11:36 ./database/.minio.sys/tmp/ a16cd007-7f7a-49de-8965-97a102f43c7e CREATE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/97/dbe8182f0b43990a625c9fff0e8b1fe7aff72c/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/97/dbe8182f0b43990a625c9fff0e8b1fe7aff72c/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ a16cd007-7f7a-49de-8965-97a102f43c7e OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ b8a7b6e4-a8dd-49c2-83e0-a180a38d90fb CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ a16cd007-7f7a-49de-8965-97a102f43c7e ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ a16cd007-7f7a-49de-8965-97a102f43c7e CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ b8a7b6e4-a8dd-49c2-83e0-a180a38d90fb OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ b8a7b6e4-a8dd-49c2-83e0-a180a38d90fb ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ b8a7b6e4-a8dd-49c2-83e0-a180a38d90fb CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8c9a13f6-f98a-4dae-8109-495f3c317d1d CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8c9a13f6-f98a-4dae-8109-495f3c317d1d OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8c9a13f6-f98a-4dae-8109-495f3c317d1d ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8c9a13f6-f98a-4dae-8109-495f3c317d1d CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 7f6a7b80-97d7-43bc-8aa0-243b6b21b73d CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 7f6a7b80-97d7-43bc-8aa0-243b6b21b73d OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 7f6a7b80-97d7-43bc-8aa0-243b6b21b73d ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 7f6a7b80-97d7-43bc-8aa0-243b6b21b73d CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ a69f2104-74ed-4bbe-9535-55fa69eb66a3 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ a69f2104-74ed-4bbe-9535-55fa69eb66a3 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ a69f2104-74ed-4bbe-9535-55fa69eb66a3 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ a69f2104-74ed-4bbe-9535-55fa69eb66a3 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ c7b79514-bdc7-438b-a8b9-83c6dce94e6a CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ c7b79514-bdc7-438b-a8b9-83c6dce94e6a OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ c7b79514-bdc7-438b-a8b9-83c6dce94e6a ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ c7b79514-bdc7-438b-a8b9-83c6dce94e6a CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/c7b79514-bdc7-438b-a8b9-83c6dce94e6a/ xl.meta CREATE
+16/01/24 11:36 ./database/.minio.sys/tmp/c7b79514-bdc7-438b-a8b9-83c6dce94e6a/ xl.meta OPEN
+16/01/24 11:36 ./database/.minio.sys/tmp/a69f2104-74ed-4bbe-9535-55fa69eb66a3/ xl.meta MODIFY
+16/01/24 11:36 ./database/wdg1/.git/objects/90/2baa7269acfde5e4aa73a99ffea24f6415afa6/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/90/2baa7269acfde5e4aa73a99ffea24f6415afa6/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/90/2baa7269acfde5e4aa73a99ffea24f6415afa6/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/9e/a758ad4277dba4d773ab9e69fa1ccade4d71d5/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/9e/a758ad4277dba4d773ab9e69fa1ccade4d71d5/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/9e/a758ad4277dba4d773ab9e69fa1ccade4d71d5/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ fa670d69-1722-453b-b2cb-28b98d6d5326 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ fa670d69-1722-453b-b2cb-28b98d6d5326 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/65572aef-beff-4667-8c6a-bd40110fae32/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/e84bf4a6-b1b8-4ede-aaa7-ba3be332c73f/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/ef1eb84c-adbc-4edc-9132-27898ba762cb/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/65572aef-beff-4667-8c6a-bd40110fae32/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/49c78f11-9a9a-4eb4-8595-8267485a5553/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/ef1eb84c-adbc-4edc-9132-27898ba762cb/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/e84bf4a6-b1b8-4ede-aaa7-ba3be332c73f/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ bf5be7df-47cb-4cb1-81a5-b38fb861f158 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/49c78f11-9a9a-4eb4-8595-8267485a5553/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ fa670d69-1722-453b-b2cb-28b98d6d5326 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/cd525c4f-ee87-4c8e-84df-a4971b27ecb6/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/ fa670d69-1722-453b-b2cb-28b98d6d5326 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/cd525c4f-ee87-4c8e-84df-a4971b27ecb6/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ fa670d69-1722-453b-b2cb-28b98d6d5326 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bf5be7df-47cb-4cb1-81a5-b38fb861f158 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bf5be7df-47cb-4cb1-81a5-b38fb861f158 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bf5be7df-47cb-4cb1-81a5-b38fb861f158 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/9c/8b312d08ccdd7666f7f511491e379b10b42a5a/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/9c/8b312d08ccdd7666f7f511491e379b10b42a5a/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/9c/8b312d08ccdd7666f7f511491e379b10b42a5a/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 65572aef-beff-4667-8c6a-bd40110fae32 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/63/ 1b3008a34a853ea855dc3318397adde5c12f6b MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/63/1b3008a34a853ea855dc3318397adde5c12f6b/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/63/ 1b3008a34a853ea855dc3318397adde5c12f6b MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 65572aef-beff-4667-8c6a-bd40110fae32 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/63/1b3008a34a853ea855dc3318397adde5c12f6b/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 49c78f11-9a9a-4eb4-8595-8267485a5553 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/67/ ad34e542266947ccb35ddc848e5aa74420a007 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/67/ad34e542266947ccb35ddc848e5aa74420a007/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/67/ ad34e542266947ccb35ddc848e5aa74420a007 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 49c78f11-9a9a-4eb4-8595-8267485a5553 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/67/ad34e542266947ccb35ddc848e5aa74420a007/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 7b875057-1996-4987-928f-0720c7b06bb0 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 7b875057-1996-4987-928f-0720c7b06bb0 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ e84bf4a6-b1b8-4ede-aaa7-ba3be332c73f MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/5c/ 49448661955ea67722dcd6dc60d4bab65a6fba MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/5c/49448661955ea67722dcd6dc60d4bab65a6fba/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/5c/ 49448661955ea67722dcd6dc60d4bab65a6fba MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ e84bf4a6-b1b8-4ede-aaa7-ba3be332c73f MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/5c/49448661955ea67722dcd6dc60d4bab65a6fba/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 7b875057-1996-4987-928f-0720c7b06bb0 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 7b875057-1996-4987-928f-0720c7b06bb0 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 65572aef-beff-4667-8c6a-bd40110fae32 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ fd3a4d15-8fce-4ff5-a989-14e14a4cbf8c MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/63/1b3008a34a853ea855dc3318397adde5c12f6b/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/7b875057-1996-4987-928f-0720c7b06bb0/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/ ef1eb84c-adbc-4edc-9132-27898ba762cb MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/69/ 319ec88779d7b65b813d07bb785b849a71da93 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/69/319ec88779d7b65b813d07bb785b849a71da93/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/69/ 319ec88779d7b65b813d07bb785b849a71da93 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ ef1eb84c-adbc-4edc-9132-27898ba762cb MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/69/319ec88779d7b65b813d07bb785b849a71da93/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 49c78f11-9a9a-4eb4-8595-8267485a5553 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 214b1a2a-6d6f-453d-ae90-37002427a94f MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/67/ad34e542266947ccb35ddc848e5aa74420a007/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ cd525c4f-ee87-4c8e-84df-a4971b27ecb6 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/7e/ 3f63831e8bddadc9bf99d978cc30354f83bd78 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/7e/3f63831e8bddadc9bf99d978cc30354f83bd78/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/7e/ 3f63831e8bddadc9bf99d978cc30354f83bd78 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ cd525c4f-ee87-4c8e-84df-a4971b27ecb6 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/7e/3f63831e8bddadc9bf99d978cc30354f83bd78/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ e84bf4a6-b1b8-4ede-aaa7-ba3be332c73f MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ f8a740aa-d39e-448c-9a63-5c16ebd31075 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/5c/49448661955ea67722dcd6dc60d4bab65a6fba/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ ef1eb84c-adbc-4edc-9132-27898ba762cb MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 65dffd98-e422-4a8b-a3d3-f20041761cf7 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/69/319ec88779d7b65b813d07bb785b849a71da93/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ cd525c4f-ee87-4c8e-84df-a4971b27ecb6 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ ba4a6cc5-0883-45f6-8a51-26f453b2d61c MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/7e/3f63831e8bddadc9bf99d978cc30354f83bd78/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/7f6a7b80-97d7-43bc-8aa0-243b6b21b73d/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/c7b79514-bdc7-438b-a8b9-83c6dce94e6a/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/b8a7b6e4-a8dd-49c2-83e0-a180a38d90fb/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/f824da07-5fec-4767-a03c-245ddc8c9c0b/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/7f6a7b80-97d7-43bc-8aa0-243b6b21b73d/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/a16cd007-7f7a-49de-8965-97a102f43c7e/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/b8a7b6e4-a8dd-49c2-83e0-a180a38d90fb/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/c7b79514-bdc7-438b-a8b9-83c6dce94e6a/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/8c9a13f6-f98a-4dae-8109-495f3c317d1d/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/a69f2104-74ed-4bbe-9535-55fa69eb66a3/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/f824da07-5fec-4767-a03c-245ddc8c9c0b/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/8c9a13f6-f98a-4dae-8109-495f3c317d1d/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/a16cd007-7f7a-49de-8965-97a102f43c7e/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 7f6a7b80-97d7-43bc-8aa0-243b6b21b73d MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/9b/ f7e1a7fbd823bf687615b3f4242898e0360395 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/9b/f7e1a7fbd823bf687615b3f4242898e0360395/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/9b/ f7e1a7fbd823bf687615b3f4242898e0360395 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 7f6a7b80-97d7-43bc-8aa0-243b6b21b73d MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/9b/f7e1a7fbd823bf687615b3f4242898e0360395/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ c7b79514-bdc7-438b-a8b9-83c6dce94e6a MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/97/ dbe8182f0b43990a625c9fff0e8b1fe7aff72c MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/97/dbe8182f0b43990a625c9fff0e8b1fe7aff72c/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/97/ dbe8182f0b43990a625c9fff0e8b1fe7aff72c MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ c7b79514-bdc7-438b-a8b9-83c6dce94e6a MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/97/dbe8182f0b43990a625c9fff0e8b1fe7aff72c/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ f824da07-5fec-4767-a03c-245ddc8c9c0b MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/8b/ 007afe4c42fa2446993b63d81a2f9da61531b6 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/8b/007afe4c42fa2446993b63d81a2f9da61531b6/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/8b/ 007afe4c42fa2446993b63d81a2f9da61531b6 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ f824da07-5fec-4767-a03c-245ddc8c9c0b MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/8b/007afe4c42fa2446993b63d81a2f9da61531b6/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8c9a13f6-f98a-4dae-8109-495f3c317d1d MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/8c/ 31a41fb3cc180e67acfd77dff23b1889197a3e MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/8c/31a41fb3cc180e67acfd77dff23b1889197a3e/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/8c/ 31a41fb3cc180e67acfd77dff23b1889197a3e MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8c9a13f6-f98a-4dae-8109-495f3c317d1d MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/8c/31a41fb3cc180e67acfd77dff23b1889197a3e/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ a16cd007-7f7a-49de-8965-97a102f43c7e MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/89/ ba2552448f373a50d1521a4a86c52f514c7eaa MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/89/ba2552448f373a50d1521a4a86c52f514c7eaa/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/89/ ba2552448f373a50d1521a4a86c52f514c7eaa MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ a16cd007-7f7a-49de-8965-97a102f43c7e MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/89/ba2552448f373a50d1521a4a86c52f514c7eaa/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/6dbc2c2d-ab56-470a-866e-b0a8b01a0d6c/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ a69f2104-74ed-4bbe-9535-55fa69eb66a3 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/99/ f53168da1381bfc223607eb7e51b359d7ba6ef MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/99/f53168da1381bfc223607eb7e51b359d7ba6ef/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/99/ f53168da1381bfc223607eb7e51b359d7ba6ef MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ a69f2104-74ed-4bbe-9535-55fa69eb66a3 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/99/f53168da1381bfc223607eb7e51b359d7ba6ef/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ b8a7b6e4-a8dd-49c2-83e0-a180a38d90fb MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/81/ d4e62bed9d25cbe614eb09a6b7796b6453879e MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/81/d4e62bed9d25cbe614eb09a6b7796b6453879e/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/81/ d4e62bed9d25cbe614eb09a6b7796b6453879e MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ b8a7b6e4-a8dd-49c2-83e0-a180a38d90fb MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/81/d4e62bed9d25cbe614eb09a6b7796b6453879e/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/af/610502364500c3bdd4beb0fe92089cf46a6ab3/ xl.meta OPEN
+16/01/24 11:36 ./database/.minio.sys/tmp/ a69f2104-74ed-4bbe-9535-55fa69eb66a3 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 3f8d1789-ecca-4335-9463-479ce7346ede MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/99/f53168da1381bfc223607eb7e51b359d7ba6ef/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/a3/70a43c062f3652178dfc3d66f3e497e6e5e6b1/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/ae/4074dda002d453ce3e2229b706c20421cfdd91/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/a2/af450f089e10fe6bc1933ca0e7ad9399fd364c/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/9f/7881467e2fa0c103b13cdee0678c121a579142/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/af/610502364500c3bdd4beb0fe92089cf46a6ab3/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/af/610502364500c3bdd4beb0fe92089cf46a6ab3/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/ae/4074dda002d453ce3e2229b706c20421cfdd91/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/a2/af450f089e10fe6bc1933ca0e7ad9399fd364c/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/a3/70a43c062f3652178dfc3d66f3e497e6e5e6b1/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/a3/70a43c062f3652178dfc3d66f3e497e6e5e6b1/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/ae/4074dda002d453ce3e2229b706c20421cfdd91/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/a2/af450f089e10fe6bc1933ca0e7ad9399fd364c/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 7f6a7b80-97d7-43bc-8aa0-243b6b21b73d MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/9f/7881467e2fa0c103b13cdee0678c121a579142/ xl.meta ACCESS
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 168607c1-b61b-4917-9612-9ca897519caa MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/9b/f7e1a7fbd823bf687615b3f4242898e0360395/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/9f/7881467e2fa0c103b13cdee0678c121a579142/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ c7b79514-bdc7-438b-a8b9-83c6dce94e6a MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 49b66150-a020-4b19-ac81-84b3ed90275e MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/97/dbe8182f0b43990a625c9fff0e8b1fe7aff72c/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 168607c1-b61b-4917-9612-9ca897519caa OPEN,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/9b/f7e1a7fbd823bf687615b3f4242898e0360395/  OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 168607c1-b61b-4917-9612-9ca897519caa ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ a16cd007-7f7a-49de-8965-97a102f43c7e MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/9b/f7e1a7fbd823bf687615b3f4242898e0360395/  ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 15587c8a-d5c4-4dc1-b7b5-0b907328b0fd MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/89/ba2552448f373a50d1521a4a86c52f514c7eaa/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 168607c1-b61b-4917-9612-9ca897519caa ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/9b/f7e1a7fbd823bf687615b3f4242898e0360395/  ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 168607c1-b61b-4917-9612-9ca897519caa CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/9b/f7e1a7fbd823bf687615b3f4242898e0360395/  CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 15587c8a-d5c4-4dc1-b7b5-0b907328b0fd OPEN,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/89/ba2552448f373a50d1521a4a86c52f514c7eaa/  OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 15587c8a-d5c4-4dc1-b7b5-0b907328b0fd ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/89/ba2552448f373a50d1521a4a86c52f514c7eaa/  ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 15587c8a-d5c4-4dc1-b7b5-0b907328b0fd ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/89/ba2552448f373a50d1521a4a86c52f514c7eaa/  ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 15587c8a-d5c4-4dc1-b7b5-0b907328b0fd CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/89/ba2552448f373a50d1521a4a86c52f514c7eaa/  CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ ff5495e8-9b6e-49d6-8b69-3adb5b666436 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ ff5495e8-9b6e-49d6-8b69-3adb5b666436 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ ff5495e8-9b6e-49d6-8b69-3adb5b666436 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ ff5495e8-9b6e-49d6-8b69-3adb5b666436 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 37394c17-40c1-4834-803b-5f4029f7a5bb CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 37394c17-40c1-4834-803b-5f4029f7a5bb OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 37394c17-40c1-4834-803b-5f4029f7a5bb ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 37394c17-40c1-4834-803b-5f4029f7a5bb CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ fb2c4194-b6f3-4ecb-89fe-888e1e3bbde7 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ fb2c4194-b6f3-4ecb-89fe-888e1e3bbde7 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ fb2c4194-b6f3-4ecb-89fe-888e1e3bbde7 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ fb2c4194-b6f3-4ecb-89fe-888e1e3bbde7 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4638257f-9f43-4352-87c9-779460a1e3dd CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4638257f-9f43-4352-87c9-779460a1e3dd OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4638257f-9f43-4352-87c9-779460a1e3dd ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4638257f-9f43-4352-87c9-779460a1e3dd CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ f824da07-5fec-4767-a03c-245ddc8c9c0b MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ dfc0e473-0369-44a5-b766-dc9bba284fc3 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/8b/007afe4c42fa2446993b63d81a2f9da61531b6/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ d2eb3be0-7839-4447-833f-8d2771308bdf CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/4638257f-9f43-4352-87c9-779460a1e3dd/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/ d2eb3be0-7839-4447-833f-8d2771308bdf OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 8c9a13f6-f98a-4dae-8109-495f3c317d1d MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ d2eb3be0-7839-4447-833f-8d2771308bdf ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 4eeded92-9e5d-4589-8af2-9b2917254a83 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/8c/31a41fb3cc180e67acfd77dff23b1889197a3e/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ d2eb3be0-7839-4447-833f-8d2771308bdf ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ d2eb3be0-7839-4447-833f-8d2771308bdf CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 4eeded92-9e5d-4589-8af2-9b2917254a83 OPEN,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/8c/31a41fb3cc180e67acfd77dff23b1889197a3e/  OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 6dbc2c2d-ab56-470a-866e-b0a8b01a0d6c MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 4eeded92-9e5d-4589-8af2-9b2917254a83 ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/8c/31a41fb3cc180e67acfd77dff23b1889197a3e/  ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/77/ 4c97c1ace81e50b9956f358666dffc2b0fc331 MOVED_TO,ISDIR
+16/01/24 11:36   MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/77/ 4c97c1ace81e50b9956f358666dffc2b0fc331 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 6dbc2c2d-ab56-470a-866e-b0a8b01a0d6c MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/77/4c97c1ace81e50b9956f358666dffc2b0fc331/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 4eeded92-9e5d-4589-8af2-9b2917254a83 ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/8c/31a41fb3cc180e67acfd77dff23b1889197a3e/  ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 4eeded92-9e5d-4589-8af2-9b2917254a83 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/8c/31a41fb3cc180e67acfd77dff23b1889197a3e/  CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ b8a7b6e4-a8dd-49c2-83e0-a180a38d90fb MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ a4274eaf-7414-42cc-b74f-9e322bcbf360 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/81/d4e62bed9d25cbe614eb09a6b7796b6453879e/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/77/ 4c97c1ace81e50b9956f358666dffc2b0fc331 OPEN,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/77/ 4c97c1ace81e50b9956f358666dffc2b0fc331 ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/77/ 4c97c1ace81e50b9956f358666dffc2b0fc331 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 6dbc2c2d-ab56-470a-866e-b0a8b01a0d6c MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 8c5b3dfc-1c87-4d16-b555-7666f3802851 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/77/4c97c1ace81e50b9956f358666dffc2b0fc331/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/fa670d69-1722-453b-b2cb-28b98d6d5326/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/fa670d69-1722-453b-b2cb-28b98d6d5326/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/7b875057-1996-4987-928f-0720c7b06bb0/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/bf5be7df-47cb-4cb1-81a5-b38fb861f158/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/bf5be7df-47cb-4cb1-81a5-b38fb861f158/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 7b875057-1996-4987-928f-0720c7b06bb0 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/9c/ 8b312d08ccdd7666f7f511491e379b10b42a5a MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/9c/8b312d08ccdd7666f7f511491e379b10b42a5a/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/9c/ 8b312d08ccdd7666f7f511491e379b10b42a5a MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 7b875057-1996-4987-928f-0720c7b06bb0 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/9c/8b312d08ccdd7666f7f511491e379b10b42a5a/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ fa670d69-1722-453b-b2cb-28b98d6d5326 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/90/ 2baa7269acfde5e4aa73a99ffea24f6415afa6 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/90/2baa7269acfde5e4aa73a99ffea24f6415afa6/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/90/ 2baa7269acfde5e4aa73a99ffea24f6415afa6 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ fa670d69-1722-453b-b2cb-28b98d6d5326 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/90/2baa7269acfde5e4aa73a99ffea24f6415afa6/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ bf5be7df-47cb-4cb1-81a5-b38fb861f158 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/9e/ a758ad4277dba4d773ab9e69fa1ccade4d71d5 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/9e/a758ad4277dba4d773ab9e69fa1ccade4d71d5/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/9e/ a758ad4277dba4d773ab9e69fa1ccade4d71d5 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bf5be7df-47cb-4cb1-81a5-b38fb861f158 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/9e/a758ad4277dba4d773ab9e69fa1ccade4d71d5/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 7b875057-1996-4987-928f-0720c7b06bb0 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 516c5307-f4c8-4f80-aa81-2fadc8587aeb MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/9c/8b312d08ccdd7666f7f511491e379b10b42a5a/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ fa670d69-1722-453b-b2cb-28b98d6d5326 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ b8ae7bab-c293-42e6-8a10-31b4306bb77d MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/90/2baa7269acfde5e4aa73a99ffea24f6415afa6/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ bf5be7df-47cb-4cb1-81a5-b38fb861f158 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ c678389d-3b6e-45ba-b39e-a54a5bce82f5 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/9e/a758ad4277dba4d773ab9e69fa1ccade4d71d5/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/b8/3a10227042961d3ddcda376b45de425c00b5d9/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/b8/6088145e61e4558e26facb733afc5050846a20/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/b8/3a10227042961d3ddcda376b45de425c00b5d9/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/b8/6088145e61e4558e26facb733afc5050846a20/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/b8/3a10227042961d3ddcda376b45de425c00b5d9/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/b8/6088145e61e4558e26facb733afc5050846a20/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/b7/61e2f4e33c3fa75fe6171b803e1efd869b6d0e/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/b7/61e2f4e33c3fa75fe6171b803e1efd869b6d0e/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/b7/61e2f4e33c3fa75fe6171b803e1efd869b6d0e/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/c1/acf0e45a5b51147a7bd6c0c6793fb68de16fb6/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/c1/acf0e45a5b51147a7bd6c0c6793fb68de16fb6/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/c1/acf0e45a5b51147a7bd6c0c6793fb68de16fb6/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5876c85f-174d-48ef-87c8-9b86c99164d6 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5876c85f-174d-48ef-87c8-9b86c99164d6 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5876c85f-174d-48ef-87c8-9b86c99164d6 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3821a30e-c4a8-4cad-8547-f074ac62cfc3 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5876c85f-174d-48ef-87c8-9b86c99164d6 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5876c85f-174d-48ef-87c8-9b86c99164d6 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3821a30e-c4a8-4cad-8547-f074ac62cfc3 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3821a30e-c4a8-4cad-8547-f074ac62cfc3 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3821a30e-c4a8-4cad-8547-f074ac62cfc3 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 852c5f60-f1b5-414c-9d15-cb4476d54e83 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 852c5f60-f1b5-414c-9d15-cb4476d54e83 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 852c5f60-f1b5-414c-9d15-cb4476d54e83 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 852c5f60-f1b5-414c-9d15-cb4476d54e83 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ e45625cc-bcac-4f7b-b471-46eec12fabd7 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ e45625cc-bcac-4f7b-b471-46eec12fabd7 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ e45625cc-bcac-4f7b-b471-46eec12fabd7 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ e45625cc-bcac-4f7b-b471-46eec12fabd7 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/c5/2f95d435fa25da17a8cc5ce3f3a1d3b9c4d0de/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/c5/2f95d435fa25da17a8cc5ce3f3a1d3b9c4d0de/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/c5/2f95d435fa25da17a8cc5ce3f3a1d3b9c4d0de/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ bb3362d1-a375-4844-8729-c9dbaf6ecc64 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bb3362d1-a375-4844-8729-c9dbaf6ecc64 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bb3362d1-a375-4844-8729-c9dbaf6ecc64 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bb3362d1-a375-4844-8729-c9dbaf6ecc64 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/fb2c4194-b6f3-4ecb-89fe-888e1e3bbde7/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/ff5495e8-9b6e-49d6-8b69-3adb5b666436/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/ff5495e8-9b6e-49d6-8b69-3adb5b666436/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/4638257f-9f43-4352-87c9-779460a1e3dd/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/fb2c4194-b6f3-4ecb-89fe-888e1e3bbde7/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/37394c17-40c1-4834-803b-5f4029f7a5bb/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/37394c17-40c1-4834-803b-5f4029f7a5bb/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/d2eb3be0-7839-4447-833f-8d2771308bdf/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/d2eb3be0-7839-4447-833f-8d2771308bdf/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/bf/6557c001c3cf499590e054ccefce7221371e16/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/bf/6557c001c3cf499590e054ccefce7221371e16/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/bf/6557c001c3cf499590e054ccefce7221371e16/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ ff5495e8-9b6e-49d6-8b69-3adb5b666436 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/9f/ 7881467e2fa0c103b13cdee0678c121a579142 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/9f/7881467e2fa0c103b13cdee0678c121a579142/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/9f/ 7881467e2fa0c103b13cdee0678c121a579142 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ ff5495e8-9b6e-49d6-8b69-3adb5b666436 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/9f/7881467e2fa0c103b13cdee0678c121a579142/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ ebdbcc1f-c354-466d-bd05-d3f8782c65f0 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ ebdbcc1f-c354-466d-bd05-d3f8782c65f0 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4638257f-9f43-4352-87c9-779460a1e3dd MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/af/ 610502364500c3bdd4beb0fe92089cf46a6ab3 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/af/610502364500c3bdd4beb0fe92089cf46a6ab3/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/af/ 610502364500c3bdd4beb0fe92089cf46a6ab3 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4638257f-9f43-4352-87c9-779460a1e3dd MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/af/610502364500c3bdd4beb0fe92089cf46a6ab3/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ ff5495e8-9b6e-49d6-8b69-3adb5b666436 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ ac1b79eb-a611-4d72-8eca-ef795690fc1f MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/9f/7881467e2fa0c103b13cdee0678c121a579142/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ ebdbcc1f-c354-466d-bd05-d3f8782c65f0 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ ebdbcc1f-c354-466d-bd05-d3f8782c65f0 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ fb2c4194-b6f3-4ecb-89fe-888e1e3bbde7 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/ae/ 4074dda002d453ce3e2229b706c20421cfdd91 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/ae/4074dda002d453ce3e2229b706c20421cfdd91/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/ae/ 4074dda002d453ce3e2229b706c20421cfdd91 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ fb2c4194-b6f3-4ecb-89fe-888e1e3bbde7 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/ae/4074dda002d453ce3e2229b706c20421cfdd91/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 37394c17-40c1-4834-803b-5f4029f7a5bb MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/a3/ 70a43c062f3652178dfc3d66f3e497e6e5e6b1 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/a3/70a43c062f3652178dfc3d66f3e497e6e5e6b1/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/a3/ 70a43c062f3652178dfc3d66f3e497e6e5e6b1 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 37394c17-40c1-4834-803b-5f4029f7a5bb MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/a3/70a43c062f3652178dfc3d66f3e497e6e5e6b1/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4638257f-9f43-4352-87c9-779460a1e3dd MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 8273309b-fcfd-4a9c-8732-b4e208f636aa MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/af/610502364500c3bdd4beb0fe92089cf46a6ab3/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ d2eb3be0-7839-4447-833f-8d2771308bdf MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/a2/ af450f089e10fe6bc1933ca0e7ad9399fd364c MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/a2/af450f089e10fe6bc1933ca0e7ad9399fd364c/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/a2/ af450f089e10fe6bc1933ca0e7ad9399fd364c MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ d2eb3be0-7839-4447-833f-8d2771308bdf MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/a2/af450f089e10fe6bc1933ca0e7ad9399fd364c/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ fb2c4194-b6f3-4ecb-89fe-888e1e3bbde7 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ a464be1c-ecea-46d2-ade5-a4d869fc1e52 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/ae/4074dda002d453ce3e2229b706c20421cfdd91/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ d2eb3be0-7839-4447-833f-8d2771308bdf MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 838d8ad4-e646-4d0e-9795-c04ca5769692 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/a2/af450f089e10fe6bc1933ca0e7ad9399fd364c/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 37394c17-40c1-4834-803b-5f4029f7a5bb MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 3eb90c3f-2f2e-48d6-9a4a-047f19f7f01d MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/a3/70a43c062f3652178dfc3d66f3e497e6e5e6b1/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/cc/8cdd9d2c74a90692f6ee3fc5231035bd43fd0d/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/cc/8cdd9d2c74a90692f6ee3fc5231035bd43fd0d/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/cc/8cdd9d2c74a90692f6ee3fc5231035bd43fd0d/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/c6/169476911aaf2aa4b70f1708425f1738eeb832/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/c6/169476911aaf2aa4b70f1708425f1738eeb832/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/c6/169476911aaf2aa4b70f1708425f1738eeb832/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ bf4de773-5913-4e31-98c3-457395af04be CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bf4de773-5913-4e31-98c3-457395af04be OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3c94c3e6-5397-4373-a8be-648c865cd80b CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bf4de773-5913-4e31-98c3-457395af04be ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bf4de773-5913-4e31-98c3-457395af04be CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3c94c3e6-5397-4373-a8be-648c865cd80b OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3c94c3e6-5397-4373-a8be-648c865cd80b ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3c94c3e6-5397-4373-a8be-648c865cd80b CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/3821a30e-c4a8-4cad-8547-f074ac62cfc3/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/3821a30e-c4a8-4cad-8547-f074ac62cfc3/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/852c5f60-f1b5-414c-9d15-cb4476d54e83/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/5876c85f-174d-48ef-87c8-9b86c99164d6/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/852c5f60-f1b5-414c-9d15-cb4476d54e83/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/5876c85f-174d-48ef-87c8-9b86c99164d6/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3821a30e-c4a8-4cad-8547-f074ac62cfc3 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/b8/ 6088145e61e4558e26facb733afc5050846a20 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/b8/6088145e61e4558e26facb733afc5050846a20/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/b8/ 6088145e61e4558e26facb733afc5050846a20 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3821a30e-c4a8-4cad-8547-f074ac62cfc3 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/b8/6088145e61e4558e26facb733afc5050846a20/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 852c5f60-f1b5-414c-9d15-cb4476d54e83 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/c1/ acf0e45a5b51147a7bd6c0c6793fb68de16fb6 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/c1/acf0e45a5b51147a7bd6c0c6793fb68de16fb6/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/c1/ acf0e45a5b51147a7bd6c0c6793fb68de16fb6 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 852c5f60-f1b5-414c-9d15-cb4476d54e83 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/c1/acf0e45a5b51147a7bd6c0c6793fb68de16fb6/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5876c85f-174d-48ef-87c8-9b86c99164d6 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/b8/ 3a10227042961d3ddcda376b45de425c00b5d9 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/b8/3a10227042961d3ddcda376b45de425c00b5d9/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/b8/ 3a10227042961d3ddcda376b45de425c00b5d9 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5876c85f-174d-48ef-87c8-9b86c99164d6 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/b8/3a10227042961d3ddcda376b45de425c00b5d9/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3821a30e-c4a8-4cad-8547-f074ac62cfc3 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 010c7836-c4af-4c6c-bfad-6bd09ae1de8b MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/b8/6088145e61e4558e26facb733afc5050846a20/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 852c5f60-f1b5-414c-9d15-cb4476d54e83 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 0fb7f249-2967-481a-b321-db9184267378 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/c1/acf0e45a5b51147a7bd6c0c6793fb68de16fb6/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5876c85f-174d-48ef-87c8-9b86c99164d6 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 86360e2b-72d0-43c0-9ed5-5e5aa43e048c MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/b8/3a10227042961d3ddcda376b45de425c00b5d9/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/e6/7428a9aecf6dff14c2849e445c4d674b10b2e9/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/e6/7428a9aecf6dff14c2849e445c4d674b10b2e9/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/e6/7428a9aecf6dff14c2849e445c4d674b10b2e9/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/e2/7b4226358ce6c59782b20bb8a1b1044805ba69/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/d9/7c1d8e499e2736b2db025a9275175ba2166d29/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/e2/7b4226358ce6c59782b20bb8a1b1044805ba69/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/e2/7b4226358ce6c59782b20bb8a1b1044805ba69/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/d9/7c1d8e499e2736b2db025a9275175ba2166d29/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/d9/7c1d8e499e2736b2db025a9275175ba2166d29/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/ea/42dab95d873d5d1a6579c31ad30794522c47df/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/ea/42dab95d873d5d1a6579c31ad30794522c47df/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/ea/42dab95d873d5d1a6579c31ad30794522c47df/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 78f7fd9a-5bd0-4d5c-9b7a-a4fd04d2b43a CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 78f7fd9a-5bd0-4d5c-9b7a-a4fd04d2b43a OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 78f7fd9a-5bd0-4d5c-9b7a-a4fd04d2b43a ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 78f7fd9a-5bd0-4d5c-9b7a-a4fd04d2b43a CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ fd155651-dd90-4c67-bffa-71f3a6d2d49a CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ fd155651-dd90-4c67-bffa-71f3a6d2d49a OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ fd155651-dd90-4c67-bffa-71f3a6d2d49a ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ fd155651-dd90-4c67-bffa-71f3a6d2d49a CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bd465f89-0b0e-4b63-be29-8ab3bf234770 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bd465f89-0b0e-4b63-be29-8ab3bf234770 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/fd155651-dd90-4c67-bffa-71f3a6d2d49a/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/ bd465f89-0b0e-4b63-be29-8ab3bf234770 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bd465f89-0b0e-4b63-be29-8ab3bf234770 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 39f56873-d24e-47be-a048-ce048fb409a6 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 39f56873-d24e-47be-a048-ce048fb409a6 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 39f56873-d24e-47be-a048-ce048fb409a6 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 39f56873-d24e-47be-a048-ce048fb409a6 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/39f56873-d24e-47be-a048-ce048fb409a6/ xl.meta MODIFY
+16/01/24 11:36 ./database/wdg1/.git/objects/ef/43eb88495d69f7ccc18be46d7cda692087320c/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/ef/43eb88495d69f7ccc18be46d7cda692087320c/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/ef/43eb88495d69f7ccc18be46d7cda692087320c/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/f0/847b143340e7550e270b435dbc9f3848001e9b/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/f0/847b143340e7550e270b435dbc9f3848001e9b/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/f0/847b143340e7550e270b435dbc9f3848001e9b/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ebdbcc1f-c354-466d-bd05-d3f8782c65f0/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/ebdbcc1f-c354-466d-bd05-d3f8782c65f0/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/bb3362d1-a375-4844-8729-c9dbaf6ecc64/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/bb3362d1-a375-4844-8729-c9dbaf6ecc64/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/e45625cc-bcac-4f7b-b471-46eec12fabd7/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/e45625cc-bcac-4f7b-b471-46eec12fabd7/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/ea/f2a99e32c1b30a4161ff39012e40aaa6d08a2f/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/ea/f2a99e32c1b30a4161ff39012e40aaa6d08a2f/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/ea/f2a99e32c1b30a4161ff39012e40aaa6d08a2f/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/f0/ff6e573f6aff7685363d99e1731a272a4dbbcd/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/f0/ff6e573f6aff7685363d99e1731a272a4dbbcd/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/f0/ff6e573f6aff7685363d99e1731a272a4dbbcd/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ b3b28516-99e3-4fb0-8244-14fe24175f8e CREATE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/fc/9b13034abfabfe6e83f5c9c2947f371377ebc4/ xl.meta OPEN
+16/01/24 11:36 ./database/.minio.sys/tmp/ b3b28516-99e3-4fb0-8244-14fe24175f8e OPEN,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/fc/9b13034abfabfe6e83f5c9c2947f371377ebc4/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/fc/9b13034abfabfe6e83f5c9c2947f371377ebc4/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/f5/8c8e32fdbf4c97c8c6cb9f200f0b881376a8ed/ xl.meta OPEN
+16/01/24 11:36 ./database/.minio.sys/tmp/ b3b28516-99e3-4fb0-8244-14fe24175f8e ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ ebdbcc1f-c354-466d-bd05-d3f8782c65f0 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ b3b28516-99e3-4fb0-8244-14fe24175f8e ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/f5/8c8e32fdbf4c97c8c6cb9f200f0b881376a8ed/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/bf/ 6557c001c3cf499590e054ccefce7221371e16 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/f5/8c8e32fdbf4c97c8c6cb9f200f0b881376a8ed/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36   MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ b3b28516-99e3-4fb0-8244-14fe24175f8e CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/bf/ 6557c001c3cf499590e054ccefce7221371e16 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ ebdbcc1f-c354-466d-bd05-d3f8782c65f0 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/bf/6557c001c3cf499590e054ccefce7221371e16/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/bf/ 6557c001c3cf499590e054ccefce7221371e16 OPEN,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/bf/ 6557c001c3cf499590e054ccefce7221371e16 ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/bf/ 6557c001c3cf499590e054ccefce7221371e16 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 868f932d-0c3c-4b9a-80d7-12d6141506a8 CREATE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/fd/ca1d6ae56e9c905fa5f5041130c419d1fc2b75/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/fd/ca1d6ae56e9c905fa5f5041130c419d1fc2b75/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/fd/ca1d6ae56e9c905fa5f5041130c419d1fc2b75/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ bb3362d1-a375-4844-8729-c9dbaf6ecc64 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/c5/ 2f95d435fa25da17a8cc5ce3f3a1d3b9c4d0de MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/c5/2f95d435fa25da17a8cc5ce3f3a1d3b9c4d0de/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/c5/ 2f95d435fa25da17a8cc5ce3f3a1d3b9c4d0de MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bb3362d1-a375-4844-8729-c9dbaf6ecc64 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/c5/2f95d435fa25da17a8cc5ce3f3a1d3b9c4d0de/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 868f932d-0c3c-4b9a-80d7-12d6141506a8 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 868f932d-0c3c-4b9a-80d7-12d6141506a8 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 868f932d-0c3c-4b9a-80d7-12d6141506a8 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5999e4f9-2e5b-45cc-847b-9e879fc21bf5 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/868f932d-0c3c-4b9a-80d7-12d6141506a8/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5999e4f9-2e5b-45cc-847b-9e879fc21bf5 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5999e4f9-2e5b-45cc-847b-9e879fc21bf5 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5999e4f9-2e5b-45cc-847b-9e879fc21bf5 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 04adcab6-97f8-486a-a5c9-6f006e3224fc CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 04adcab6-97f8-486a-a5c9-6f006e3224fc OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ ebdbcc1f-c354-466d-bd05-d3f8782c65f0 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ f167eee7-7b52-432f-a768-f5d7daffb77f MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/bf/6557c001c3cf499590e054ccefce7221371e16/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 04adcab6-97f8-486a-a5c9-6f006e3224fc ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 04adcab6-97f8-486a-a5c9-6f006e3224fc CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ ba52927a-e126-4457-8546-6764bd4a77fe CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ ba52927a-e126-4457-8546-6764bd4a77fe OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ e45625cc-bcac-4f7b-b471-46eec12fabd7 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/b7/ 61e2f4e33c3fa75fe6171b803e1efd869b6d0e MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/b7/61e2f4e33c3fa75fe6171b803e1efd869b6d0e/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/b7/ 61e2f4e33c3fa75fe6171b803e1efd869b6d0e MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ e45625cc-bcac-4f7b-b471-46eec12fabd7 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/b7/61e2f4e33c3fa75fe6171b803e1efd869b6d0e/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ ba52927a-e126-4457-8546-6764bd4a77fe ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ ba52927a-e126-4457-8546-6764bd4a77fe CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bb3362d1-a375-4844-8729-c9dbaf6ecc64 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ f7dfd225-321e-4b8c-8519-1bdccf794061 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/c5/2f95d435fa25da17a8cc5ce3f3a1d3b9c4d0de/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ b7ffb030-de49-4c98-bcd0-198b4ce0e3dc CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ b7ffb030-de49-4c98-bcd0-198b4ce0e3dc OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ e45625cc-bcac-4f7b-b471-46eec12fabd7 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 9924f09b-e401-4ffb-bbd7-5776a3a1e8af MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/b7/61e2f4e33c3fa75fe6171b803e1efd869b6d0e/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ b7ffb030-de49-4c98-bcd0-198b4ce0e3dc ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ b7ffb030-de49-4c98-bcd0-198b4ce0e3dc CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ ae3e0d98-f020-4c34-ad88-33780d6b31c2 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ ae3e0d98-f020-4c34-ad88-33780d6b31c2 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ ae3e0d98-f020-4c34-ad88-33780d6b31c2 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ ae3e0d98-f020-4c34-ad88-33780d6b31c2 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/packed-refs/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/packed-refs/ xl.meta ACCESS
+16/01/24 11:36 ./database/.minio.sys/tmp/78f7fd9a-5bd0-4d5c-9b7a-a4fd04d2b43a/ xl.meta MODIFY
+16/01/24 11:36 ./database/wdg1/.git/packed-refs/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/78f7fd9a-5bd0-4d5c-9b7a-a4fd04d2b43a/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/3c94c3e6-5397-4373-a8be-648c865cd80b/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/3c94c3e6-5397-4373-a8be-648c865cd80b/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/bd465f89-0b0e-4b63-be29-8ab3bf234770/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/bf4de773-5913-4e31-98c3-457395af04be/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/bd465f89-0b0e-4b63-be29-8ab3bf234770/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/bf4de773-5913-4e31-98c3-457395af04be/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 78f7fd9a-5bd0-4d5c-9b7a-a4fd04d2b43a MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/e6/ 7428a9aecf6dff14c2849e445c4d674b10b2e9 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/e6/7428a9aecf6dff14c2849e445c4d674b10b2e9/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/e6/ 7428a9aecf6dff14c2849e445c4d674b10b2e9 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 78f7fd9a-5bd0-4d5c-9b7a-a4fd04d2b43a MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/e6/7428a9aecf6dff14c2849e445c4d674b10b2e9/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3c94c3e6-5397-4373-a8be-648c865cd80b MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/c6/ 169476911aaf2aa4b70f1708425f1738eeb832 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/c6/169476911aaf2aa4b70f1708425f1738eeb832/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/c6/ 169476911aaf2aa4b70f1708425f1738eeb832 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3c94c3e6-5397-4373-a8be-648c865cd80b MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/c6/169476911aaf2aa4b70f1708425f1738eeb832/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 185314ec-5b72-4c0d-8529-78ee94289a00 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 185314ec-5b72-4c0d-8529-78ee94289a00 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bd465f89-0b0e-4b63-be29-8ab3bf234770 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/ea/ 42dab95d873d5d1a6579c31ad30794522c47df MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/ea/42dab95d873d5d1a6579c31ad30794522c47df/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/ea/ 42dab95d873d5d1a6579c31ad30794522c47df MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bd465f89-0b0e-4b63-be29-8ab3bf234770 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/ea/42dab95d873d5d1a6579c31ad30794522c47df/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 185314ec-5b72-4c0d-8529-78ee94289a00 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 3c94c3e6-5397-4373-a8be-648c865cd80b MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 185314ec-5b72-4c0d-8529-78ee94289a00 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ f982a95e-b7f7-405d-8ab7-16d1e326776f MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/c6/169476911aaf2aa4b70f1708425f1738eeb832/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/185314ec-5b72-4c0d-8529-78ee94289a00/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/ bf4de773-5913-4e31-98c3-457395af04be MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/cc/ 8cdd9d2c74a90692f6ee3fc5231035bd43fd0d MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/cc/8cdd9d2c74a90692f6ee3fc5231035bd43fd0d/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/cc/ 8cdd9d2c74a90692f6ee3fc5231035bd43fd0d MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bf4de773-5913-4e31-98c3-457395af04be MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/cc/8cdd9d2c74a90692f6ee3fc5231035bd43fd0d/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ bd465f89-0b0e-4b63-be29-8ab3bf234770 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 24182951-2186-41b9-b6e7-ec5c2b061389 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/ea/42dab95d873d5d1a6579c31ad30794522c47df/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ f982a95e-b7f7-405d-8ab7-16d1e326776f OPEN,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/c6/169476911aaf2aa4b70f1708425f1738eeb832/  OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ f982a95e-b7f7-405d-8ab7-16d1e326776f ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/c6/169476911aaf2aa4b70f1708425f1738eeb832/  ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ f982a95e-b7f7-405d-8ab7-16d1e326776f ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/c6/169476911aaf2aa4b70f1708425f1738eeb832/  ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ f982a95e-b7f7-405d-8ab7-16d1e326776f CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/c6/169476911aaf2aa4b70f1708425f1738eeb832/  CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 78f7fd9a-5bd0-4d5c-9b7a-a4fd04d2b43a MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 8d294110-dbbf-40d4-80ba-6087ce64e244 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/e6/7428a9aecf6dff14c2849e445c4d674b10b2e9/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ c1cfac40-2db6-425b-bc13-ea430aae4fde CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ c1cfac40-2db6-425b-bc13-ea430aae4fde OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ c1cfac40-2db6-425b-bc13-ea430aae4fde ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bf4de773-5913-4e31-98c3-457395af04be MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ e924da6d-0d0c-4b90-b8e1-82f9fe964588 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/cc/8cdd9d2c74a90692f6ee3fc5231035bd43fd0d/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ c1cfac40-2db6-425b-bc13-ea430aae4fde ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ c1cfac40-2db6-425b-bc13-ea430aae4fde CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4a8dd6a2-0f36-4b1e-bc6c-17e3667c54d0 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4a8dd6a2-0f36-4b1e-bc6c-17e3667c54d0 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4a8dd6a2-0f36-4b1e-bc6c-17e3667c54d0 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4a8dd6a2-0f36-4b1e-bc6c-17e3667c54d0 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/04adcab6-97f8-486a-a5c9-6f006e3224fc/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/b7ffb030-de49-4c98-bcd0-198b4ce0e3dc/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/ae3e0d98-f020-4c34-ad88-33780d6b31c2/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/b3b28516-99e3-4fb0-8244-14fe24175f8e/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/868f932d-0c3c-4b9a-80d7-12d6141506a8/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ba52927a-e126-4457-8546-6764bd4a77fe/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/b7ffb030-de49-4c98-bcd0-198b4ce0e3dc/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ae3e0d98-f020-4c34-ad88-33780d6b31c2/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/04adcab6-97f8-486a-a5c9-6f006e3224fc/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ba52927a-e126-4457-8546-6764bd4a77fe/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/b3b28516-99e3-4fb0-8244-14fe24175f8e/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/fd155651-dd90-4c67-bffa-71f3a6d2d49a/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/5999e4f9-2e5b-45cc-847b-9e879fc21bf5/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/5999e4f9-2e5b-45cc-847b-9e879fc21bf5/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ ae3e0d98-f020-4c34-ad88-33780d6b31c2 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/f0/ ff6e573f6aff7685363d99e1731a272a4dbbcd MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/f0/ff6e573f6aff7685363d99e1731a272a4dbbcd/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/f0/ ff6e573f6aff7685363d99e1731a272a4dbbcd MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ ae3e0d98-f020-4c34-ad88-33780d6b31c2 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/f0/ff6e573f6aff7685363d99e1731a272a4dbbcd/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/39f56873-d24e-47be-a048-ce048fb409a6/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ b7ffb030-de49-4c98-bcd0-198b4ce0e3dc MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/ea/ f2a99e32c1b30a4161ff39012e40aaa6d08a2f MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/ea/f2a99e32c1b30a4161ff39012e40aaa6d08a2f/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/ea/ f2a99e32c1b30a4161ff39012e40aaa6d08a2f MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ b7ffb030-de49-4c98-bcd0-198b4ce0e3dc MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/ea/f2a99e32c1b30a4161ff39012e40aaa6d08a2f/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/HEAD/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/change-version/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/change-version/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/HEAD/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/change-version/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/HEAD/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ fd155651-dd90-4c67-bffa-71f3a6d2d49a MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/e2/ 7b4226358ce6c59782b20bb8a1b1044805ba69 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/e2/7b4226358ce6c59782b20bb8a1b1044805ba69/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/e2/ 7b4226358ce6c59782b20bb8a1b1044805ba69 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ fd155651-dd90-4c67-bffa-71f3a6d2d49a MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/e2/7b4226358ce6c59782b20bb8a1b1044805ba69/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/refs/heads/zh_master/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/refs/heads/zh_master/ xl.meta ACCESS
+16/01/24 11:36 ./database/.minio.sys/tmp/ ba52927a-e126-4457-8546-6764bd4a77fe MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/fd/ ca1d6ae56e9c905fa5f5041130c419d1fc2b75 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/heads/zh_master/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/fd/ca1d6ae56e9c905fa5f5041130c419d1fc2b75/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/fd/ ca1d6ae56e9c905fa5f5041130c419d1fc2b75 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ ba52927a-e126-4457-8546-6764bd4a77fe MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/fd/ca1d6ae56e9c905fa5f5041130c419d1fc2b75/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4e93b3b3-89ba-4902-bbf7-487244331b52 CREATE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/heads/master/ xl.meta OPEN
+16/01/24 11:36 ./database/.minio.sys/tmp/ b7ffb030-de49-4c98-bcd0-198b4ce0e3dc MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 06923d70-766d-4cd4-a25c-aec8dcc46f71 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/ea/f2a99e32c1b30a4161ff39012e40aaa6d08a2f/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/refs/heads/master/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/refs/heads/master/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/4a8dd6a2-0f36-4b1e-bc6c-17e3667c54d0/e52a66d1-ed3e-40d4-b8c9-354d8f1fd5df/ part.1 MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5d39b962-ff2b-43c4-bad1-cce7c8eefaae CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4e93b3b3-89ba-4902-bbf7-487244331b52 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4e93b3b3-89ba-4902-bbf7-487244331b52 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4e93b3b3-89ba-4902-bbf7-487244331b52 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 9875feed-c9fc-44d6-98f1-b8b48ffe6031 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5d39b962-ff2b-43c4-bad1-cce7c8eefaae OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5d39b962-ff2b-43c4-bad1-cce7c8eefaae ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5d39b962-ff2b-43c4-bad1-cce7c8eefaae CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 868f932d-0c3c-4b9a-80d7-12d6141506a8 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 9875feed-c9fc-44d6-98f1-b8b48ffe6031 OPEN,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/ef/ 43eb88495d69f7ccc18be46d7cda692087320c MOVED_TO,ISDIR
+16/01/24 11:36   MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/ef/ 43eb88495d69f7ccc18be46d7cda692087320c MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 868f932d-0c3c-4b9a-80d7-12d6141506a8 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/ef/43eb88495d69f7ccc18be46d7cda692087320c/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 9875feed-c9fc-44d6-98f1-b8b48ffe6031 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 9875feed-c9fc-44d6-98f1-b8b48ffe6031 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/ef/ 43eb88495d69f7ccc18be46d7cda692087320c OPEN,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/ef/ 43eb88495d69f7ccc18be46d7cda692087320c ACCESS,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/ef/ 43eb88495d69f7ccc18be46d7cda692087320c CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 635353be-471f-49b9-b357-688fbe5dd025 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ fd155651-dd90-4c67-bffa-71f3a6d2d49a MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ d1adf57d-1e70-4838-9a09-1cb0fd9ad1ec MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/e2/7b4226358ce6c59782b20bb8a1b1044805ba69/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 635353be-471f-49b9-b357-688fbe5dd025 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 635353be-471f-49b9-b357-688fbe5dd025 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 635353be-471f-49b9-b357-688fbe5dd025 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 04adcab6-97f8-486a-a5c9-6f006e3224fc MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/f5/ 8c8e32fdbf4c97c8c6cb9f200f0b881376a8ed MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/f5/8c8e32fdbf4c97c8c6cb9f200f0b881376a8ed/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/f5/ 8c8e32fdbf4c97c8c6cb9f200f0b881376a8ed MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 04adcab6-97f8-486a-a5c9-6f006e3224fc MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/f5/8c8e32fdbf4c97c8c6cb9f200f0b881376a8ed/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ ba52927a-e126-4457-8546-6764bd4a77fe MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ b572c7c5-9241-4be3-b867-46506dc2323e MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/fd/ca1d6ae56e9c905fa5f5041130c419d1fc2b75/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ b3b28516-99e3-4fb0-8244-14fe24175f8e MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/f0/ 847b143340e7550e270b435dbc9f3848001e9b MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/f0/847b143340e7550e270b435dbc9f3848001e9b/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/f0/ 847b143340e7550e270b435dbc9f3848001e9b MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ b3b28516-99e3-4fb0-8244-14fe24175f8e MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/f0/847b143340e7550e270b435dbc9f3848001e9b/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 868f932d-0c3c-4b9a-80d7-12d6141506a8 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ d61f84ef-d899-4861-adfa-52cf29f53fb8 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/ef/43eb88495d69f7ccc18be46d7cda692087320c/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5999e4f9-2e5b-45cc-847b-9e879fc21bf5 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/fc/ 9b13034abfabfe6e83f5c9c2947f371377ebc4 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/fc/9b13034abfabfe6e83f5c9c2947f371377ebc4/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/fc/ 9b13034abfabfe6e83f5c9c2947f371377ebc4 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5999e4f9-2e5b-45cc-847b-9e879fc21bf5 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/fc/9b13034abfabfe6e83f5c9c2947f371377ebc4/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 04adcab6-97f8-486a-a5c9-6f006e3224fc MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 283e0e94-ca12-40f8-b198-f59407cad787 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/f5/8c8e32fdbf4c97c8c6cb9f200f0b881376a8ed/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ ae3e0d98-f020-4c34-ad88-33780d6b31c2 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ c6c98d38-728d-4c21-b679-0e946cc9be25 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/f0/ff6e573f6aff7685363d99e1731a272a4dbbcd/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ b3b28516-99e3-4fb0-8244-14fe24175f8e MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 7e10efb0-ed52-4f86-8540-9d80b2f93f25 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/f0/847b143340e7550e270b435dbc9f3848001e9b/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 39f56873-d24e-47be-a048-ce048fb409a6 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/d9/ 7c1d8e499e2736b2db025a9275175ba2166d29 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/d9/7c1d8e499e2736b2db025a9275175ba2166d29/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/d9/ 7c1d8e499e2736b2db025a9275175ba2166d29 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 39f56873-d24e-47be-a048-ce048fb409a6 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/d9/7c1d8e499e2736b2db025a9275175ba2166d29/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5999e4f9-2e5b-45cc-847b-9e879fc21bf5 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 7f71b7b1-30ec-4c63-b6d5-eb92b7fe04a0 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/fc/9b13034abfabfe6e83f5c9c2947f371377ebc4/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 39f56873-d24e-47be-a048-ce048fb409a6 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 2a1d4ca9-d7ce-49e7-bbf5-f47db7921db6 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/d9/7c1d8e499e2736b2db025a9275175ba2166d29/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/185314ec-5b72-4c0d-8529-78ee94289a00/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 185314ec-5b72-4c0d-8529-78ee94289a00 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/ packed-refs MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/packed-refs/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/ packed-refs MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 185314ec-5b72-4c0d-8529-78ee94289a00 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/packed-refs/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 185314ec-5b72-4c0d-8529-78ee94289a00 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ f3d6293f-cb84-481c-95ce-fab9bc78b388 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/packed-refs/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/4a8dd6a2-0f36-4b1e-bc6c-17e3667c54d0/e52a66d1-ed3e-40d4-b8c9-354d8f1fd5df/ part.1 MODIFY
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/dev-2401/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/dev-2401/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/dev-2401/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/dev-2310/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/dev-2310/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/dev-2310/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/4a8dd6a2-0f36-4b1e-bc6c-17e3667c54d0/e52a66d1-ed3e-40d4-b8c9-354d8f1fd5df/ part.1 MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/ bb4f469d-5ecc-4ec4-a634-1271f068a188 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bb4f469d-5ecc-4ec4-a634-1271f068a188 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bb4f469d-5ecc-4ec4-a634-1271f068a188 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bb4f469d-5ecc-4ec4-a634-1271f068a188 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 60ca74b6-d141-408e-b334-a805ccc6b198 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 60ca74b6-d141-408e-b334-a805ccc6b198 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 60ca74b6-d141-408e-b334-a805ccc6b198 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 60ca74b6-d141-408e-b334-a805ccc6b198 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/dev-probe/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/dev-probe/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/dev-probe/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/refs/tags/v1.7.17/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/refs/tags/v1.7.17/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/refs/tags/v1.7.17/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 68c5be25-d469-49f8-b3c8-1a516e393049 CREATE,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/master/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/master/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/master/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 68c5be25-d469-49f8-b3c8-1a516e393049 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 68c5be25-d469-49f8-b3c8-1a516e393049 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/635353be-471f-49b9-b357-688fbe5dd025/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/ 68c5be25-d469-49f8-b3c8-1a516e393049 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 68c5be25-d469-49f8-b3c8-1a516e393049 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/635353be-471f-49b9-b357-688fbe5dd025/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/5d39b962-ff2b-43c4-bad1-cce7c8eefaae/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/5d39b962-ff2b-43c4-bad1-cce7c8eefaae/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/4e93b3b3-89ba-4902-bbf7-487244331b52/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/4e93b3b3-89ba-4902-bbf7-487244331b52/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/9875feed-c9fc-44d6-98f1-b8b48ffe6031/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/ 162ef61d-fe6f-48db-8992-fe83c7bf6943 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/9875feed-c9fc-44d6-98f1-b8b48ffe6031/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 162ef61d-fe6f-48db-8992-fe83c7bf6943 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 162ef61d-fe6f-48db-8992-fe83c7bf6943 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 162ef61d-fe6f-48db-8992-fe83c7bf6943 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 635353be-471f-49b9-b357-688fbe5dd025 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/heads/ master MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/heads/master/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/refs/heads/ master MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 635353be-471f-49b9-b357-688fbe5dd025 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/heads/master/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/pack/pack-fb7bcddbeb8bc34a61600ae41c9665238b38f247.idx/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/pack/pack-fb7bcddbeb8bc34a61600ae41c9665238b38f247.idx/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/pack/pack-fb7bcddbeb8bc34a61600ae41c9665238b38f247.idx/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ a75f8641-1b81-4ab4-8c01-93e3f4b96ba6 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ a75f8641-1b81-4ab4-8c01-93e3f4b96ba6 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5d39b962-ff2b-43c4-bad1-cce7c8eefaae MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/ change-version MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/change-version/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/ change-version MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5d39b962-ff2b-43c4-bad1-cce7c8eefaae MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/change-version/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ a75f8641-1b81-4ab4-8c01-93e3f4b96ba6 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ a75f8641-1b81-4ab4-8c01-93e3f4b96ba6 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4e93b3b3-89ba-4902-bbf7-487244331b52 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/ HEAD MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/HEAD/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/ HEAD MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4e93b3b3-89ba-4902-bbf7-487244331b52 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/HEAD/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/c1cfac40-2db6-425b-bc13-ea430aae4fde/ xl.meta CREATE
+16/01/24 11:36 ./database/.minio.sys/tmp/c1cfac40-2db6-425b-bc13-ea430aae4fde/ xl.meta OPEN
+16/01/24 11:36 ./database/.minio.sys/tmp/ 9875feed-c9fc-44d6-98f1-b8b48ffe6031 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/heads/ zh_master MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/heads/zh_master/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/refs/heads/ zh_master MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 9875feed-c9fc-44d6-98f1-b8b48ffe6031 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/heads/zh_master/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 5d39b962-ff2b-43c4-bad1-cce7c8eefaae MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 742c6333-6438-42eb-ae26-a74cdee196e6 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/change-version/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 635353be-471f-49b9-b357-688fbe5dd025 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 68cf1b50-af4c-411a-9ab4-13ce39385865 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/heads/master/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4e93b3b3-89ba-4902-bbf7-487244331b52 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 43561914-7032-430b-b9dd-1ea14e6b0e49 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/HEAD/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 9875feed-c9fc-44d6-98f1-b8b48ffe6031 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 88588c9b-1e16-40d7-976f-a4d6a5467d61 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/heads/zh_master/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.gitignore/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.gitignore/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.gitignore/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ fa5e9af4-8c23-4165-a5b8-347fa14e4569 CREATE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ fa5e9af4-8c23-4165-a5b8-347fa14e4569 OPEN,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ fa5e9af4-8c23-4165-a5b8-347fa14e4569 ACCESS,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ fa5e9af4-8c23-4165-a5b8-347fa14e4569 CLOSE_NOWRITE,CLOSE,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/4a8dd6a2-0f36-4b1e-bc6c-17e3667c54d0/e52a66d1-ed3e-40d4-b8c9-354d8f1fd5df/ part.1 MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/bb4f469d-5ecc-4ec4-a634-1271f068a188/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/60ca74b6-d141-408e-b334-a805ccc6b198/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/bb4f469d-5ecc-4ec4-a634-1271f068a188/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/60ca74b6-d141-408e-b334-a805ccc6b198/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ bb4f469d-5ecc-4ec4-a634-1271f068a188 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/ dev-2401 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/dev-2401/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/ dev-2401 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ bb4f469d-5ecc-4ec4-a634-1271f068a188 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/dev-2401/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 60ca74b6-d141-408e-b334-a805ccc6b198 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/ dev-2310 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/dev-2310/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/ dev-2310 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 60ca74b6-d141-408e-b334-a805ccc6b198 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/dev-2310/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 60ca74b6-d141-408e-b334-a805ccc6b198 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ ee17f75f-409b-4684-b32b-98ce9cffe55e MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/dev-2310/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ bb4f469d-5ecc-4ec4-a634-1271f068a188 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 8a147e2a-c810-4180-8bc8-7ea444b6b703 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/dev-2401/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/a75f8641-1b81-4ab4-8c01-93e3f4b96ba6/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/c1cfac40-2db6-425b-bc13-ea430aae4fde/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/68c5be25-d469-49f8-b3c8-1a516e393049/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/162ef61d-fe6f-48db-8992-fe83c7bf6943/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/fa5e9af4-8c23-4165-a5b8-347fa14e4569/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/c1cfac40-2db6-425b-bc13-ea430aae4fde/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/fa5e9af4-8c23-4165-a5b8-347fa14e4569/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/162ef61d-fe6f-48db-8992-fe83c7bf6943/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/68c5be25-d469-49f8-b3c8-1a516e393049/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/a75f8641-1b81-4ab4-8c01-93e3f4b96ba6/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ c1cfac40-2db6-425b-bc13-ea430aae4fde MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/pack/ pack-fb7bcddbeb8bc34a61600ae41c9665238b38f247.idx MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/pack/pack-fb7bcddbeb8bc34a61600ae41c9665238b38f247.idx/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/pack/ pack-fb7bcddbeb8bc34a61600ae41c9665238b38f247.idx MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ c1cfac40-2db6-425b-bc13-ea430aae4fde MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/pack/pack-fb7bcddbeb8bc34a61600ae41c9665238b38f247.idx/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ fa5e9af4-8c23-4165-a5b8-347fa14e4569 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/ .gitignore MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.gitignore/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/ .gitignore MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ fa5e9af4-8c23-4165-a5b8-347fa14e4569 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.gitignore/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 162ef61d-fe6f-48db-8992-fe83c7bf6943 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/tags/ v1.7.17 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/tags/v1.7.17/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/refs/tags/ v1.7.17 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 162ef61d-fe6f-48db-8992-fe83c7bf6943 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/tags/v1.7.17/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ c1cfac40-2db6-425b-bc13-ea430aae4fde MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 2f1ff93c-8d57-4603-85ae-91b6090eaedd MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/pack/pack-fb7bcddbeb8bc34a61600ae41c9665238b38f247.idx/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ a75f8641-1b81-4ab4-8c01-93e3f4b96ba6 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/ master MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/master/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/ master MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ a75f8641-1b81-4ab4-8c01-93e3f4b96ba6 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/master/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 68c5be25-d469-49f8-b3c8-1a516e393049 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/ dev-probe MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/dev-probe/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/ dev-probe MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 68c5be25-d469-49f8-b3c8-1a516e393049 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/dev-probe/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ fa5e9af4-8c23-4165-a5b8-347fa14e4569 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ eee31cac-fc54-48c6-9f61-79e6af7a82ae MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.gitignore/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 162ef61d-fe6f-48db-8992-fe83c7bf6943 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 2d03261a-8025-460c-8751-0689a8e58385 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/tags/v1.7.17/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 68c5be25-d469-49f8-b3c8-1a516e393049 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ 3414a7b4-9a9e-4f1b-b7a7-0f3d819fe8b3 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/dev-probe/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ a75f8641-1b81-4ab4-8c01-93e3f4b96ba6 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ eeb1b084-4721-45a2-9377-7629a037ee02 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/refs/remotes/origin/master/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/4a8dd6a2-0f36-4b1e-bc6c-17e3667c54d0/e52a66d1-ed3e-40d4-b8c9-354d8f1fd5df/ part.1 CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/wdg1/.git/objects/pack/pack-fb7bcddbeb8bc34a61600ae41c9665238b38f247.pack/ xl.meta OPEN
+16/01/24 11:36 ./database/wdg1/.git/objects/pack/pack-fb7bcddbeb8bc34a61600ae41c9665238b38f247.pack/ xl.meta ACCESS
+16/01/24 11:36 ./database/wdg1/.git/objects/pack/pack-fb7bcddbeb8bc34a61600ae41c9665238b38f247.pack/ xl.meta CLOSE_NOWRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/4a8dd6a2-0f36-4b1e-bc6c-17e3667c54d0/ xl.meta CREATE
+16/01/24 11:36 ./database/.minio.sys/tmp/4a8dd6a2-0f36-4b1e-bc6c-17e3667c54d0/ xl.meta OPEN
+16/01/24 11:36 ./database/.minio.sys/tmp/4a8dd6a2-0f36-4b1e-bc6c-17e3667c54d0/ xl.meta MODIFY
+16/01/24 11:36 ./database/.minio.sys/tmp/4a8dd6a2-0f36-4b1e-bc6c-17e3667c54d0/ xl.meta CLOSE_WRITE,CLOSE
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4a8dd6a2-0f36-4b1e-bc6c-17e3667c54d0 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/pack/ pack-fb7bcddbeb8bc34a61600ae41c9665238b38f247.pack MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/pack/pack-fb7bcddbeb8bc34a61600ae41c9665238b38f247.pack/  MOVE_SELF
+16/01/24 11:36 ./database/wdg1/.git/objects/pack/ pack-fb7bcddbeb8bc34a61600ae41c9665238b38f247.pack MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4a8dd6a2-0f36-4b1e-bc6c-17e3667c54d0 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/pack/pack-fb7bcddbeb8bc34a61600ae41c9665238b38f247.pack/  MOVE_SELF
+16/01/24 11:36 ./database/.minio.sys/tmp/ 4a8dd6a2-0f36-4b1e-bc6c-17e3667c54d0 MOVED_FROM,ISDIR
+16/01/24 11:36 ./database/.minio.sys/tmp/.trash/ ab194efa-6053-4d1a-ac04-220950ed4390 MOVED_TO,ISDIR
+16/01/24 11:36 ./database/wdg1/.git/objects/pack/pack-fb7bcddbeb8bc34a61600ae41c9665238b38f247.pack/  MOVE_SELF

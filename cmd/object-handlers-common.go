@@ -335,6 +335,8 @@ func setPutObjHeaders(w http.ResponseWriter, objInfo ObjectInfo, delete bool) {
 	// We must not use the http.Header().Set method here because some (broken)
 	// clients expect the ETag header key to be literally "ETag" - not "Etag" (case-sensitive).
 	// Therefore, we have to set the ETag directly as map entry.
+    // 我们不能在此处使用 http.Header().Set 方法，因为某些（损坏的）客户端希望 ETag 标头键字面意思是“ETag”，而不是“Etag”（区分大小写）。 
+    // 因此，我们必须直接将 ETag 设置为映射条目。
 	if objInfo.ETag != "" && !delete {
 		w.Header()[xhttp.ETag] = []string{`"` + objInfo.ETag + `"`}
 	}

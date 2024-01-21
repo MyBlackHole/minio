@@ -105,6 +105,7 @@ func osTrace(s osMetric, startTime time.Time, duration time.Duration, path strin
 	}
 }
 
+// 更新系统指标
 func updateOSMetrics(s osMetric, paths ...string) func(err error) {
 	if globalTrace.NumSubscribers(madmin.TraceOS) == 0 {
 		osAction := globalOSMetrics.time(s)

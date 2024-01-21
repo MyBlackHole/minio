@@ -293,6 +293,7 @@ var (
 	globalDriveConfig drive.Config
 
 	// The global cache config
+    // 全局缓存配置
 	globalCacheConfig cache.Config
 
 	// Global server's network statistics
@@ -317,6 +318,7 @@ var (
 
 	globalPublicCerts []*x509.Certificate
 
+    // 虚拟主机样式请求的根域
 	globalDomainNames []string      // Root domains for virtual host style requests
 	globalDomainIPs   set.StringSet // Root domain IP address(s) for a distributed MinIO deployment
 
@@ -420,6 +422,8 @@ var (
 
 	// List of local drives to this node, this is only set during server startup,
 	// and should never be mutated. Hold globalLocalDrivesMu to access.
+    // 该节点的本地驱动器列表，仅在服务器启动期间设置，并且永远不应更改。
+    // 持有globalLocalDrivesMu即可访问。
 	globalLocalDrives   []StorageAPI
 	globalLocalDrivesMu sync.RWMutex
 
